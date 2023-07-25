@@ -1,0 +1,7 @@
+The files starting with 'imas_' are downloaded from the IMAS database of WEST. Each file contains data of a whole shot. 
+'t0' is the start of the plasma.
+
+- 'core_profiles': Electron density profile fitted from interferometry using splines, by equilibrium code NICE
+- 'equilibrium': Equilibrium reconstruction with magnetics and interfero-polarimetry, by equilibrium code NICE
+- 'interferometery': Line integrated electron density measured by interferometer
+- 'los_interferometer': Lines of sight for interferometer
