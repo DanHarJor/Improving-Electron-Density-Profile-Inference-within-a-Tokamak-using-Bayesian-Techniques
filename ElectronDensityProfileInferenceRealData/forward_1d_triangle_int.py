@@ -203,7 +203,7 @@ def plot_geometry_with_mag_equi(geo: ChordGeometryInterferometry, equi: Magnetic
     """
     Plot the geometry of the chords along with magnetic surfaces
     """
-    plt.figure()
+    fig = plt.figure()
     ax = plt.subplot(111)
     r = equi.r_equi_2d[0, :]
     z = equi.z_equi_2d[:, 0]
@@ -211,22 +211,23 @@ def plot_geometry_with_mag_equi(geo: ChordGeometryInterferometry, equi: Magnetic
     num_z_points = z.shape[0]
     # Plot grid lines
     for i in range(num_r_points):
-        plt.plot(r[i] * np.ones_like(z), z, linestyle='-', linewidth=0.5, color='grey', alpha=0.3)
+        plt.plot(r[i] * np.ones_like(z), z, linestyle='-', linewidth=0.5, color='grey', alpha=0.3);
     for j in range(num_z_points):
-        plt.plot(r, z[j] * np.ones_like(r), linestyle='-', linewidth=0.5, color='grey', alpha=0.3)
-    plt.contour(equi.r_equi_2d, equi.z_equi_2d, equi.psi_norm, linestyles='dashed', linewidths=1, colors='black')
-    plt.plot(equi.plasma_boundary[0, :], equi.plasma_boundary[1, :], linestyle='--', linewidth=2, color='red')
+        plt.plot(r, z[j] * np.ones_like(r), linestyle='-', linewidth=0.5, color='grey', alpha=0.3);
+    plt.contour(equi.r_equi_2d, equi.z_equi_2d, equi.psi_norm, linestyles='dashed', linewidths=1, colors='black');
+    plt.plot(equi.plasma_boundary[0, :], equi.plasma_boundary[1, :], linestyle='--', linewidth=2, color='red');
     for i in range(geo.num_los):
-        plt.plot([geo.los_r_start[i], geo.los_r_end[i]], [geo.los_z_start[i], geo.los_z_end[i]], label=f'ch{i + 1}')
-    plt.xlabel('R (m)', fontsize=12)
-    plt.ylabel('z (m)', fontsize=12)
-    box = ax.get_position()
-    ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
-    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    plt.title('Geometry of the chords from interferometry', fontsize=16)
+        plt.plot([geo.los_r_start[i], geo.los_r_end[i]], [geo.los_z_start[i], geo.los_z_end[i]], label=f'ch{i + 1}');
+    plt.xlabel('R (m)', fontsize=12);
+    plt.ylabel('z (m)', fontsize=12);
+    box = ax.get_position();
+    ax.set_position([box.x0, box.y0, box.width * 0.9, box.height]);
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5));
+    plt.title('Geometry of the chords from interferometry', fontsize=16);
     if file_name is not None:
         plt.savefig(file_name)
-    plt.show()
+    plt.close(fig)
+    return fig
 
 
 def forward_1d_triangle_main():
