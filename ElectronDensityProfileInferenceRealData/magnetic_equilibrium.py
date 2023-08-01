@@ -118,8 +118,9 @@ class MagneticEquilibrium(object):
         self.shot = shot
         equi = file_equilibrium['ids']
         # Filter no converged equilibrium computations
-        output_flag = equi['code'][0, 0]['output_flag'][0, 0].flatten()
-        mask_eq = (output_flag >= 0)
+        #output_flag = equi['code'][0, 0]['output_flag'][0, 0].flatten()
+        #mask of ones removes effect of mask
+        mask_eq = [True for i in range(len(equi['time'][0, 0].flatten()))]#(output_flag >= 0)
         self.time_equi = equi['time'][0, 0].flatten()[mask_eq] - self.t0
         self.ip = equi['ip'][0, 0].flatten()[mask_eq]
         self.r_equi_2d = equi['interp2D'][0, 0]['r'][0, 0].T
@@ -133,27 +134,27 @@ class MagneticEquilibrium(object):
         self.lid_nice = equi['constraints'][0, 0]['n_e_line'][0, 0]['reconstructed'][0, 0][mask_eq, :] / 1e19
         self.r_ax = equi['mag_ax_R'][0, 0].flatten()[mask_eq]
         self.z_ax = equi['mag_ax_Z'][0, 0].flatten()[mask_eq]
-        for i in range(mask_eq.sum()):
-            if remove_x_point:
-                # Only keep the region inside the LCFS
-                dist_axis_boundary = (self.plasma_boundary[i, 0, :] - self.r_ax[i]) ** 2 + \
-                                     (self.plasma_boundary[i, 1, :] - self.z_ax[i]) ** 2
-                max_dist_2 = dist_axis_boundary.max()
-                psi[i, (self.r_equi_2d - self.r_ax[i]) ** 2 + (self.z_equi_2d - self.z_ax[i]) ** 2 > max_dist_2] = np.nan
-            if remove_boundary:
-                psi[i, psi[i, :, :] > self.psi_boundary[i]] = np.nan
-            # Interpolation for rho_tor_norm
-            psi_2d = psi[i, :, :].squeeze()
-            psi_flatten = psi_2d.flatten()
-            f = interp1d(self.psi_prof[i, :], self.rho_tor_norm_1d[i, :], kind='linear')
-            rho_tor_norm_flatten = f(psi_flatten)
-            self.rho_tor_norm_2d[i, :, :] = rho_tor_norm_flatten.reshape(self.r_equi_2d.shape)
+        # for i in range(mask_eq.sum()):
+        #     if remove_x_point:
+        #         # Only keep the region inside the LCFS
+        #         dist_axis_boundary = (self.plasma_boundary[i, 0, :] - self.r_ax[i]) ** 2 + \
+        #                              (self.plasma_boundary[i, 1, :] - self.z_ax[i]) ** 2
+        #         max_dist_2 = dist_axis_boundary.max()
+        #         psi[i, (self.r_equi_2d - self.r_ax[i]) ** 2 + (self.z_equi_2d - self.z_ax[i]) ** 2 > max_dist_2] = np.nan
+        #     if remove_boundary:
+        #         psi[i, psi[i, :, :] > self.psi_boundary[i]] = np.nan
+        #     # Interpolation for rho_tor_norm
+        #     psi_2d = psi[i, :, :].squeeze()
+        #     psi_flatten = psi_2d.flatten()
+        #     f = interp1d(self.psi_prof[i, :], self.rho_tor_norm_1d[i, :], kind='linear')
+        #     rho_tor_norm_flatten = f(psi_flatten)
+        #     self.rho_tor_norm_2d[i, :, :] = rho_tor_norm_flatten.reshape(self.r_equi_2d.shape)
         self.psi = psi
-        self.psi_ax = np.zeros(mask_eq.sum())
-        for i in range(mask_eq.sum()):
-            psi_2d_min = self.psi[i][np.logical_not(np.isnan(psi[i]))].min()
-            psi_1d_min = self.psi_prof[i, :].min()
-            self.psi_ax[i] = np.minimum(psi_2d_min, psi_1d_min)
+        self.psi_ax = np.zeros(len(mask_eq))#.sum())
+        # for i in range(mask_eq.sum()):
+        #     psi_2d_min = self.psi[i][np.logical_not(np.isnan(psi[i]))].min()
+        #     psi_1d_min = self.psi_prof[i, :].min()
+        #     self.psi_ax[i] = np.minimum(psi_2d_min, psi_1d_min)
         self.psi_norm = (self.psi - self.psi_ax[:, np.newaxis, np.newaxis]) / \
                         (self.psi_boundary[:, np.newaxis, np.newaxis] - self.psi_ax[:, np.newaxis, np.newaxis])
 
