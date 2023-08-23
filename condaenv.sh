@@ -1,1 +1,1 @@
-conda create -n mthesis -c conda-forge optuna ipykernel scipy matplotlib sk-video gptools
+conda create -n mthesis -c conda-forge -c pytorch pytorch optuna ipykernel scipy matplotlib sk-video gptools
