@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram of a tokamak and relevant magnetic fields that create the helical particle trajectory \cite {tokamakSchema}.}}{4}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The magnetic flux surfaces and interfero-polarimetry laser geometry for a cross-section of the WEST tokamak \cite {reneintpol}.}}{5}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Electron density profile inferred by \gls {nice} for an instance in time within the \gls {west} tokamak.}}{7}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustrating how many Gaussians can model a line and its uncertainty.}}{9}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A visualisation of the simple \gls {gpr} process. In truth the prior in this implementation has 101 Gaussians. Only five are shown to aid visualisation. The posterior also has 101 Gaussians and their standard deviations are shown by the light green shade. The likelihood truly has the same number of Gaussians as the number of data points.}}{10}{figure.2.5}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

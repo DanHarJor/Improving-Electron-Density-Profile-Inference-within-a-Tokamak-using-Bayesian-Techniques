@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{nice}
+Blaise Faugeras.
+\newblock An overview of the numerical methods for tokamak plasma equilibrium
+  computation implemented in the nice code.
+\newblock {\em Fusion engineering and design}, 160:112020--, 2020.
+
+\bibitem{reneintpol}
+C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
+  J.~Morales, P.~Moreau, and B.~Santraine.
+\newblock Renewal of the interfero-polarimeter diagnostic for west.
+\newblock {\em Fusion engineering and design}, 140:81--91, 2019.
+
+\bibitem{tokamakSchema}
+S.~Li, H.~Jiang, Z.~Ren, and C.~Xu.
+\newblock Optimal tracking for a divergent-type parabolic pde system in current
+  profile control.
+\newblock {\em Abstract and applied analysis}, 2014:1--8, 2014.
+
+\bibitem{oscraz}
+David~J.C. MacKay.
+\newblock {\em Bayesian methods for adaptive models}.
+\newblock PhD thesis, 1992.
+
+\bibitem{westmagdiag}
+P.~Moreau, A.~Le-Luyer, P.~Spuig, P.~Malard, F.~Saint-Laurent, J.~F. Artaud,
+  J.~Morales, B.~Faugeras, H.~Heumann, B.~Cantone, M.~Moreau, C.~Brun,
+  R.~Nouailletas, E.~Nardon, B.~Santraine, A.~Berne, P.~Kumari, and S.~Belsare.
+\newblock The new magnetic diagnostics in the west tokamak.
+\newblock {\em Review of scientific instruments}, 89(10):10J109--10J109, 2018.
+
+\end{thebibliography}
