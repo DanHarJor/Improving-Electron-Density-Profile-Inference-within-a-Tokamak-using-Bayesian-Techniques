@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  26 SEP 2023 11:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  26 SEP 2023 16:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -385,11 +385,7 @@ Package glossaries Info: Writing glossary file uw-ethesis.symbols-glo on input l
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count314
 \l__pdf_internal_box=\box58
-) (./uw-ethesis.aux
-
-LaTeX Warning: Label `fig:mvg' multiply defined.
-
-)
+) (./uw-ethesis.aux)
 \openout1 = `uw-ethesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
@@ -552,7 +548,7 @@ Chapter 1.
 
 ]) (./chapter-2-background_theory.tex [2]
 Chapter 2.
-<images/tokamak.jpg, id=193, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=195, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 7.
@@ -561,7 +557,7 @@ Package pdftex.def Info: images/tokamak.jpg  used on input line 7.
 
 
 ] [4 <./images/tokamak.jpg>]
-<images/magfluxsurf.png, id=209, 1099.10625pt x 780.9175pt>
+<images/magfluxsurf.png, id=211, 1099.10625pt x 780.9175pt>
 File: images/magfluxsurf.png Graphic file (type png)
 <use images/magfluxsurf.png>
 Package pdftex.def Info: images/magfluxsurf.png  used on input line 20.
@@ -574,31 +570,24 @@ LaTeX Warning: Reference `' on page 5 undefined on input line 25.
 LaTeX Warning: Reference `' on page 5 undefined on input line 25.
 
 [5 <./images/magfluxsurf.png>] [6]
-<images/niceExample.png, id=241, 297.87285pt x 268.00125pt>
+<images/niceExample.png, id=243, 297.87285pt x 268.00125pt>
 File: images/niceExample.png Graphic file (type png)
 <use images/niceExample.png>
 Package pdftex.def Info: images/niceExample.png  used on input line 29.
 (pdftex.def)             Requested size: 284.52756pt x 256.01465pt.
  [7 <./images/niceExample.png>]
-<images/mvg.png, id=261, 386.04225pt x 263.18324pt>
+<images/mvg.png, id=263, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 52.
-(pdftex.def)             Requested size: 284.52756pt x 193.9775pt.
-
-
-LaTeX Warning: Reference `eq:' on page 8 undefined on input line 57.
-
-
-LaTeX Warning: Reference `eq:' on page 8 undefined on input line 57.
-
-[8]
-<images/gprvis.png, id=276, 666.0885pt x 490.2315pt>
+(pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
+ [8] [9 <./images/mvg.png>]
+<images/gprvis.png, id=301, 666.0885pt x 490.2315pt>
 File: images/gprvis.png Graphic file (type png)
 <use images/gprvis.png>
-Package pdftex.def Info: images/gprvis.png  used on input line 69.
+Package pdftex.def Info: images/gprvis.png  used on input line 86.
 (pdftex.def)             Requested size: 284.52756pt x 209.41158pt.
- [9 <./images/mvg.png>] [10 <./images/gprvis.png>]) (./chapter-3-methodology.tex [11]
+ [10 <./images/gprvis.png>]) (./chapter-3-methodology.tex [11]
 Chapter 3.
 [12
 
@@ -641,17 +630,14 @@ Package glossaries-extra Warning: Rerun required to build the glossary `main' or
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
 (rerunfilecheck)             Checksum: B9FC5835FEAE26ABD7F1FD58547C5AA5;842.
  ) 
 Here is how much of TeX's memory you used:
- 16564 strings out of 480129
- 277540 string characters out of 5893409
- 662686 words of memory out of 5000000
- 34170 multiletter control sequences out of 15000+600000
+ 16571 strings out of 480129
+ 277643 string characters out of 5893409
+ 664215 words of memory out of 5000000
+ 34174 multiletter control sequences out of 15000+600000
  475969 words of font info for 53 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  106i,7n,105p,4303b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -666,10 +652,10 @@ pdfTeX warning (dest): name{glo:west} has been referenced but does not exist, re
 pdfTeX warning (dest): name{glo:nice} has been referenced but does not exist, replaced by a fixed one
 
  </home/daniel/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on uw-ethesis.pdf (30 pages, 2379397 bytes).
+Output written on uw-ethesis.pdf (30 pages, 2269891 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 335 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
  159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

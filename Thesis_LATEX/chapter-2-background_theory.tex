@@ -45,7 +45,7 @@ This work aims to use Bayesian inference to obtain the electron density profile.
 \label{eq:mvg}
 \end{equation}
 
-The multivariate Gaussian expression \ref{eq:mvg} can be used to model a curve and its uncertainty, as illustrated in the violin plot \ref{fig:mvg}. The mean vector $\Vec{\mu}$ holds the $y$ values of the curve at regular intervals along the $x$ axis. The diagonal of the covariance matrix holds the standard deviations of each Gaussian of the multivariate which represents the errors of the curve. Figure \ref{fig:mvg} has 10 Gaussians but in practice many are used to ensure a smooth curve. This will be used to represent the result of \gls{gpr} which is the most likely curve given the data. The uncertainty of this curve is represented by the standard deviation of the many Gaussian's that make it up.  
+The multivariate Gaussian expression \ref{eq:mvg} can be used to model a curve and its uncertainty, as illustrated in the violin plot \ref{fig:mvg}. The mean vector $\Vec{\mu}$ holds the $y$ values of the curve at regular intervals along the $x$ axis. The diagonal of the covariance matrix holds the standard deviations of each Gaussian of the multivariate which represents the errors of the curve. Figure \ref{fig:mvg} has 10 Gaussians but in practice many are used to ensure a smooth curve. This will be used to represent the result of \gls{gpr} which is the most likely curve given the data. The uncertainty of this curve is represented by the standard deviation of the many Gaussians that make it up.  
 
 \begin{figure}
   \centering
@@ -54,21 +54,38 @@ The multivariate Gaussian expression \ref{eq:mvg} can be used to model a curve a
   \label{fig:mvg}
 \end{figure}
 
-The simple regression problem consists of points to which one would like to fit a smooth curve. To solve this using \gls{gpr} one must define their likelihood and prior as multivariate Gaussians, equation \ref{eq:} and \ref{eq:}.
+The simple regression problem consists of points to which one would like to fit a smooth curve. To solve this using \gls{gpr} one must define their likelihood (equation \ref{eq:likelihood}) and prior (equation \ref{eq:prior}) as multivariate Gaussians. The many gaussians that make up these multivariate gaussians are visualised in \ref{fig:gprvis}. This visualisation method is perfect for the likelihood where the covariance matrix is diagonal. The multiple gaussians that make up the likelihood are not dependant on eachother and so representing them individually provides all the infomation in the likelihood. The prior has a more complex covariance matrix $\overline{\overline{K}}$, and figure \ref{fig:gprvis} does not have a complete representation of the priors form. In this simple implimentation the covariance between the prior's Gaussians can be completly encapsulated by a single number known as the lengthscale $l$ in equation \ref{eq:prior}. These visualisations of the varius distributions are helpful but to compute the posterior in figure \ref{fig:gprvis} one must understand the components of equations \ref{eq:posterior}, \ref{eq:likelihood}, \ref{eq:prior}, and how they can be combined to form the closed form equations \ref{eq:closedform}. In the posterior equation \ref{eq:posterior}, $\Vec{y}$ contains the random variables $y_i$ for regularly spaced positions $x_i$. Given the data the most probable values of these random variables is expressed in $\Vec{\mu}$ and their uncertinites in the diagonal of $\overline{\overline{\Sigma_{post}}}$. In the likelihood equation \ref{eq:likelihood} $\Vec{D}$, is a vector containing all the data/$y$-values from measurements at various $x$ positions. $\overline{\overline{R}}$ is known as the responce matrix and ensures that the mean vector of the multivariate gaussian $\overline{\overline{R}}\Vec{y}$ only contains values of $\Vec(y)$ at the same $x$ positions the data was recorded at. $\overline{\overline{R}}$ is essentially a filter that removes irrelevant $y_i$ values from $\Vec{y}$ for the mean vector of the likelyhood. In the likelihood of figure \ref{fig:gprvis} you can see an example of a given $\Vec{y}$ and the mean of each gaussian is the value on that line at the same $x$ position as the data point. $\epsilon$ is the experimental error of the measurements in $\Vec{D}$. 
 
 \begin{equation}
-    \mathcal{N}(\Vec{D}, \overline{\overline{R}}\Vec{y}, \overline{\overline{\Sigma_{li}}}),\hspace{0.5cm} \overline{\overline{\Sigma_{li}}} = \begin{vmatrix}
-        \epsilon & 0 & 0\\
-        0 & \epsilon & 0\\
-        0 & 0 & \epsilon
-    \end{vmatrix}
+  \mathcal{N}(\Vec{y}, \Vec{\mu_{post}}, \overline{\overline{\Sigma_{post}}})
+  \label{eq:posterior}
+\end{equation}
+
+\begin{equation}
+  closed form
+  \label{eq:closedform}
+\end{equation}
+
+\begin{equation}
+    \mathcal{N}(\Vec{D}, \overline{\overline{R}}\Vec{y}, \overline{\overline{\Sigma_{li}}}),\hspace{0.5cm} \overline{\overline{\Sigma_{li}}} = 
+      \begin{vmatrix}
+          \epsilon & 0 & 0\\
+          0 & \epsilon & 0\\
+          0 & 0 & \epsilon
+      \end{vmatrix}
+    \label{eq:likelihood}
+\end{equation}
+
+\begin{equation}
+  \mathcal{N}(\Vec{y}, \Vec{0}, \overline{\overline{K}}),\hspace{0.5cm} K_{ij} = \sigma e^{\frac{y_i - y_j}{2l^2}}
+  \label{eq:prior}
 \end{equation}
 
 \begin{figure}
   \centering
   \includegraphics[width=10cm]{images/gprvis.png}
-  \caption{A visualisation of the simple \gls{gpr} process. In truth the prior in this implementation has 101 Gaussians. Only five are shown to aid visualisation. The posterior also has 101 Gaussians and their standard deviations are shown by the light green shade. The likelihood truly has the same number of Gaussians as the number of data points.}
-  \label{fig:mvg}
+  \caption{A visualisation of the simple \gls{gpr} process. In truth the prior in this implementation has 101 Gaussians. Only five are shown to aid visualisation. The likelihood truly has the same number of Gaussians as the number of data points. The posterior has 101 Gaussians, their mean is shown by the green line, the standard deviation by the green shade, it is analogous to figure \ref{fig:mvg} without the Gaussians full form being shown.}
+  \label{fig:gprvis}
 \end{figure}
 
 To summarise the electron density profile is important as it plays a key role in determining the energy confinement time and informing real time control systems. With the assumption of magnetic flux surfaces one can express it as a 1D profile, \ref{fig:nice_example}. \gls{nice} is an equilibrium re-construction code that also infers the electron density profile that can be used as a comparison in this thesis. 
