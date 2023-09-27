@@ -4,45 +4,45 @@ The top-level auxiliary file: uw-ethesis.aux
 The style file: plain.bst
 Database file #1: uw-ethesis.bib
 Warning--empty school in oscraz
-You've used 5 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            538 strings with 5201 characters,
-and the built_in function-call counts, 2269 in all, are:
-= -- 197
-> -- 183
+            545 strings with 5369 characters,
+and the built_in function-call counts, 2536 in all, are:
+= -- 224
+> -- 196
 < -- 0
-+ -- 75
-- -- 68
-* -- 207
-:= -- 414
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 48
++ -- 80
+- -- 72
+* -- 221
+:= -- 462
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 52
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 53
-empty$ -- 120
-format.name$ -- 68
-if$ -- 430
+cite$ -- 7
+duplicate$ -- 65
+empty$ -- 142
+format.name$ -- 72
+if$ -- 488
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 4
-newline$ -- 28
-num.names$ -- 10
-pop$ -- 41
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 48
 quote$ -- 0
-skip$ -- 34
+skip$ -- 41
 stack$ -- 0
-substring$ -- 111
-swap$ -- 5
+substring$ -- 116
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
+type$ -- 22
 warning$ -- 1
-while$ -- 14
-width$ -- 6
-write$ -- 56
+while$ -- 16
+width$ -- 7
+write$ -- 68
 (There was 1 warning)
