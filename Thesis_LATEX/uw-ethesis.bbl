@@ -12,6 +12,11 @@ C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
 \newblock Renewal of the interfero-polarimeter diagnostic for west.
 \newblock {\em Fusion engineering and design}, 140:81--91, 2019.
 
+\bibitem{princPlasDiag}
+Ian~H. Hutchinson and Ian~H. Hutchinson.
+\newblock {\em Principles of plasma diagnostics / I. H. Hutchinson}.
+\newblock Cambridge University press, Cambridge etc, c1987.
+
 \bibitem{tokamakSchema}
 S.~Li, H.~Jiang, Z.~Ren, and C.~Xu.
 \newblock Optimal tracking for a divergent-type parabolic pde system in current
