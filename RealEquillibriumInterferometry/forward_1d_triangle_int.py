@@ -203,29 +203,50 @@ def plot_geometry_with_mag_equi(geo: ChordGeometryInterferometry, equi: Magnetic
     """
     Plot the geometry of the chords along with magnetic surfaces
     """
-    fig = plt.figure()
+    fig = plt.figure(dpi=300)
     ax = plt.subplot(111)
-    r = equi.r_equi_2d[0, :]
-    z = equi.z_equi_2d[:, 0]
+    # r = equi.r_equi_2d[0, :]
+    r = np.linspace(2,3,5)
+    # z = equi.z_equi_2d[:, 0]
+    z = np.linspace(-0.75,0.75,10)
     num_r_points = r.shape[0]
     num_z_points = z.shape[0]
     # Plot grid lines
     for i in range(num_r_points):
-        plt.plot(r[i] * np.ones_like(z), z, linestyle='-', linewidth=0.5, color='grey', alpha=0.3);
+        plt.plot(r[i] * np.ones_like(z), z, linestyle='-', linewidth=0.5, color='grey', alpha=0.9, marker='.');
     for j in range(num_z_points):
-        plt.plot(r, z[j] * np.ones_like(r), linestyle='-', linewidth=0.5, color='grey', alpha=0.3);
+        plt.plot(r, z[j] * np.ones_like(r), linestyle='-', linewidth=0.5, color='grey', alpha=0.9, marker='.');
+    for k in range(num_r_points+4):
+        diagr = r#+k*(1/5)
+        diagz = z+k*(0.75*2/9)
+        less=0
+        if k>5: less=less + k-5
+        plt.plot(diagr[:5-less], diagz[0:5-less], linestyle='-', linewidth=0.5, color='grey', alpha=0.9, marker='.')
+    for l in range(4):
+        diagr = r[l:]
+        diagz = z[:len(diagr)]
+        plt.plot(diagr, diagz, linestyle='-', linewidth=0.5, color='grey', alpha=0.9, marker='.')
+    plt.plot(r[[1,1,2,1]],z[[6,7,7,6]], marker='.', color='gold')
+    
+
     plt.contour(equi.r_equi_2d, equi.z_equi_2d, equi.psi_norm, linestyles='dashed', linewidths=1, colors='black');
     plt.plot(equi.plasma_boundary[0, :], equi.plasma_boundary[1, :], linestyle='--', linewidth=2, color='red');
-    for i in range(geo.num_los):
-        plt.plot([geo.los_r_start[i], geo.los_r_end[i]], [geo.los_z_start[i], geo.los_z_end[i]], label=f'ch{i + 1}');
+    for i in [3]:#range(geo.num_los):
+        x = np.linspace(geo.los_r_start[i], geo.los_r_end[i],30)
+        y = np.linspace(geo.los_z_start[i], geo.los_z_end[i],30)
+        plt.plot(x, y, marker='x', color='blue', label=f'ch{i + 1}');
+        plt.plot(x[5], y[5], color='gold', marker='x')
+
     plt.xlabel('R (m)', fontsize=12);
     plt.ylabel('z (m)', fontsize=12);
     box = ax.get_position();
     ax.set_position([box.x0, box.y0, box.width * 0.9, box.height]);
-    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5));
-    plt.title('Geometry of the chords from interferometry', fontsize=16);
+    # plt.legend(loc='center left', bbox_to_anchor=(1, 0.5));
+    # plt.title('Geometry of the chords from interferometry', fontsize=16);
     if file_name is not None:
         plt.savefig(file_name)
+    plt.xlim(1.8,3.2)
+    plt.gca().set_aspect('equal', adjustable='box')
     plt.close(fig)
     return fig
 
