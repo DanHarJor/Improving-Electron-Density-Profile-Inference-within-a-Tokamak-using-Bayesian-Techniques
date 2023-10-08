@@ -1,0 +1,16 @@
+\contentsline {chapter}{Author's Declaration}{ii}{section*.1}%
+\contentsline {chapter}{Abstract}{iii}{section*.2}%
+\contentsline {chapter}{Acknowledgements}{iv}{section*.3}%
+\contentsline {chapter}{Dedication}{v}{section*.4}%
+\contentsline {chapter}{List of Figures}{vii}{section*.7}%
+\contentsline {chapter}{List of Tables}{viii}{section*.9}%
+\contentsline {chapter}{List of Abbreviations}{ix}{section*.12}%
+\contentsline {chapter}{List of Symbols}{x}{section*.15}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Background Theory of Bayesian Techniques and WEST Interferometry}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{18}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Future Investigation}{19}{chapter.6}%
+\contentsline {chapter}{\textbf {References}}{21}{section*.18}%
+\contentsline {chapter}{Glossary}{22}{section*.20}%
