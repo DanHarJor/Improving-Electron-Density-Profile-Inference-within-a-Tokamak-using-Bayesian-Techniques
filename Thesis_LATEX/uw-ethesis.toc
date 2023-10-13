@@ -8,9 +8,17 @@
 \contentsline {chapter}{List of Symbols}{x}{section*.15}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background Theory of Bayesian Techniques and WEST Interferometry}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{18}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Future Investigation}{19}{chapter.6}%
-\contentsline {chapter}{\textbf {References}}{21}{section*.18}%
-\contentsline {chapter}{Glossary}{22}{section*.20}%
+\contentsline {section}{\numberline {2.1}The Tokamak}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}NICE}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Bayesian Inference and Gaussian Process Regression}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Interferometry and Polarimetry}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Gaussian Process Regression for Interferometry}{15}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Methodology}{22}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Results}{24}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Future Investigation}{26}{chapter.6}%
+\contentsline {chapter}{\textbf {References}}{28}{section*.18}%
+\contentsline {chapter}{APPENDICES}{30}{appendix*.20}%
+\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{31}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{34}{appendix.B}%
+\contentsline {chapter}{Glossary}{39}{section*.21}%

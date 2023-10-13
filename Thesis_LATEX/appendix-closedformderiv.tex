@@ -1,0 +1,102 @@
+\chapter{Deriving the Closed Form Posterior Expressions}
+% \label{Appendix A}
+\label{append:dervcf}
+The inference begins with Bayes theorem,  
+
+$$
+	P(\vec{y}|\vec{d}, \vec\epsilon, \theta) = \frac{P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)}{P(\vec d|\vec\epsilon,\theta)}
+$$
+where each distribution can be written fully as below
+
+Likelihood:
+$$
+P(\vec{d}|\vec{y},\vec\epsilon) = \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li}|}} \exp \left[ -\frac{1}{2} (\vec d - R\vec y)^{\top} \Sigma^{-1}_{li} (\vec d - R\vec y) \right], \hspace{0.5cm} \Sigma_{li} = \vec \epsilon I.
+$$
+
+Prior:
+
+$$
+P(\vec y|\theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|K|}} \exp \left[ -\frac{1}{2}(\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr}) \right],
+$$
+$$
+\theta \rightarrow \{\sigma, l\}, \hspace{0.5cm} K_{ij} = k(\rho_i, \rho_j) = \sigma \exp \left[\frac{(\rho_i - \rho_j)^2}{2l^2}\right].
+$$
+
+Posterior:
+
+$$
+P(\vec{y}|\vec{d},\vec\epsilon, \theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|\Sigma_{post}|}} \exp \left[ -\frac{1}{2}(\vec y - \mu_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \mu_{post}) \right].
+$$
+
+To derive $\mu_{post}$ and $\Sigma_{post}$ the likelihood and prior are multiplied together and re-arranged. Only first and second order $\vec y$ terms are kept as the constants do not affect the shape of the multi variate Gaussian and thus do not affect $\mu_{post}$ or $\Sigma_{post}$. Then using the completing the square formula for matrices they can be combined into a single multivariate Gaussian. By comparing with the posterior we find the closed form expressions for $\mu_{post}$ and $\Sigma_{post}$. 
+
+When the distributions are multiplied together the exponential powers are summed,
+
+$$
+ -\frac{1}{2}\left[(\vec d - R\vec y)^{\top} \Sigma^{-1}_{li} (\vec d - R\vec y)  + (\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr})\right]
+$$
+ignoring the $-\frac{1}{2}$ for now and multiplying it out gets,
+
+\begin{multline*}
+\left(\vec d ^\top \Sigma_{li}^{-1} \vec d - \vec d^\top \Sigma_{li}^{-1} R\vec y - (R\vec y)^\top \Sigma_{li}^{-1} \vec d + (R\vec y)^\top \Sigma_{li}^{-1} R\vec y \right) \\ 
++ \left( \vec y^\top K^{-1} \vec y - \vec y^\top K^{-1} \vec \mu_{pr} - \vec \mu_{pr}^\top K^{-1} \vec y + \vec \mu_{pr}^\top K^{-1} \vec \mu_{pr} \right) \\
+\end{multline*}
+
+focusing on the 1st order terms and remembering that the transpose of a scalar is itself and the transpose of a symmetric matrix (e.g. $\Sigma_{li}$) is itself, it can be shown that the first order terms equate to
+
+$$
+- \vec d^\top \Sigma_{li}^{-1} R\vec y - (R\vec y)^\top \Sigma_{li}^{-1} \vec d - \vec y^\top K^{-1} \vec \mu_{pr} - \vec \mu_{pr}^\top K^{-1} \vec y = -2 \vec y^\top ( R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}) =-2 \vec y^\top \vec b
+$$
+in which a substitution was made to ease the use of the competing square formula, 
+$$
+\vec b = R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}
+$$
+switching the focus to the 2nd order terms,
+
+$$
+(R\vec y)^\top \Sigma_{li}^{-1} R\vec y + \vec y^\top K^{-1} \vec y = \vec y^\top (R^\top \Sigma_{li}^{-1} R + K^{-1}) \vec y = \vec y^\top M \vec y,
+$$
+in which a substitution was made to ease the use of the completing square formula,
+
+$$
+M = (R^\top \Sigma_{li}^{-1} R + K^{-1})
+$$
+ignoring 0 order terms that do not affect the shape, the original exponential power takes the form,
+
+$$
+ -\frac{1}{2}\left[\vec y^\top M \vec y - \vec y^\top \vec b \right],
+$$
+via completing the squares we obtain
+$$
+\vec y^\top M \vec y - y^\top \vec b = (\vec y - M^{-1}\vec b)^\top M (\vec y - M^{-1} \vec b) - \vec b^\top M^{-1} \vec b.
+$$
+We can ignore $\vec b^\top M^{-1} \vec b$ as it doesn't affect the shape of the Gaussian. Finally we have that 
+
+$$
+P(\vec{y}|\vec{d},\vec\epsilon, \theta) \propto \exp \left[ -\frac{1}{2}(\vec y - \mu_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \mu_{post}) \right] \propto \exp \left[ -\frac{1}{2} (\vec y - M^{-1}\vec b)^\top M (\vec y - M^{-1} \vec b)\right],
+$$
+
+from comparison it can be seen that,
+$$
+\mu_{post} = M^{-1} \vec b = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1} \left(R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}\right), \hspace{1cm} \Sigma_{post} = M^{-1} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}
+$$
+
+The posterior mean is often written in another form. This form can be found with the following steps,
+$$
+\begin{aligned}
+\vec{\mu}_{post} &= (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1}(R^{\top} \Sigma_{li}^{-1} \vec{d} + K^{-1} \vec{\mu}_{pr}) \\
+&= (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} \vec{d} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} (K^{-1} + R^{\top} \Sigma_{li}^{-1} R - R^{\top} \Sigma_{li}^{-1} R) \vec{\mu}_{pr} \\
+&= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} \vec{d} - (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} R \vec{\mu}_{pr} \\
+&= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr}).
+\end{aligned}
+$$
+The final closed form expression of the posterior mean and covariance is
+
+$$
+\mu_{post}= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr})
+$$
+$$
+\Sigma_{post} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
+$$
+
+The error of each value in $\mu_{post}$ con be found on the diagonal of $\Sigma_{post}$.

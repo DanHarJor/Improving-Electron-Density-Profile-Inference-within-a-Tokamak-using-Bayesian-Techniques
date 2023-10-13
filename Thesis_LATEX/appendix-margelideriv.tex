@@ -1,0 +1,155 @@
+\chapter{Deriving the Marginal Likelihood and Loss Function Expression}
+% \label{Appendix B}
+\label{append:dervml}
+The marginal likelihood is the denominator in Bayes theorem for the inference
+
+$$
+P(\vec{y}|\vec{d}, \vec\epsilon, \theta) = \frac{P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)}{P(\vec d|\vec\epsilon,\theta)},
+$$
+since the marginal likelihood is a normalizing constant it can be expressed as
+
+$$
+P(\vec d|\vec\epsilon,\theta) = \int P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)  \, d\vec y,
+$$
+the likelihood and prior can be expressed as
+
+$$
+P(\vec{d}|\vec{y},\vec\epsilon) = \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li}|}} \exp \left[ -\frac{1}{2} (\vec d - R\vec y)^{\top} \Sigma^{-1}_{li} (\vec d - R\vec y) \right], \hspace{0.5cm} \Sigma_{li} = \vec \epsilon I,
+$$
+
+
+$$
+P(\vec y|\theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|K|}} \exp \left[ -\frac{1}{2} (\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr}) \right], 
+$$
+$$
+\theta \rightarrow \{\sigma, l\}, \hspace{0.5cm} K_{ij} = k(\rho_i, \rho_j) = \sigma \exp \left[\frac{\rho_i - \rho_j}{2l^2}\right],
+$$
+
+when multiplied together the exponential powers become 
+
+
+\begin{multline*}
+\left(\vec d ^\top \Sigma_{li}^{-1} \vec d - \vec d^\top \Sigma_{li}^{-1} R\vec y - (R\vec y)^\top \Sigma_{li}^{-1} \vec d + (R\vec y)^\top \Sigma_{li}^{-1} R\vec y \right)\\ 
++ \left( \vec y^\top K^{-1} \vec y - \vec y^\top K^{-1} \vec \mu_{pr} - \vec \mu_{pr}^\top K^{-1} \vec y + \vec \mu_{pr}^\top K^{-1} \vec \mu_{pr} \right) 
+\end{multline*}
+
+
+the first order terms of $\vec y$ can be simplified to be
+$$
+-\vec d^\top \Sigma_{li}^{-1} R\vec y - (R\vec y)^\top \Sigma_{li}^{-1} \vec d - \vec y^\top K^{-1} \vec \mu_{pr} - \vec \mu_{pr}^\top K^{-1} \vec y = -2 \vec y^\top ( R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}) =-2 \vec y^\top \vec b,
+$$
+the second order terms of $\vec y$ can be simplified to be
+
+$$
+(R\vec y)^\top \Sigma_{li}^{-1} R\vec y + \vec y^\top K^{-1} \vec y = \vec y^\top (R^\top \Sigma_{li}^{-1} R + K^{-1}) \vec y = \vec y^\top M \vec y,
+$$
+all together we have
+
+$$
+\begin{aligned}
+ P(\vec d|\vec\epsilon,\theta) 
+ &= \int P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)  \, d\vec y \\
+ &= \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li}|}} \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|K|}} \exp\left[ -\frac{1}{2}(\vec d ^\top \Sigma_{li}^{-1} \vec d + \vec \mu_{pr}^\top K^{-1} \vec \mu_{pr} )\right] \int \exp\left[-\frac{1}{2}\vec y^\top M \vec y + \vec y^\top \vec b\right] \, d\vec y, 
+\end{aligned}
+$$
+
+performing the standard Gaussian integral we get that
+
+$$
+\int \exp\left[-\frac{1}{2}\vec y^\top M \vec y + \vec y^\top \vec b\right] \, d\vec y =  \frac{(2\pi)^\frac{n}{2}}{\sqrt{|M|}} \exp \left[ \frac{1}{2} \vec b^\top M^{-1}\vec b \right],
+$$
+
+all together we have
+
+$$
+\begin{aligned}
+ P(\vec d|\vec\epsilon,\theta) &= \int P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)  \, d\vec y\\
+ &= \frac{(2\pi)^{\frac{n}{2}}}{(2\pi)^{\frac{m}{2}} (2\pi)^{\frac{n}{2}} \sqrt{|\Sigma_{li}||K||M|}} \exp\left[ -\frac{1}{2}(\vec d ^\top \Sigma_{li}^{-1} \vec d + \vec \mu_{pr}^\top K^{-1} \vec \mu_{pr} - \vec b^\top M^{-1}\vec b )\right] 
+\end{aligned}
+$$
+
+where $\vec b$ and $M$ are substitutions made earlier
+$$
+\vec b = R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}
+$$$$
+M = (R^\top \Sigma_{li}^{-1} R + K^{-1}),
+$$
+ignoring the $-\frac{1}{2}$ for now and reverting $\vec b$ and $M$ to their original form the exponential power becomes
+
+$$
+\vec{\mu}_{pr}^{\top} K^{-1} \vec{\mu}_{pr} + \vec{d}^{\top} \Sigma_{li}^{-1} \vec{d}- (R^{\top} \Sigma_{li}^{-1} \vec{d} + K^{-1}\vec{\mu}_{pr})^{\top} (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} (R^{\top} \Sigma_{li}^{-1} \vec{d} + K^{-1}\vec{\mu}_{pr})\\
+$$
+
+the next step requires the woodbury identity \cite{gp4ml}, 
+$$
+(A + UCV)^{-1} = A^{-1} - A^{-1}U(C^{-1}+VA^{-1}U)^{-1}VA^{-1}
+$$
+the exponential power can be expanded to be
+$$
+\vec{\mu}_{pr}^{\top} K^{-1} \vec{\mu}_{pr} + \vec{d}^{\top} \Sigma_{li}^{-1} \vec{d} - (R^{\top} \Sigma_{li}^{-1} \vec{d} + K^{-1}\vec{\mu}_{pr})^{\top} \left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] (R^{\top} \Sigma_{li}^{-1} \vec{d} + K^{-1}\vec{\mu}_{pr})
+$$
+This can then be rearranged to be
+
+\begin{multline*}
+\vec{d}^{\top} \left\{ \Sigma_{li}^{-1} - \Sigma_{li}^{-1} R \left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] R^{\top} \Sigma_{li}^{-1} \right\} \vec{d} \\- 2 \vec{\mu}^{\top} K^{-1} \left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] R^{\top} \Sigma_{li}^{-1} \vec{d} \\+ \vec{\mu}^{\top} \left\{ K^{-1} - K^{-1}\left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] K^{-1} \right\}\vec{\mu},\\
+\end{multline*}
+
+the second order term in $\vec d$ can be reduced
+$$
+\begin{aligned}
+\Sigma_{li}^{-1} - \Sigma_{li}^{-1} R &\left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] R^{\top} \Sigma_{li}^{-1} \\ &= \Sigma_{li}^{-1} - \Sigma_{li}^{-1} R K R^{\top} \Sigma_{li}^{-1} + \Sigma_{li}^{-1} R K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K R^{\top} \Sigma_{li}^{-1}\\ &= \Sigma_{li}^{-1} - \Sigma_{li}^{-1} R K R^{\top} \Sigma_{li}^{-1} + \Sigma_{li}^{-1} \left(\Sigma_{li} + R K R^{\top} - \Sigma_{li}\right)\left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K R^{\top} \Sigma_{li}^{-1} \\
+&= \Sigma_{li}^{-1} - \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K R^{\top} \Sigma_{li}^{-1} \\ &= \Sigma_{li}^{-1} - \left(\Sigma_{li} + RK R^{\top}\right)^{-1} \left(\Sigma_{li} + R K R^{\top} - \Sigma_{li} \right)\Sigma_{li}^{-1} \\ &= \left(\Sigma_{li} + RK R^{\top}\right)^{-1},
+\end{aligned}
+$$
+
+the first order term in $\vec d$ can be reduced
+$$
+\begin{aligned}
+-2 \vec{\mu}^{\top} K^{-1} &\left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] R^{\top} \Sigma_{li}^{-1} \\
+&= -2 \vec{\mu}^{\top} R^{\top} \Sigma_{li}^{-1} + 2 \vec{\mu}^{\top} R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K R^{\top} \Sigma_{li}^{-1}\\
+&= -2 \vec{\mu}^{\top} R^{\top} \Sigma_{li}^{-1} + 2 \vec{\mu}^{\top} R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} \left( \Sigma_{li} + R K R^{\top} - \Sigma_{li} \right) \Sigma_{li}^{-1} \\
+&= -2 \vec{\mu}^{\top} R^{\top} \Sigma_{li}^{-1} + 2 \vec{\mu}^{\top} R^{\top} \Sigma_{li}^{-1} - 2 \vec{\mu}^{\top} R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} \\
+&= -2 \vec{\mu}^{\top} R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1},
+\end{aligned}
+$$
+
+the zero order term in $\vec d$ can be reduced 
+$$
+K^{-1} - K^{-1}\left[K - K R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R K \right] K^{-1} = R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R,\\
+$$
+
+now the exponential is 
+$$
+\begin{aligned}
+\vec d ^\top \Sigma_{li}^{-1} \vec d + \vec \mu_{pr}^\top &K^{-1} \vec \mu_{pr} - \vec b^\top M^{-1}\vec b \\
+&= \vec{d}^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} \vec{d} -2 \vec{\mu}^{\top} R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} + \vec{\mu}^{\top} R^{\top} \left(\Sigma_{li} + RK R^{\top}\right)^{-1} R \vec{\mu} \\
+&= (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr})
+\end{aligned}
+$$
+
+the scaling constant can be simplified using the matrix determinant lemma \cite{gp4ml}, this also helps avoid precision errors as there are less matrix inversions and determinants to compute
+$$
+\lvert A + UCV \rvert = \lvert A \rvert \, \lvert C \rvert \, \lvert C^{-1} + V A^{-1} U \rvert,
+$$
+$$
+|\Sigma_{li}||K||M| = |\Sigma_{li}||K||R^\top \Sigma_{li}^{-1} R + K^{-1}| = |\Sigma_{li} + RKR^\top|,
+$$
+the marginal likelihood becomes
+
+$$
+\begin{aligned}
+ P(\vec d|\vec\epsilon,\theta) &= \int P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)  \, d\vec y \\
+ &= \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li} + RKR^\top|}} \exp\left[ -\frac{1}{2} (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}) \right].
+\end{aligned}
+$$
+
+The values of the marginal likelihood can become very large and troublesome to compute with standard 64bit float precision. For this reason the logarithm is computed,
+$$
+\ln(P(\vec d| \vec \epsilon,\theta)) = -\frac{1}{2} \left[m\ln(2\pi ) + \ln(|\Sigma_{li}+RKR^\top|) +  (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr})\right]. 
+$$
+
+It is convention for loss functions to be minimized so the negative log marginal likelihood is used as the loss function for optimizing the hyper-parameters. When minimizing, the constants do not play a major roll, thus the loss function for the hyper parameters is expressed as
+
+$$
+loss(\epsilon, \theta) = \ln(|\Sigma_{li}+RKR^\top|) +  (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr})
+$$

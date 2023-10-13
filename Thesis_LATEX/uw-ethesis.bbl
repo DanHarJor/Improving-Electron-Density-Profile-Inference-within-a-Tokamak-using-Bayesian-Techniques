@@ -1,10 +1,24 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{chilenski}
+M.A. Chilenski, M.~Greenwald, Y.~Marzouk, N.T. Howard, A.E. White, J.E. Rice,
+  and J.R. Walk.
+\newblock Improved profile fitting and quantification of uncertainty in
+  experimental measurements of impurity transport coefficients using gaussian
+  process regression.
+\newblock {\em Nuclear fusion}, 55(2):23012--20, 2015.
 
 \bibitem{nice}
 Blaise Faugeras.
 \newblock An overview of the numerical methods for tokamak plasma equilibrium
   computation implemented in the nice code.
 \newblock {\em Fusion engineering and design}, 160:112020--, 2020.
+
+\bibitem{westinterfero}
+C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
+  J.~Morales, P.~Moreau, and B.~Santraine.
+\newblock Renewal of the interfero-polarimeter diagnostic for west.
+\newblock {\em Fusion engineering and design}, 140:81--91, 2019.
 
 \bibitem{reneintpol}
 C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
@@ -26,7 +40,7 @@ S.~Li, H.~Jiang, Z.~Ren, and C.~Xu.
 \bibitem{oscraz}
 David~J.C. MacKay.
 \newblock {\em Bayesian methods for adaptive models}.
-\newblock PhD thesis, 1992.
+\newblock PhD thesis, California Institute of Technology, 1992.
 
 \bibitem{westmagdiag}
 P.~Moreau, A.~Le-Luyer, P.~Spuig, P.~Malard, F.~Saint-Laurent, J.~F. Artaud,
@@ -40,5 +54,12 @@ Carl~Edward. Rasmussen and Christopher K.~I. Williams.
 \newblock {\em Gaussian processes for machine learning}.
 \newblock Adaptive computation and machine learning. MIT Press, Cambridge,
   Mass, 2006.
+
+\bibitem{wessontokamak}
+John Wesson and John Wesson.
+\newblock {\em Tokamaks / John Wesson ; with contributions from D.J. Campbell
+  ... <et al.>}.
+\newblock <<The >>Oxford engineering science series. Clarendon Press, Oxford,
+  2. ed edition, 1997.
 
 \end{thebibliography}

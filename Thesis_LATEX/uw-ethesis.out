@@ -8,9 +8,17 @@
 \BOOKMARK [0][-]{section*.15}{List of Symbols}{}% 8
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
 \BOOKMARK [0][-]{chapter.2}{Background Theory of Bayesian Techniques and WEST Interferometry}{}% 10
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 11
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 12
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 13
-\BOOKMARK [0][-]{chapter.6}{Future Investigation}{}% 14
-\BOOKMARK [0][-]{section*.18}{References}{}% 15
-\BOOKMARK [0][-]{section*.20}{Glossary}{}% 16
+\BOOKMARK [1][-]{section.2.1}{The Tokamak}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{NICE}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Bayesian Inference and Gaussian Process Regression}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Interferometry and Polarimetry}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Gaussian Process Regression for Interferometry}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 16
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 17
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 18
+\BOOKMARK [0][-]{chapter.6}{Future Investigation}{}% 19
+\BOOKMARK [0][-]{section*.18}{References}{}% 20
+\BOOKMARK [0][-]{appendix*.20}{APPENDICES}{}% 21
+\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 22
+\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 23
+\BOOKMARK [0][-]{section*.21}{Glossary}{}% 24

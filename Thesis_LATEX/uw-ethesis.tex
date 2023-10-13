@@ -81,7 +81,7 @@
 %\usepackage{nomencl} % For a nomenclature (optional; available from ctan.org)
 \usepackage{amsmath,amssymb,amstext} % Lots of math symbols and environments
 \usepackage[pdftex]{graphicx} % For including graphics N.B. pdftex graphics driver 
-
+\usepackage{float}
 % Hyperlinks make it very easy to navigate an electronic document.
 % In addition, this is where you should specify the thesis title and author as they appear in the properties of the PDF document.
 % Use the "hyperref" package 
@@ -221,10 +221,12 @@
 % The \appendix statement indicates the beginning of the appendices.
 \appendix
 % Add an un-numbered title page before the appendices and a line in the Table of Contents
-% \chapter*{APPENDICES}
-% \addcontentsline{toc}{chapter}{APPENDICES}
+\chapter*{APPENDICES}/
+\addcontentsline{toc}{chapter}{APPENDICES}
 % Appendices are just more chapters, with different labeling (letters instead of numbers).
-% \input{appendix-matlab_plots.tex}
+\input{appendix-closedformderiv.tex}
+\input{appendix-margelideriv.tex}
+
 
 % GLOSSARIES (Lists of definitions, abbreviations, symbols, etc. provided by the glossaries-extra package)
 % -----------------------------

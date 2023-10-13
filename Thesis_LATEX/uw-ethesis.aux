@@ -43,52 +43,85 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Background Theory of Bayesian Techniques and WEST Interferometry}{3}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram of a tokamak and relevant magnetic fields that create the helical particle trajectory \cite  {tokamakSchema}.}}{4}{figure.2.1}\protected@file@percent }
-\newlabel{fig:tokamakSchema}{{2.1}{4}{Diagram of a tokamak and relevant magnetic fields that create the helical particle trajectory \cite {tokamakSchema}}{figure.2.1}{}}
-\citation{reneintpol}
-\citation{reneintpol}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}The Tokamak}{4}{section.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces A tokamak and relevant magnetic fields that create the helical particle trajectory \cite  {tokamakSchema}.}}{4}{figure.2.1}\protected@file@percent }
+\newlabel{fig:tokamakSchema}{{2.1}{4}{A tokamak and relevant magnetic fields that create the helical particle trajectory \cite {tokamakSchema}}{figure.2.1}{}}
+\citation{wessontokamak}
 \citation{westmagdiag}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The magnetic flux surfaces and interfero-polarimetry laser geometry for a cross-section of the WEST tokamak \cite  {reneintpol}.}}{6}{figure.2.2}\protected@file@percent }
-\newlabel{fig:magfluxsurf}{{2.2}{6}{The magnetic flux surfaces and interfero-polarimetry laser geometry for a cross-section of the WEST tokamak \cite {reneintpol}}{figure.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Magnetic flux surfaces \cite  {wessontokamak}.}}{6}{figure.2.2}\protected@file@percent }
+\newlabel{fig:magfluxsurf}{{2.2}{6}{Magnetic flux surfaces \cite {wessontokamak}}{figure.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}NICE}{6}{section.2.2}\protected@file@percent }
 \citation{oscraz}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Electron density profile inferred by \gls {nice} for an instance in time within the \gls {west} tokamak.}}{8}{figure.2.3}\protected@file@percent }
 \newlabel{fig:nice_example}{{2.3}{8}{Electron density profile inferred by \gls {nice} for an instance in time within the \gls {west} tokamak}{figure.2.3}{}}
-\citation{oscraz}
-\citation{gp4ml}
-\newlabel{eq:bayesth}{{2.1}{9}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.1}{}}
-\newlabel{eq:mvg}{{2.2}{9}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Bayesian Inference and Gaussian Process Regression}{8}{section.2.3}\protected@file@percent }
+\newlabel{eq:bayesth}{{2.1}{8}{Bayesian Inference and Gaussian Process Regression}{equation.2.3.1}{}}
+\newlabel{eq:mvg}{{2.2}{9}{Bayesian Inference and Gaussian Process Regression}{equation.2.3.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustrating how many Gaussians can model a line and its uncertainty.}}{10}{figure.2.4}\protected@file@percent }
 \newlabel{fig:mvg}{{2.4}{10}{Illustrating how many Gaussians can model a line and its uncertainty}{figure.2.4}{}}
-\newlabel{eq:posterior}{{2.3}{11}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.3}{}}
-\newlabel{eq:closedform}{{2.4}{11}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.4}{}}
-\newlabel{eq:likelihood}{{2.5}{11}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.5}{}}
+\newlabel{eq:likelihood}{{2.3}{10}{Bayesian Inference and Gaussian Process Regression}{equation.2.3.3}{}}
+\newlabel{eq:prior}{{2.4}{10}{Bayesian Inference and Gaussian Process Regression}{equation.2.3.4}{}}
+\newlabel{eq:posterior}{{2.5}{10}{Bayesian Inference and Gaussian Process Regression}{equation.2.3.5}{}}
+\citation{oscraz}
+\citation{gp4ml}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces A visualisation of the simple \gls {gpr} process.}}{11}{figure.2.5}\protected@file@percent }
+\newlabel{fig:gprvis}{{2.5}{11}{A visualisation of the simple \gls {gpr} process}{figure.2.5}{}}
+\citation{westinterfero}
 \citation{princPlasDiag}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces A visualisation of the simple \gls {gpr} process. In truth the prior in this implementation has 101 Gaussians. Only five are shown to aid visualisation. The likelihood truly has the same number of Gaussians as the number of data points. The posterior has 101 Gaussians, their mean is shown by the green line, the standard deviation by the green shade, it is analogous to figure fig:mvg without the Gaussians full form being shown.}}{12}{figure.2.5}\protected@file@percent }
-\newlabel{fig:gprvis}{{2.5}{12}{A visualisation of the simple \gls {gpr} process. In truth the prior in this implementation has 101 Gaussians. Only five are shown to aid visualisation. The likelihood truly has the same number of Gaussians as the number of data points. The posterior has 101 Gaussians, their mean is shown by the green line, the standard deviation by the green shade, it is analogous to figure fig:mvg without the Gaussians full form being shown}{figure.2.5}{}}
-\newlabel{eq:prior}{{2.6}{12}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.6}{}}
-\newlabel{eq:int_phase}{{2.7}{12}{Background Theory of Bayesian Techniques and WEST Interferometry}{equation.2.0.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces The geometry of interfero-polarimetry lasers at \gls {WEST} \cite  {westinterfero}.}}{14}{figure.2.6}\protected@file@percent }
+\newlabel{fig:magfluxsurf}{{2.6}{14}{The geometry of interfero-polarimetry lasers at \gls {WEST} \cite {westinterfero}}{figure.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Interferometry and Polarimetry}{15}{section.2.4}\protected@file@percent }
+\newlabel{eq:int_phase}{{2.10}{15}{Interferometry and Polarimetry}{equation.2.4.10}{}}
+\newlabel{eq:pol_farad}{{2.11}{15}{Interferometry and Polarimetry}{equation.2.4.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Gaussian Process Regression for Interferometry}{15}{section.2.5}\protected@file@percent }
+\newlabel{eq:neapprox}{{2.13}{16}{Gaussian Process Regression for Interferometry}{equation.2.5.13}{}}
+\newlabel{eq:neapproxFS}{{2.15}{16}{Gaussian Process Regression for Interferometry}{equation.2.5.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces An example mesh grid to aid visualisation of the triangular mesh grid interpolation used in the responce matrix construction.}}{17}{figure.2.7}\protected@file@percent }
+\newlabel{fig:meshtriangle}{{2.7}{17}{An example mesh grid to aid visualisation of the triangular mesh grid interpolation used in the responce matrix construction}{figure.2.7}{}}
+\citation{chilenski}
+\citation{chilenski}
+\citation{chilenski}
+\citation{chilenski}
+\newlabel{eq:smoothstep}{{2.19}{18}{Gaussian Process Regression for Interferometry}{equation.2.5.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Hyperbolic tangent smooth step function for length scale, equation \ref  {eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite  {chilenski}.}}{19}{figure.2.8}\protected@file@percent }
+\newlabel{fig:smoothstep}{{2.8}{19}{Hyperbolic tangent smooth step function for length scale, equation \ref {eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite {chilenski}}{figure.2.8}{}}
+\newlabel{eq:Ralt}{{2.20}{19}{Gaussian Process Regression for Interferometry}{equation.2.5.20}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{22}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{24}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{18}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Future Investigation}{19}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Future Investigation}{26}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibstyle{plain}
 \bibdata{uw-ethesis.bib}
-\bibcite{nice}{1}
-\bibcite{reneintpol}{2}
-\bibcite{princPlasDiag}{3}
-\bibcite{tokamakSchema}{4}
-\bibcite{oscraz}{5}
-\bibcite{westmagdiag}{6}
-\bibcite{gp4ml}{7}
+\bibcite{chilenski}{1}
+\bibcite{nice}{2}
+\bibcite{westinterfero}{3}
+\bibcite{reneintpol}{4}
+\bibcite{princPlasDiag}{5}
+\bibcite{tokamakSchema}{6}
+\bibcite{oscraz}{7}
+\bibcite{westmagdiag}{8}
+\bibcite{gp4ml}{9}
+\@writefile{toc}{\contentsline {chapter}{\textbf  {References}}{28}{section*.18}\protected@file@percent }
+\bibcite{wessontokamak}{10}
 \citation{*}
-\@writefile{toc}{\contentsline {chapter}{\textbf  {References}}{21}{section*.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Glossary}{22}{section*.20}\protected@file@percent }
-\gdef \@abspage@last{32}
+\@writefile{toc}{\contentsline {chapter}{APPENDICES}{30}{appendix*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{31}{appendix.A}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{append:dervcf}{{A}{31}{Deriving the Closed Form Posterior Expressions}{appendix.A}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{34}{appendix.B}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{append:dervml}{{B}{34}{Deriving the Marginal Likelihood and Loss Function Expression}{appendix.B}{}}
+\citation{gp4ml}
+\citation{gp4ml}
+\@writefile{toc}{\contentsline {chapter}{Glossary}{39}{section*.21}\protected@file@percent }
+\gdef \@abspage@last{49}
