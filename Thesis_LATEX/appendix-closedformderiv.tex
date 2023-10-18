@@ -7,13 +7,14 @@ The inference begins with Bayes theorem,
     P(\vec{y}|\vec{d}, \vec\epsilon, \theta) = \frac{P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)}{P(\vec d|\vec\epsilon,\theta)},
 \end{equation}
 
-where the likelihood can be written as,
+\noindent where the likelihood can be written as,
 
 \begin{equation}
 P(\vec{d}|\vec{y},\vec\epsilon) = \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li}|}} \exp \left[ -\frac{1}{2} (\vec d - R\vec y)^{\top} \Sigma^{-1}_{li} (\vec d - R\vec y) \right], \, \Sigma_{li} = \vec \epsilon I,
 \end{equation}
 
-the prior as,
+\noindent the prior as,
+
 \begin{equation}
 \begin{split}
 P(\vec y|\theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|K|}} \exp \left[ -\frac{1}{2}(\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr}) \right],\\
@@ -21,13 +22,13 @@ P(\vec y|\theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|K|}} \exp \left[ -\frac{
 \end{split}
 \end{equation}
 
-and the posterior as,
+\noindent and the posterior as,
 
 \begin{equation}
 P(\vec{y}|\vec{d},\vec\epsilon, \theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|\Sigma_{post}|}} \exp \left[ -\frac{1}{2}(\vec y - \mu_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \mu_{post}) \right].
 \end{equation}
 
-To derive $\mu_{post}$ and $\Sigma_{post}$ the likelihood and prior are multiplied together and re-arranged. Only first and second order $\vec y$ terms are kept as the constants do not affect the shape of the multi variate Gaussian and thus do not affect $\mu_{post}$ or $\Sigma_{post}$. Then using the completing the square formula for matrices they can be combined into a single multivariate Gaussian. By comparing with the posterior we find the closed form expressions for $\mu_{post}$ and $\Sigma_{post}$. When the distributions are multiplied together the exponential powers are summed,
+\noindent To derive $\mu_{post}$ and $\Sigma_{post}$ the likelihood and prior are multiplied together and re-arranged. Only first and second order $\vec y$ terms are kept as the constants do not affect the shape of the multivariate Gaussian and thus do not affect $\mu_{post}$ or $\Sigma_{post}$. Then using the completing the square formula for matrices they can be combined into a single multivariate Gaussian. By comparing with the posterior we find the closed form expressions for $\mu_{post}$ and $\Sigma_{post}$. When the distributions are multiplied together the exponential powers are summed,
 
 $$
  -\frac{1}{2}\left[(\vec d - R\vec y)^{\top} \Sigma^{-1}_{li} (\vec d - R\vec y)  + (\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr})\right],
@@ -40,7 +41,7 @@ $$
 + \left( \vec y^\top K^{-1} \vec y - \vec y^\top K^{-1} \vec \mu_{pr} - \vec \mu_{pr}^\top K^{-1} \vec y + \vec \mu_{pr}^\top K^{-1} \vec \mu_{pr} \right),
 \end{multline*}
 
-\noindent focusing on the 1st order terms and remembering that the transpose of a scalar is itself and the transpose of a symmetric matrix (e.g. $\Sigma_{li}$) is itself, it can be shown that the first order terms equate to
+\noindent focusing on the $1^{st}$ order terms and remembering that the transpose of a scalar is itself and the transpose of a symmetric matrix (e.g. $\Sigma_{li}$) is itself, it can be shown that the first order terms equate to
 
 $$
 - \vec d^\top \Sigma_{li}^{-1} R\vec y - (R\vec y)^\top \Sigma_{li}^{-1} \vec d - \vec y^\top K^{-1} \vec \mu_{pr} - \vec \mu_{pr}^\top K^{-1} \vec y = -2 \vec y^\top ( R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}) =-2 \vec y^\top \vec b
@@ -52,7 +53,7 @@ $$
 \vec b = R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}
 $$
 
-\noindent switching the focus to the 2nd order terms,
+\noindent switching the focus to the $2^{nd}$ order terms,
 
 $$
 (R\vec y)^\top \Sigma_{li}^{-1} R\vec y + \vec y^\top K^{-1} \vec y = \vec y^\top (R^\top \Sigma_{li}^{-1} R + K^{-1}) \vec y = \vec y^\top M \vec y,
@@ -87,7 +88,7 @@ $$
 \mu_{post} = M^{-1} \vec b = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1} \left(R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}\right), \, \Sigma_{post} = M^{-1} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
 \end{equation}
 
-The posterior mean is often written in another form. This form can be found with the following steps,
+\noindent The posterior mean is often written in another form. This form can be found with the following steps,
 
 $$
 \begin{aligned}

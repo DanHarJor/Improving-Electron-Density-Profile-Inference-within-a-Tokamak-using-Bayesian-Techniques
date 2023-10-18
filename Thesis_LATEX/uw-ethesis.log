@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  18 OCT 2023 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  18 OCT 2023 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -452,7 +452,7 @@ LaTeX Info: Redefining \nameref on input line 165.
 \openout7 = `uw-ethesis.out'.
 
  (./uw-ethesis-frontpgs.tex
-<images/unilogos.png, id=100, 36.43613pt x 9.1542pt>
+<images/unilogos.png, id=96, 36.43613pt x 9.1542pt>
 File: images/unilogos.png Graphic file (type png)
 <use images/unilogos.png>
 Package pdftex.def Info: images/unilogos.png  used on input line 14.
@@ -473,11 +473,11 @@ Package pdftex.def Info: images/unilogos.png  used on input line 14.
 
 
 ] (./uw-ethesis.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
@@ -498,15 +498,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-] (./uw-ethesis.lot)
-\tf@lot=\write10
-\openout10 = `uw-ethesis.lot'.
-
- [8
-
-
-
-
 ]) (./chapter-1-introduction.tex
 Chapter 1.
 ) (./chapter-2-background_theory.tex [1
@@ -516,7 +507,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/tokamak.jpg, id=215, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=205, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
@@ -525,48 +516,48 @@ Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 
 
 ] [3 <./images/tokamak.jpg>] [4]
-<images/fluxsurf.png, id=243, 329.23pt x 341.275pt>
+<images/fluxsurf.png, id=233, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
  [5 <./images/fluxsurf.png>]
-<images/niceExample.png, id=273, 297.87285pt x 268.00125pt>
+<images/niceExample.png, id=262, 297.87285pt x 268.00125pt>
 File: images/niceExample.png Graphic file (type png)
 <use images/niceExample.png>
 Package pdftex.def Info: images/niceExample.png  used on input line 33.
 (pdftex.def)             Requested size: 369.88582pt x 332.82109pt.
  [6] [7 <./images/niceExample.png>] [8]
-<images/mvg.png, id=299, 418.2024pt x 312.6882pt>
+<images/mvg.png, id=288, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 62.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
  [9 <./images/mvg.png>]
-<images/gprvis.png, id=315, 666.0885pt x 490.2315pt>
+<images/gprvis.png, id=305, 666.0885pt x 490.2315pt>
 File: images/gprvis.png Graphic file (type png)
 <use images/gprvis.png>
 Package pdftex.def Info: images/gprvis.png  used on input line 98.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
  [10 <./images/gprvis.png>] [11] [12]
-<images/interfgeo.png, id=351, 1099.10625pt x 780.9175pt>
+<images/interfgeo.png, id=341, 1099.10625pt x 780.9175pt>
 File: images/interfgeo.png Graphic file (type png)
 <use images/interfgeo.png>
 Package pdftex.def Info: images/interfgeo.png  used on input line 139.
 (pdftex.def)             Requested size: 284.52756pt x 202.15198pt.
  [13 <./images/interfgeo.png>]
-<images/meshtriangle.png, id=370, 274.3851pt x 309.3156pt>
+<images/meshtriangle.png, id=360, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
-Package pdftex.def Info: images/meshtriangle.png  used on input line 168.
+Package pdftex.def Info: images/meshtriangle.png  used on input line 170.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
  [14] [15 <./images/meshtriangle.png>] [16]
-<images/smoothstep.png, id=397, 431.4519pt x 331.4784pt>
+<images/smoothstep.png, id=390, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
-Package pdftex.def Info: images/smoothstep.png  used on input line 228.
+Package pdftex.def Info: images/smoothstep.png  used on input line 238.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
- [17 <./images/smoothstep.png>] [18]) (./chapter-3-methodology_results.tex [19]
+ [17] [18 <./images/smoothstep.png>]) (./chapter-3-methodology_results.tex [19]
 Chapter 3.
 ) (./chapter-4-conclusion.tex [20
 
@@ -595,17 +586,17 @@ Appendix A.
 
 
 ] [27]
-Overfull \hbox (6.95715pt too wide) detected at line 82
+Overfull \hbox (6.95715pt too wide) detected at line 83
 \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; []; ^^R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] / [] [] \OML/cmm/m/it/12 ;
  []
 
 
-Overfull \hbox (36.56061pt too wide) detected at line 88
+Overfull \hbox (36.56061pt too wide) detected at line 89
 [][]\OML/cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M[][] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 ;  \OT1/cmr/m/n/12 ^^F[] = \OML/cmm/m/it/12 M[] \OT1/cmr/m/n/12 = [][] \OML/cmm/m/it/12 :
  []
 
 
-Overfull \hbox (5.59161pt too wide) detected at line 99
+Overfull \hbox (5.59161pt too wide) detected at line 100
 [][]
  []
 
@@ -644,12 +635,12 @@ Appendix C.
 [34
 
 
-] [35] [36]) (./uw-ethesis.gls [37] [38
+] [35] [36]) [37] (./uw-ethesis.gls [38] [39
 
 
 
 
-]) [39
+]) [40
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg -o uw-ethesis.gls uw-ethesis.glo)...executed safely (allowed).
 
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-abr uw-ethesis.glo-abr)...executed safely (allowed).
@@ -658,21 +649,21 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.nomenclature-glg -o uw-ethes
 
 ] (./uw-ethesis.aux)
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
-(rerunfilecheck)             Checksum: 35356D75B153B77538C0A8F21E7A9134;1675.
+(rerunfilecheck)             Checksum: 255B46A5F332D96ADAC28CE96603D6D5;1623.
  ) 
 Here is how much of TeX's memory you used:
  16644 strings out of 480129
- 278923 string characters out of 5893409
+ 278937 string characters out of 5893409
  674334 words of memory out of 5000000
- 34168 multiletter control sequences out of 15000+600000
+ 34164 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  106i,17n,105p,5196b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (47 pages, 2512938 bytes).
+Output written on uw-ethesis.pdf (47 pages, 2514737 bytes).
 PDF statistics:
- 663 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
- 148 named destinations out of 1000 (max. 500000)
- 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 571 compressed objects within 6 object streams
+ 155 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

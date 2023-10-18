@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces A visualisation of the simple GPR process.}}{10}{figure.2.5}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces The geometry of interfero-polarimetry lasers at WEST \cite {westinterfero}.}}{13}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces An example mesh grid to aid visualisation of the triangular mesh grid interpolation used in the response matrix construction.}}{15}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Hyperbolic tangent smooth step function for length scale, equation \ref {eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite {chilenski}.}}{17}{figure.2.8}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Hyperbolic tangent smooth step function for length scale, equation \ref {eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite {chilenski}.}}{18}{figure.2.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -2,9 +2,9 @@
 \label{append:distexpres}
 \section{Gaussian Process Regression for Interferometry, Discluding Artificial Observations}
 
-In section \ref{sec:BIandGPR} Gaussian process regression was introduced for a simple regression problem. In section \ref{sec:GPRforInterf} it was explained how to alter \gls{gpr} so that it could be applied to interferometry. Here are the mentioned distributions fully described for reference.  The likelihood is,
+In section \ref{sec:BIandGPR}, Gaussian process regression was introduced for a simple regression problem. In section \ref{sec:GPRforInterf} it was explained how to alter \gls{gpr} so that it could be applied to interferometry. Here are the mentioned distributions fully described for reference.  The likelihood is,
 
-$$
+\begin{equation}
 \begin{aligned}
 \mathcal{N}(\vec{d}, \vec{\mu_{li}} = R\vec{n_e}, \Sigma_{li}) &= \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{li}|}} \exp \left[{{-\frac{1}{2}(\vec{d}-R\vec{n_e})^\top\Sigma_{li}^{-1}(\vec{d}-R\vec{n_e})}}\right],\\
 \Sigma_{li} = \vec{\epsilon}I &=
@@ -15,17 +15,16 @@ $$
 0 & 0 & 0 &\epsilon_m
 \end{bmatrix},
 \end{aligned}
-$$
+\end{equation}
   
 \noindent where $R$ is a matrix composed of flux surface contribution row vectors, where each row vector corresponds to a different line of sight and when multiplied with $\vec{n_e}$ produces the line integrated density over that line of sight, see section \ref{sec:GPRforInterf} for more details. The prior is,
 
-$$
+\begin{equation}
 \begin{aligned}
 &\mathcal{N}(\vec{n_e}, \vec \mu_{pr} = \vec{0}, K) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|K|}} \exp \left[{{-\frac{1}{2}\vec{n_e}^\top K^{-1}\vec{n_e}}}\right],\\
 &K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \left( \frac{2l(\rho_i)l(\rho_j)}{l(\rho_i)^2 + l(\rho_j)^2} \right)^{1/2} \exp\left({\frac{(\rho_i - \rho_j)^2}{l(\rho_i)^2+l(\rho_j)^2}}\right),\\
-%\label{eq:prior}
 \end{aligned}
-$$
+\end{equation}
 
 \noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l$ is not a function but a constant, $l(\rho) = l$, then the kernel reverts back to the static kernel,
 
@@ -37,17 +36,14 @@ K_{ij} = k(\rho_i, \rho_j) = \sigma \exp\left[{\frac{\rho_i - \rho_j}{2l^2}}\rig
 
 \begin{equation}
 \mathcal{N}(\vec{n_e}, \vec{\mu_{post}}, \Sigma_{post}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{post}|}} \exp \left[{{-\frac{1}{2}(\vec{n_e}-\mu_{post})^\top\Sigma_{post}^{-1}(\vec{n_e}-\mu_{post})}}\right],\\
-%\label{eq:posterior}
 \end{equation}
 
 \noindent which can be done with the closed form expressions,
 
-$$
-\begin{aligned}
-\mu_{post} &= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr}),\\
-\Sigma_{post} &= \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1},
-\end{aligned}
-$$
+\begin{gather}
+    \mu_{post}= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr})\\
+    \Sigma_{post} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
+\end{gather}
 
 \noindent as derived in appendix \ref{append:dervcf}. Once known the density profile can be plotted with the $\vec{\mu_{post}}$ values at the same $\rho$ values used in the kernel. The errors are the standard deviations held in the diagonal of $\Sigma_{post}$. This calculation is unlikely to be accurate until the hyperparameters are optimised. The parameters in the length scale function $l(\rho)$ are hyperparameters. The experimental errors $\epsilon$ can also be hyperparameters if unknown. The optimal hyperparameters can be found by minimising the negative log marginal likelihood. It is derived in appendix \ref{append:dervml} to be, 
 
@@ -55,18 +51,18 @@ $$
 -\ln(P(\vec d| \vec \epsilon,\theta)) \propto \ln(|\Sigma_{li}+RKR^\top|) + (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}).
 \end{equation}
 
-\noindent There is no change in it's form from the simple regression problem. The values of the various matrices and vectors have changed. 
+\noindent There is no change in its form from the simple regression problem. The values of the various matrices and vectors have changed. 
 
 \section{Gaussian Process Regression for Interferometry, Including Artificial Observations}
 
-Artificial observations can be placed in the likelihood to include prior knowledge. This circumvents precision issues when including this information in the prior. The process was exlained in section \ref{sec:GPRforInterf}. Here are the full expressions for reference. The likelihood is,
+Artificial observations can be placed in the likelihood to include prior knowledge. This circumvents precision issues when including this information in the prior. The process was explained in section \ref{sec:GPRforInterf}. Here are the full expressions for reference. The likelihood is,
 
-$$
+\begin{equation}
 \begin{aligned}
-&\mathcal{N}(\vec{d}, \vec{\mu_{li}} = R^{alt}\vec{a}, \Sigma_{li}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{li}|}} \exp \left[{{-\frac{1}{2}(\vec{d}-R^{alt}\vec{a})^\top\Sigma_{li}^{-1}(\vec{d}-R^{alt}\vec{a})}}\right],\\
+&\mathcal{N}(\vec{d^{alt}}, \vec{\mu_{li}} = R^{alt}\vec{a}, \Sigma_{li}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{li}^{alt}|}} \exp \left[{{-\frac{1}{2}(\vec{d^{alt}}-R^{alt}\vec{a})^\top(\Sigma_{li}^{alt})^{-1}(\vec{d}-R^{alt}\vec{a})}}\right],\\
 &\vec d^{alt} = \begin{bmatrix} \vec{d}\\ n_e(\rho=1)=0\\ n_e'(\rho=0)=0 \end{bmatrix} = \begin{bmatrix} lid_1\\ lid_2 \\ \vdots \\ lid_m \\ n_e(\rho=1)=0\\ n_e'(\rho=0)=0 \end{bmatrix}, \\
 &\vec a = \begin{bmatrix} \vec{n_e}\\ n_e(\rho=1)\\ n_e'(\rho=0) \end{bmatrix} = \begin{bmatrix} n_e(\rho_1)\\ n_e(\rho_2) \\ \vdots \\ n_e(\rho_n) \\ n_e(\rho=1)\\ n_e'(\rho=0) \end{bmatrix}, \\
-&\Sigma_{li} = I\begin{bmatrix}\vec{\epsilon} \\ \epsilon_{edge} \\ \epsilon'_{core}\end{bmatrix} = I\begin{bmatrix}\epsilon_1 \\ \epsilon_2 \\ \vdots \\ \epsilon_m \\ \epsilon_{edge} \\ \epsilon'_{core}\end{bmatrix} =
+&\Sigma_{li}^{alt} = I\begin{bmatrix}\vec{\epsilon} \\ \epsilon_{edge} \\ \epsilon'_{core}\end{bmatrix} = I\begin{bmatrix}\epsilon_1 \\ \epsilon_2 \\ \vdots \\ \epsilon_m \\ \epsilon_{edge} \\ \epsilon'_{core}\end{bmatrix} =
 \begin{bmatrix}
 \epsilon_1 & 0 & \cdots & 0 & 0 & 0\\
 0 & \epsilon_2 & \cdots & 0 & 0 & 0\\
@@ -82,11 +78,11 @@ R & \cdots & 0 & 0\\
 0 & 0 & 0 & 1
 \end{bmatrix},
 \end{aligned}
-$$
+\end{equation}
 
 \noindent where $\vec d$ has been altered to include the data from the artificial observations, $lid_1$ is the line integrated density from the $1^{st}$ laser of $m$ lasers. $\vec a$ is the vector to be inferred and is the original electron density profile $\vec{n_e}$ with the additional artificial observations, $\vec \epsilon$ contains the experimental errors of the interferometry for each line of sight and $\epsilon_{edge}$ is the error of our artificial observation for the electron density at the edge, it represents the strength of our prior assumption. $\epsilon'_{core}$ represents the error of the artificial observation that the density gradient is 0 at the core, it also represents the strength of this prior assumption. $R$ is the original response matrix explained previously and $R^{alt}$ is a small alteration to return the artificial observations when applied to some $\vec a$. The prior is,
 
-$$
+\begin{equation}
 \begin{aligned}
 &\mathcal{N}(\vec{a}, \vec \mu_{pr} = \vec{0}, K^{alt}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|K^{alt}|}} \exp \left[{{-\frac{1}{2}\vec{a}^\top (K^{alt})^{-1}\vec{a}}}\right],\\
 &K^{alt} = \begin{bmatrix} K & K'\\ -K'^\top & K''\end{bmatrix},\\
@@ -94,9 +90,9 @@ $$
 &K'_{ij} = k'(\rho'_i, \rho_j) = \frac{\partial k{(\rho'_i,\rho_j)}}{\partial \rho'_i},\\
 &K''_{ij} = k''(\rho'_i, \rho'_j) = \frac{\partial k{(\rho'_i,\rho'_j)}}{\partial \rho'_i\partial \rho'_j},\\
 \end{aligned}
-$$
+\end{equation}
 
-\noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l(\rho) = l$ then this reverts back to the static kernel,
+\noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l(\rho) = l$ then this reverts to the static kernel,
 
 \begin{equation}
 K_{ij} = k(\rho_i, \rho_j) = \sigma \exp\left[{\frac{\rho_i - \rho_j}{2l^2}}\right].
@@ -106,7 +102,6 @@ K_{ij} = k(\rho_i, \rho_j) = \sigma \exp\left[{\frac{\rho_i - \rho_j}{2l^2}}\rig
 
 \begin{equation}
 \mathcal{N}(\vec{a}, \vec{\mu_{post}}, \Sigma_{post}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{post}|}} \exp \left[{{-\frac{1}{2}(\vec{a}-\mu_{post})^\top\Sigma_{post}^{-1}(\vec{a}-\mu_{post})}}\right],\\
-%\label{eq:posterior}
 \end{equation}
 
-\noindent where since $\vec{n_e}$ has been extended to $\vec a$ the $\vec \mu_{post}$ and $\Sigma_{post}$ have also been extended. The careful choice of alterations allows us to use the exact same closed form expressions as before the artificial observations simply replacing the alternate forms of the various matrices and vectors. The marginal likelihood for optimization also holds its form.
+\noindent where since $\vec{n_e}$ has been extended to $\vec a$ the $\vec \mu_{post}$ and $\Sigma_{post}$ have also been extended. The careful choice of alterations allows us to use the same closed form expressions as before the artificial observations simply by inserting the alternate forms of the various matrices and vectors. The marginal likelihood for optimization also holds its form. To get the density profile one must remove the end terms of $\mu_{post}$ associated with the artificial observations before plotting. The same applies to the diagonal of $\Sigma_{post}$ to obtain the errors. 

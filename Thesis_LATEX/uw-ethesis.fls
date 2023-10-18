@@ -983,10 +983,6 @@ INPUT ./uw-ethesis.lof
 INPUT uw-ethesis.lof
 INPUT uw-ethesis.lof
 OUTPUT uw-ethesis.lof
-INPUT ./uw-ethesis.lot
-INPUT uw-ethesis.lot
-INPUT uw-ethesis.lot
-OUTPUT uw-ethesis.lot
 INPUT ./chapter-1-introduction.tex
 INPUT chapter-1-introduction.tex
 INPUT ./chapter-1-introduction.tex

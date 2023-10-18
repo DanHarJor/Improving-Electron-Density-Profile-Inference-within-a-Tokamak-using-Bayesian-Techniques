@@ -26,7 +26,7 @@ The magnetic field lines are confined to magnetic flux surfaces, figure \ref{fig
 
 \section{NICE}
 
-\gls{nice} is an equilibrium reconstruction code developed for the \gls{west} tokamak. It is relevant because it computes an inference of the electron density profile that is available for comparison to the profile inferred in this work, although \glspl{nice} main objective is to infer the shape and position of the magnetic flux surfaces. \gls{nice} uses magnetic diagnostics. At \gls{west} these include 421 pickup coils, 36 flux loops and 12 Rogowski coils \cite{westmagdiag}. Magnetic diagnostics provide the majority of the information. \gls{nice} also uses interferometry, polarimetry, motional stark effect and pressure measurements. Equation \ref{eq:int_phase} and \ref{eq:pol_farad} further in the chapter, show how interferometry and polarimetry together can provide information about the poloidal magnetic field, which directly affects the magnetic flux and thus magnetic flux surfaces. \gls{nice} performs the inference by minimising a cost function. The cost function determines how well a physical state of the system matches the data received. A state is a specific position and shape of the magnetic flux surfaces and electron density profile. This requires a forward model. The forward model takes a state of the system and attempts to compute the signals that would be received by error free diagnostics if that state was the ground truth. The forward model is a simplified mathematical representation of the measurement process and can never be 100\% accurate. This introduces errors in the inference that need to be accounted for. The signals from the forward model can be compared to the actual signals received by the diagnostics to compute the cost function. By minimising the cost function the state that best matches the data is found. \gls{nice} uses \gls{sqp} as the minimisation algorithm. The optimal state of the system is then stored in the \gls{imas} database for \gls{west}. This includes the 1D electron density profile used as a comparison for the profile inferred in this work. \gls{nice} also imposes regularisation terms on their cost function. These penalise the cost function when state properties have features that disagree with prior knowledge. This includes smoothness. We expect the magnetic flux surfaces and electron density profile, to be continuous and smooth. A state inputted into the cost function that is not smooth triggers the regularisation term which causes the cost function to be larger. Minimising the cost function now also leads to smooth magnetic flux surfaces and electron density profile. This leads to a difficult question, how smooth should it be? They also have a regularisation term to penalise the cost function if the electron density profile is far from 0 at the last closed flux surface or plasma edge. It is prior knowledge that the electron density is near 0 at the plasma edge. How close to 0, and how strong should the regularisation be is still an open question. This work's \gls{gpr} approach has direct analogues to these regularisation terms. As explained later in more detail the length scale controls smoothness and an artificial observation ensures the density is close to zero at the edge. Figure \ref{fig:nice_example} shows an example of a \gls{nice} inferred electron density profile. It is modelled with a cubic spline function. It is the parameters of the cubic spline that are inputted into the cost function. The errors are calculated using a sensitivity method. In short, the error is deemed larger for the electron density of a particular normalised radius if a large change in the density leads to a small change in the cost function. In this case we cannot be certain what density is more true because many lead to a similarly low cost function and thus match the data similarly well. To include some more details, the \gls{sqp} minimisation algorithm computes the hessian of the cost function for minimisation, but this hessian can also be used to measure the sensitivity and thus the errors. The diagonal of the hessian contains the second differential of the cost function for each input parameter. This describes the curvature of the cost function in the direction of each parameter. A smaller curvature means a smaller sensitivity and thus a larger error.
+\gls{nice} is an equilibrium reconstruction code developed for the \gls{west} tokamak. It is relevant because it computes an inference of the electron density profile that is available for comparison to the profile inferred in this work, although \glspl{nice} main objective is to infer the shape and position of the magnetic flux surfaces. \gls{nice} uses magnetic diagnostics. At \gls{west} these include 421 pickup coils, 36 flux loops and 12 Rogowski coils \cite{westmagdiag}. Magnetic diagnostics provide the majority of the information. \gls{nice} also uses interferometry, polarimetry, motional stark effect and pressure measurements. Equation \ref{eq:int_phase} and \ref{eq:pol_farad} further in the chapter, show how interferometry and polarimetry together can provide information about the poloidal magnetic field, which directly affects the magnetic flux and thus magnetic flux surfaces. \gls{nice} performs the inference by minimising a cost function. The cost function determines how well a physical state of the system matches the data received. A state is a specific position and shape of the magnetic flux surfaces and electron density profile. This requires a forward model. The forward model takes a state of the system and attempts to compute the signals that would be received by error free diagnostics if that state was the ground truth. The forward model is a simplified mathematical representation of the measurement process and can never be 100\% accurate. This introduces errors in the inference that need to be accounted for. The signals from the forward model can be compared to the actual signals received by the diagnostics to compute the cost function. By minimising the cost function the state that best matches the data is found. \gls{nice} uses \gls{sqp} as the minimisation algorithm. The optimal state of the system is then stored in the \gls{imas} database for \gls{west}. This includes the 1D electron density profile used as a comparison for the profile inferred in this work. \gls{nice} also imposes regularisation terms on their cost function. These penalise the cost function when state properties have features that disagree with prior knowledge. This includes smoothness. We expect the magnetic flux surfaces and electron density profile, to be continuous and smooth. A state inputted into the cost function that is not smooth triggers the regularisation term which causes the cost function to be larger. Minimising the cost function now also leads to smooth magnetic flux surfaces and electron density profile. This leads to a difficult question, how smooth should it be? They also have a regularisation term to penalise the cost function if the electron density profile is far from 0 at the last closed flux surface or plasma edge. It is prior knowledge that the electron density is near 0 at the plasma edge. How close to 0, and how strong should the regularisation be is still an open question. This work's \gls{gpr} approach has direct analogues to these regularisation terms. As explained later in more detail the length scale controls smoothness and an artificial observation ensures the density is close to zero at the edge. Figure \ref{fig:nice_example} shows an example of a \gls{nice} inferred electron density profile. It is modelled with a cubic spline function. It is the parameters of the cubic spline that are inputted into the cost function. The errors are calculated using a sensitivity method. In short, the error is deemed larger for the electron density of a particular normalised radius if a large change in the density leads to a small change in the cost function. In this case, we cannot be certain what density is more true because many lead to a similarly low cost function and thus match the data similarly well. To include some more details, the \gls{sqp} minimisation algorithm computes the hessian of the cost function for minimisation, but this hessian can also be used to measure the sensitivity and thus the errors. The diagonal of the hessian contains the second differential of the cost function for each input parameter. This describes the curvature of the cost function in the direction of each parameter. A smaller curvature means a smaller sensitivity and thus a larger error.
 
 \begin{figure}
   \centering
@@ -37,7 +37,7 @@ The magnetic field lines are confined to magnetic flux surfaces, figure \ref{fig
 
 \section{Bayesian Inference and Gaussian Process Regression}\label{sec:BIandGPR}
 
-This work aims to use Bayesian inference to obtain the electron density profile. Bayes theorem for a physical quantity of interest $q$ is expressed as 
+This work aims to use Bayesian inference to obtain the electron density profile. Bayes theorem for a physical quantity of interest $q$ is expressed as,
 
 \begin{equation} 
   P(q|D,I) = \frac{P(D|q,I) P(q|I)}{P(D|I)},
@@ -46,7 +46,7 @@ This work aims to use Bayesian inference to obtain the electron density profile.
 
 \noindent the posterior $P(q|D,I)$ is the probability density distribution of $q$ given the measured data $D$ and some prior information $I$. The maximum of the posterior is the most probable value of $q$ given the data and prior information. The uncertainty of $q$ can also be obtained from the posterior. The likelihood $P(D|q,I)$ is the probability density function that expresses the probability of the measured data given a fixed value of $q$ and the prior information. The likelihood is described by the experimental error for the data collection. The prior $P(q|I)$ contains information assumed about $q$ before the data is taken. The marginal likelihood or evidence $P(D|I)$ is simply the probability of the data given the prior information only. For posterior computation, the marginal likelihood serves as a normalisation factor. Normalisation is often carried out with other means to simplify the posterior computation. Although the marginal likelihood can be used to tune hyperparameters. For example, the degree or strength of prior information is uncertain and by finding the strength that maximises the marginal likelihood we find the prior that matches the data the best. Maximising the marginal likelihood to tune the hyperparameters also aids in avoiding over-fitting, as the trade off between model complexity and data-fit is automatic via Occam's razor principle \cite{oscraz}. The marginal likelihood method is powerful although it is important to remember that it is not perfect and does not guarantee to find the hyperparameters that lead to the most accurate posterior.
 
-\gls{gpr} is a form of Bayesian inference where we assume these distributions can be expressed with multivariate Gaussian distributions. When the prior and posterior have the same form then the prior is known as a conjugate prior. This simplifies the inference as it is possible to find a closed form expression of the posterior. Without a closed form expression the posterior must be approximated with sampling techniques. \gls{gpr} is the technique used in this work to infer the electron density profile from interferometry data. First the technique is introduced for a simple regression problem where we wish to fit a curve to a set of points.
+\gls{gpr} is a form of Bayesian inference where we assume these distributions can be expressed with multivariate Gaussian distributions. When the prior and posterior have the same form then the prior is known as a conjugate prior. This simplifies the inference as it is possible to find a closed form expression of the posterior. Without a closed form expression, the posterior must be approximated with sampling techniques. \gls{gpr} is the technique used in this work to infer the electron density profile from interferometry data. First, the technique is introduced for a simple regression problem where we wish to fit a curve to a set of points.
 
 A multivariate Gaussian can be used to model a curve and its uncertainty, as illustrated in the violin plot of figure \ref{fig:mvg}. The functional form of a multivariate Gaussian is,
 
@@ -55,7 +55,7 @@ A multivariate Gaussian can be used to model a curve and its uncertainty, as ill
   \label{eq:mvg}
 \end{equation}
 
-\noindent the mean vector $\vec{\mu}$ holds the $y$ values of the curve at regular intervals along the $x$ axis. The diagonal of the covariance matrix holds the standard deviations of each Gaussian within the multivariate. These represent the errors of the curve. Figure \ref{fig:mvg} shows 10 Gaussians but in practice many are used to ensure a smooth curve. In this way a multivariate Gaussian can be used to represent the curve resulting from \gls{gpr}.
+\noindent the mean vector $\vec{\mu}$ holds the $y$ values of the curve at regular intervals along the $x$ axis. The diagonal of the covariance matrix holds the standard deviations of each Gaussian within the multivariate. These represent the errors of the curve. Figure \ref{fig:mvg} shows 10 Gaussians but in practice many are used to ensure a smooth curve. In this way, a multivariate Gaussian can be used to represent the curve resulting from \gls{gpr}.
 
 \begin{figure}
   \centering
@@ -103,18 +103,18 @@ The simple regression problem consists of points to which one would like to fit 
 
 \noindent This visualisation aid is helpful to appreciate the role of the likelihood and prior but it is not always a perfect representation. The likelihood has a diagonal covariance matrix and so the multiple Gaussians that make up the likelihood are not dependent on each other, thus representing them individually provides all the information in the likelihood. The prior has a more complex covariance matrix $K$, and figure \ref{fig:gprvis} does not have a complete representation of the priors form. To compute the posterior in figure \ref{fig:gprvis} one must understand the components of the posterior, likelihood, prior and how they can be combined into the closed form equations. Starting with the posterior, equation \ref{eq:posterior}, $\vec{y}$ contains the random variables $y_i$ for regularly spaced positions $x_i$. Given the data the most probable values of $\vec{y_i}$ are in $\vec{\mu_{post}}$ and their uncertainties in the diagonal of $\Sigma_{post}$. In the likelihood, equation \ref{eq:likelihood}, $\vec{d}$ is the data vector containing all the $y$-values from measurements at various $x$ positions. $R$ is known as the response matrix and ensures that the mean vector of the likelihood $R\vec{y}$ only contains values of $\vec{y}$ at the same $x$ positions the data was recorded at. $R$ is essentially a filter that removes irrelevant $y_i$ values from $\vec{y}$ for the mean vector of the likelyhood. This ensures the mean vector has the same length as the data vector. In the likelihood of figure \ref{fig:gprvis} you can see an example of a given $\vec{y}$ and the mean of each Gaussian is the value on that line at the same $x$ position as the data point. $\vec{\epsilon}$ contains the experimental error of the measurements in $\vec{d}$. In the prior, equation \ref{eq:prior}, there are as many Gaussians as in the posterior but each of these Gaussians has a mean of 0. The $\vec{0}$ symbol represents a vector of zeros the same length as the vector $\vec{y}$ of random variables. To aid visualisation the prior in figure $\ref{fig:gprvis}$ only shows 5 out of the 101 Gaussians used. The covariance matrix $K$ is constructed using the kernel $k(x_i,x_j)$. The main role of the amplitude, $\sigma$, in the kernel is to set the prior strength. The length scale, $l$ sets the strength of the correlation of neighbouring Gaussians. A low length scale means that only Gaussians close in $x$ are highly correlated. Gaussians further in x would have a low correlation, meaning they can have a very different mean value. A low length scale allows the fitted curve to have more complexity similar to a high order polynomial and can lead to overfitting. A high length scale limits the fit's ability to curve sharply leading to a simple model, similar to a low order polynomial, leading to underfitting. A very high length scale leads to an almost linear fit, every time. This prior is far from perfect. For instance, it is often known that the inferred values must be positive, for example, you cannot have a negative electron density. Since the prior mean vector is set to $\vec{0}$, a negative value is as likely to be inferred as a positive value. Since it is Gaussian, values close to 0 are more likely to be inferred than values far from 0. To mitigate this a high amplitude can be used to lower the prior strength and allow the data in the likelihood to have more influence on the posterior result. The kernel $k(x_i,x_j)$ in equation \ref{eq:prior} is known as the static exponential square kernel. It is a very commonly used kernel in \gls{gpr} but far from the only choice. The single value of the length scale prevents the inference from having long smooth regions with few features followed by regions of high variability. This can be an issue when inferring H-mode tokamak plasmas that have a sharp drop-off in density at the edge. For these situations, a non-static kernel can be used that allows the length scale to be a function of $x$ which can then allow for posteriors of varying complexity. Regardless of the kernel used, deciding the optimal values of its parameters for a problem is not obvious. A common solution is to use the marginal likelihood of equation \ref{eq:bayesth} as a loss function. The parameters that maximise it can be found with gradient based methods. This finds the parameters that maximise the probability of the data being measured. Although the marginal likelihood method is also known for automatically deploying Occam's razor principle which finds a balance between closely fitting the data and having a simple model that accounts for the data's errors to have a more accurate inference \cite{oscraz} \cite{gp4ml}. Essentially maximising the marginal likelihood avoids overfitting. Although this method is powerful it does not guarantee to produce parameters that lead to the most accurate fit. To get a more accurate fit, bayesian sampling techniques can be used, although this is more computationally expensive. 
 
-The posterior mean vector and covariance matrix can be expressed by the closed form expressions
+The posterior mean vector and covariance matrix can be expressed by the closed form expressions,
 
 % \begin{equation}
 \begin{align}
 \label{eq:mupost}
-\mu_{post} &= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr}),\\
+\vec \mu_{post} &= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr}),\\
 \label{eq:covpost}
 \Sigma_{post} &= \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1},
 \end{align}
 % \end{equation}
 
-\noindent these are derived in appendix \ref{append:dervcf}. The main steps include multiplying the functional forms of the prior and likelihood, ignoring all scaling factors, simplifying until they form a single unnormalised multivariate Gaussian and then comparing this with the posterior. The marginal likelihood can be expressed as
+\noindent these are derived in appendix \ref{append:dervcf}. The main steps include multiplying the functional forms of the prior and likelihood, ignoring all scaling factors, simplifying until they form a single unnormalised multivariate Gaussian and then comparing this with the posterior. The marginal likelihood can be expressed as,
 
 \begin{equation}
 \begin{aligned}
@@ -123,7 +123,7 @@ The posterior mean vector and covariance matrix can be expressed by the closed f
 \end{aligned}
 \end{equation}
 
-\noindent The values of the marginal likelihood can become very large and troublesome to compute with standard 64-bit float precision. For this reason, the logarithm is computed. It is the convention when performing optimisation to define a loss function to be minimised, thus the negative log marginal likelihood is used. Scaling constants do not affect the minimum value and can be ignored. The negative log marginal likelihood used as a loss function for hyper-parameters is then 
+\noindent The values of the marginal likelihood can become very large and troublesome to compute with standard 64-bit float precision. For this reason, the logarithm is computed. It is the convention when performing optimisation to define a loss function to be minimised, thus the negative log marginal likelihood is used. Scaling constants do not affect the minimum value and can be ignored. The negative log marginal likelihood used as a loss function for hyper-parameters is then,
 
 \begin{equation}
 -\ln(P(\vec d| \vec \epsilon,\theta)) \propto \ln(|\Sigma_{li}+RKR^\top|) +  (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}),
@@ -141,27 +141,29 @@ The posterior mean vector and covariance matrix can be expressed by the closed f
   \label{fig:interfgeo}
 \end{figure}
 
-Both Interferometry and polarimetry gain information from the same lasers. The lasers are fired through the plasma at multiple angles. The geometry at \gls{west} is shown in figure \ref{fig:interfgeo}. The refractive index of the plasma is dependent on the electron density. The lasers slow and the phase shift can be measured with interferometry. This phase shift is proportional to the line integrated electron density $n_e$ along the line of sight of the lasers, equation \ref{eq:int_phase} \cite{princPlasDiag}.
+Both Interferometry and polarimetry gain information from the same lasers. The lasers are fired through the plasma at multiple angles. The geometry at \gls{west} is shown in figure \ref{fig:interfgeo}. The refractive index of the plasma is dependent on the electron density. The lasers slow and the phase shift can be measured with interferometry. This phase shift is proportional to the line integrated electron density $n_e$ along the line of sight of the lasers,
 
 \begin{equation} 
   \label{eq:int_phase}
-  \Delta\phi = \frac{\lambda e^{2}}{4 \pi \epsilon_0 m_e c^2 } \int n_e \, dl
+  \Delta\phi = \frac{\lambda e^{2}}{4 \pi \epsilon_0 m_e c^2 } \int n_e \, dl \, \cite{princPlasDiag},
 \end{equation}
 
 \noindent The laser wavelength $\lambda$, is combined with other common physical constants to ascertain the constant of proportionality. \gls{west} has stored the line integrated electron density as raw interferometry data in the \gls{imas} database. This is the data that will be used for this work.
 
-Polarimetry measures the Faraday rotation angle of the lasers. The linearly polarised lasers experience a rotation as the circularly polarised components travel through the plasma at different speeds. This is due to the small gyration of the electrons around the magnetic field. The Faraday rotation angle is proportional to the line integrated density of $n_e B_{||}$ along the line of sight of the lasers. Where $B_{||}$ is the magnetic field strength parallel to the line of sight. Polarimetry has information about electron density and this work could be extended to become a Bayesian integrated analysis which includes this information in the inference. Currently only interferometry information is used. Polarimetry can be used in combination with interferometry to gain information about the poloidal magnetic field and this is why \gls{nice} uses it to determine the position of the magnetic flux surfaces.
+Polarimetry measures the Faraday rotation angle of the lasers. The linearly polarised lasers experience a rotation as the circularly polarised components travel through the plasma at different speeds. This is due to the small gyration of the electrons around the magnetic field. The Faraday rotation angle is proportional to the line integrated density of $n_e B_{||}$ along the line of sight of the lasers, 
 
 \begin{equation}
   \label{eq:pol_farad}
-  \theta_F = \frac{\lambda^2 e^3}{8 \pi^2 c^3 \epsilon_0 m_e^2} \int n_e B_{||} \, dl
+  \theta_F = \frac{\lambda^2 e^3}{8 \pi^2 c^3 \epsilon_0 m_e^2} \int n_e B_{||} \, dl \, \cite{princPlasDiag},
 \end{equation}
+
+\noindent where $B_{||}$ is the magnetic field strength parallel to the line of sight. Polarimetry has information about electron density and this work could be extended to become a Bayesian integrated analysis which includes this information in the inference. Currently only interferometry information is used. Polarimetry can be used in combination with interferometry to gain information about the poloidal magnetic field and this is why \gls{nice} uses it to determine the position of the magnetic flux surfaces.
 
 \section{Gaussian Process Regression for Interferometry}\label{sec:GPRforInterf}
 
 To infer the electron density profile with interferometry the \gls{gpr} process is altered. $\vec{y}$ becomes $\vec{n_e}$, the $\vec{0}$ prior mean can remain the same. The amplitude $\sigma$ and length-scale $l$ can be re-optimised by maximising the marginal likelihood. The data is now in a different space and thus is the likelihood. The response matrix $R$ must be created so that it will transform a profile $\vec{n_e}$ into what would be measured by an error free version of the \gls{west} interferometry system given $\vec{n_e}$ is the true profile. The result of $R \vec{n_e}$ is a vector the same length as the data $\vec{d}$ where each element corresponds to a different interferometry laser or channel. 
 
-The response matrix computation can be summarised in a few steps. \Gls{nice} provides the magnetic flux at a set of grid points on the tokamak cross-section. It also provides the flux at a set of flux surfaces of known normalised radius $\rho$. A simple 1D interpolation can be used to determine the normalised radius at each grid point. Then using $\vec{n_e}$ another 1D interpolation can be done to determine the electron density at each grid point. After the density at any point along a laser's line of sight can be computed using triangular mesh interpolation. The density at the golden cross in figure \ref{fig:meshtriangle} can be computed as a weighted sum of the three nearest known density points that form the golden triangle.
+The response matrix computation can be summarised in a few steps. \Gls{nice} provides the magnetic flux at a set of grid points on the tokamak cross-section. It also provides the flux at a set of flux surfaces of known normalised radius $\rho$. A simple 1D interpolation can be used to determine the normalised radius at each grid point. Then using $\vec{n_e}$ another 1D interpolation can be done to determine the electron density at each grid point. After the density at any point along a laser's line of sight can be computed using triangular mesh interpolation. The density at the golden cross in figure \ref{fig:meshtriangle} can be computed as a weighted sum of the three nearest known density points that form the golden triangle,
 
 \begin{figure}
   \centering
@@ -171,39 +173,47 @@ The response matrix computation can be summarised in a few steps. \Gls{nice} pro
 \end{figure}
 
 \begin{equation}
-  n_e(l_i) = \lambda_1 n_e(g_1) + \lambda_2 n_e(g_2) + \lambda_3 n_e(g_3)
+  n_e(l_i) = \lambda_1 n_e(g_1) + \lambda_2 n_e(g_2) + \lambda_3 n_e(g_3),
 \end{equation}
 
-\noindent The line integrated density can be approximated as a sum of electron densities at many points along the line of sight times the width of their separation.
+\noindent where $\lambda$ values can be computed using the $(R_1,z_1), (R_2,z_2), (R_3,z_3)$ coordinates of the 3 known density points and the point of interest $(R, z)$,
+
+\begin{gather}
+\lambda_1 = \frac{(z_2 - z_3)(R - R_3) + (R_3 - R_2)(z - z_3)}{(z_2 - z_3)(R_1 - R_3) + (R_3 - R_2)(z_1 - z_3)},\\
+\lambda_2 = \frac{(z_3 - z_1)(R - R_3) + (R_1 - R_3)(z - z_3)}{(z_2 - z_3)(R_1 - R_3) + (R_3 - R_2)(z_1 - z_3)},\\
+\lambda_3 = 1-\lambda_1-\lambda_2,
+\end{gather}
+
+\noindent these $\lambda$ values are known as the barycentric coordinates of the point of interest. The line integrated density can be approximated as a sum of electron densities at many points along the line of sight times the width of their separation,
 
 \begin{equation}
-  \int n_e \, dl \approx \sum_i n_e(l_i) \Delta l
+  \int n_e \, dl \approx \sum_i n_e(l_i) \Delta l.
   \label{eq:neapprox}
 \end{equation}
 
-\noindent The contribution $w(g_i)$ of each grid point $g_i$ is a sum of all the mesh interpolation coefficiants $\lambda_j$ used on that point.
+\noindent The contribution $w(g_i)$ of each grid point $g_i$ is a sum of all the mesh interpolation coefficiants $\lambda_j$ used on that point,
 
 \begin{equation}
-  \int n_e \, dl \approx \Delta l \sum_i w(g_i) n_e(g_i), \hspace{1cm} w(g_i) = \sum_j \lambda_j  
+  \int n_e \, dl \approx \Delta l \sum_i w(g_i) n_e(g_i), \, w(g_i) = \sum_j \lambda_j.
 \end{equation}
 
-\noindent Each point can be associated with the nearest flux surface $f_i$ equally spaced in $\rho$. This way the contribution $w(f_i)$ of each flux surface is a sum of the contribution at each of its associated grid points $g_j$.
+\noindent Each point can be associated with the nearest flux surface $f_i$ equally spaced in $\rho$. This way the contribution $w(f_i)$ of each flux surface is a sum of the contribution at each of its associated grid points $g_j$,
 
 \begin{equation}
-  \int n_e \, dl \approx \Delta l \sum_i w(f_i) n_e(f_i), \hspace{1cm} f = \sum_j g_j
+  \int n_e \, dl \approx \Delta l \sum_i w(f_i) n_e(f_i), \, f = \sum_j g_j.
   \label{eq:neapproxFS}
 \end{equation}
 
-\noindent All of these steps equate to a simple re-ordering of the original summation \ref{eq:neapprox} to extract the contribution of each flux surface on the final integrated density value. Equation \ref{eq:neapproxFS} can be computed using a vector product.
+\noindent All of these steps equate to a simple re-ordering of the original summation \ref{eq:neapprox} to extract the contribution of each flux surface on the final integrated density value. Equation \ref{eq:neapproxFS} can be computed using a vector product,
 
 \begin{equation}
-  \int n_e \, dl \approx \Delta l \vec{w}^{\top} \vec{n_e}
+  \int n_e \, dl \approx \Delta l \vec{w}^{\top} \vec{n_e}.
 \end{equation}
 
-\noindent The contribution vector applies to one line of sight. The computation for all lines of sight can be performed by placing the $\vec{w}$ vector for each line of sight as a row in the response matrix $R$. Creating a vector of line integrated densities for the likelihood, $\vec{\mu_{li}}$. The $\Delta l$ is also multiplied into the matrix.
+\noindent The contribution vector applies to one line of sight. The computation for all lines of sight can be performed by placing the $\Delta l \vec{w}$ vector for each line of sight as a row in the response matrix $R$. Thus, a vector of line integrated densities for the likelihood can be created,
 
 \begin{equation}
-  \vec{\mu_{li}} = R \vec{n_e}
+  \vec{\mu_{li}} = R \vec{n_e}.
 \end{equation}
 
 \noindent This responce matrix $R$ can then be used in the closed form expressions \ref{eq:mupost} and \ref{eq:covpost}, to perfrom a 1D electron density profile inference.
@@ -214,16 +224,16 @@ Some further alterations to the \gls{gpr} method can be made to further increase
   K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \left( \frac{2l(\rho_i)l(\rho_j)}{l(\rho_i)^2 + l(\rho_j)^2} \right)^{1/2} \exp\left({\frac{(\rho_i - \rho_j)^2}{l(\rho_i)^2+l(\rho_j)^2}}\right),
 \end{equation}
 
-\noindent This allows the length scale to change as a function of $\rho$. The length scale controls smoothness, model complexity and curvature. If these are free to change for different regions of the plasma then there is a greater range of possibilities for the final inference. Chilenski used a hyperbolic tangent function,
+\noindent this allows the length scale to change as a function of $\rho$. The length scale controls smoothness, model complexity and curvature. If these are free to change for different regions of the plasma then there is a greater range of possibilities for the final inference. Chilenski used a hyperbolic tangent function,
 
 \begin{equation}
-  l(\rho) = \frac{l_{core} + l_{edge}}{2} + \frac{l_{core} - l_{edge}}{2} \tanh\left(\frac{\rho-\rho_{step_center}}{\rho_{step_width}}\right),
+  l(\rho) = \frac{l_{core} + l_{edge}}{2} + \frac{l_{core} - l_{edge}}{2} \tanh\left(\frac{\rho-\rho_{step_center}}{\rho_{step_width}}\right) \, \cite{chilenski}, 
   \label{eq:smoothstep}
 \end{equation}
 
-\noindent to form a smooth step down from a high length scale at the core to low at the edge \cite{chilenski}. The extra freedom at the edge allows the inference to accommodate for a large sudden drop in electron density, which is a common feature for H-mode plasmas. H-mode plasmas are known to have a longer confinement time and thus better fusion performance. \gls{west} does not operate in H-mode, although this method is tested with synthetic data from a simple H-mode simulation.
+\noindent to form a smooth step down from a high length scale at the core to low at the edge, see figure \ref{fig:smoothstep}. The extra freedom at the edge allows the inference to accommodate for a large sudden drop in electron density, which is a common feature for H-mode plasmas. H-mode plasmas are known to have a longer confinement time and thus better fusion performance. \gls{west} does not operate in H-mode, although this method is tested with synthetic data from a simple H-mode simulation.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=10cm]{images/smoothstep.png}
   \caption{Hyperbolic tangent smooth step function for length scale, equation \ref{eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite{chilenski}.}
@@ -232,7 +242,7 @@ Some further alterations to the \gls{gpr} method can be made to further increase
 
 % Explain the cubic spline length scale here if it is done in the results 
 
-Traditionally prior information should be included in the prior distribution. However, in practice precision errors can make this difficult and it is often more convenient to place prior information into the likelihood in the form of artificial observations. This method was also adopted by Chilenski \cite{chilenski}. The density is known to be close to 0 at the edge, ($\rho=1$). It is also known that the density profile is smooth and symmetric meaning the gradient of the profile at the core must be close to 0. The point of reflection for the symmetry is the core. This information can be included in the data, $\vec{d}$, with an artificial experimental error determining the strength of the information included in $\vec{\epsilon}$. Other parts of the \gls{gpr} method need to be altered to accommodate the new information. The vector to be infered $\vec{a}$ is not only $\vec{n_e}$ but also includes $n_e(\rho=1)$ and $n_e'(\rho=0)$ concatonated onto the end. This allows the response matrix alteration to be simple,
+Traditionally prior information should be included in the prior distribution. However, in practice precision errors can make this difficult in the \gls{gpr} framework and it is often more convenient to place prior information into the likelihood in the form of artificial observations. This method was also adopted by Chilenski \cite{chilenski}. The density is known to be close to 0 at the edge, ($\rho=1$). It is also known that the density profile is smooth and symmetric meaning the gradient of the profile at the core must be close to 0. The point of reflection for the symmetry is the core. This information can be included in the data, $\vec{d}$, with an artificial experimental error determining the strength of the information included in $\vec{\epsilon}$. Other parts of the \gls{gpr} method need to be altered to accommodate the new information. The vector to be infered $\vec{a}$ is not only $\vec{n_e}$ but also includes $n_e(\rho=1)$ and $n_e'(\rho=0)$ concatonated onto the end. This allows the response matrix alteration to be simple,
 
 \begin{equation}
   R^{alt} =
@@ -245,17 +255,17 @@ Traditionally prior information should be included in the prior distribution. Ho
   \label{eq:Ralt}
 \end{equation}
 
-\noindent The prior covariance matrix must also be altered. The covariance between a gradient and non-gradient data point is simply the differntial of the covariance over the gradient data point. For two gradient data points, it is a double differential over each point.
+\noindent The prior covariance matrix must also be altered. The covariance between a gradient and non-gradient data point is simply the differential of the covariance over the gradient data point. For two gradient data points, it is a differential over each point.
 
 \begin{equation}
-  K'_{ij} = k'(\rho_i, \rho_j) = \frac{\partial k'(\rho'_i, \rho_j)}{\partial \rho'_i}  
+  K'_{ij} = k'(\rho_i, \rho_j) = \frac{\partial k'(\rho'_i, \rho_j)}{\partial \rho'_i} \, \cite{chilenski},
 \end{equation}
 
 \begin{equation}
-  K''_{ij} = k'(\rho'_i, \rho'_j) = \frac{\partial k''(\rho'_i, \rho'_j)}{\partial \rho'_i \partial \rho'_j}  
+  K''_{ij} = k''(\rho'_i, \rho'_j) = \frac{\partial k''(\rho'_i, \rho'_j)}{\partial \rho'_i \partial \rho'_j} \, \cite{chilenski}.
 \end{equation}
 
-\noindent In this notation $\rho'$ indicates the position of a gradient data point. The alternate kernel is then.
+\noindent In this notation $\rho'$ indicates the position of a gradient data point. The alternate kernel is then,
 
 \begin{equation}
   K^{alt} = 
@@ -269,8 +279,7 @@ The necessary adaptations for \gls{gpr} to Interferometry have been described. F
 
 \section{Chapter Summary}
 
-The electron density profile is important as it plays a key role in determining the energy confinement time and informing real time control systems. With the assumption of magnetic flux surfaces one can express it as a 1D profile. \gls{nice} is an equilibrium reconstruction code that also infers the electron density profile that can be used as a comparison in this thesis. \gls{gpr} is a form of Bayesian inference that can be applied to interferometry data to infer the electron density profile. A non-static kernel can be used to allow the inference to have a model complexity that varies with $\rho$. Prior information can be easily included in the likelihood with artificial observations. In the results section, these methods will be deployed on synthetic data. The inference performance can be determined by how closely it fits the ground truth profile. They will also be deployed on real \gls{west} data and the results will be compared to that obtained by \gls{nice}.
-
+The electron density profile is important as it plays a key role in determining the energy confinement time and informing real time control systems. With the assumption of magnetic flux surfaces, one can express it as a 1D profile. \gls{nice} is an equilibrium reconstruction code that also infers the electron density profile that can be used as a comparison in this thesis. \gls{gpr} is a form of Bayesian inference that can be applied to interferometry data to infer the electron density profile. A non-static kernel can be used to allow the inference to have a model complexity that varies with $\rho$. Hyperparameters can be tuned by minimising the negative log marginal likelihood. Prior information can be easily included in the likelihood with artificial observations. In the results section, these methods will be deployed on synthetic data. The inference performance can be determined by how closely it fits the ground truth profile. They will also be deployed on real \gls{west} data and the results will be compared to that obtained by \gls{nice}.
 % \begin{figure}
 %   \centering
 %   \includegraphics[width=\columnwidth]{images/niceExample.png}
@@ -291,11 +300,11 @@ The electron density profile is important as it plays a key role in determining 
 %     \item Explain the theory of how NICE did their inference to some degree. ***
 %     \item Bayes Theorem for inference problems, each distribution involved and why the marginal likelihood is useful. ***
 %     \item Explian how a multivariate gaussian can model a curve. ***
-%     \item Explain Gaussian Process Regression for a generic line fitting problem, including the various distributions constructed and how they are used in the closed form expressions. A little on marginal liklyhood again for parameter optimisation. Mention briefly the alterations to this algorythem that will be made to allow it to be used for interferometry including the responce function change, and virtual observations.
+%     \item Explain Gaussian Process Regression for a generic line fitting problem, including the various distributions constructed and how they are used in the closed form expressions. A little on marginal liklyhood again for parameter optimisation. Mention briefly the alterations to this algorithm that will be made to allow it to be used for interferometry including the response function change, and virtual observations.
 %     \item Explain Interferometry and a little on polarimetry, show west laser geometry
 %     \item Explain the magnetic flux surfaces again a little and how this allows us to make the electron density profile 1D again.
-%     \item Explain the forward model and how it is computed with the responce matrix.
+%     \item Explain the forward model and how it is computed with the response matrix.
 %     \item Explain how the prior edge and core information can be added and the complications of inserting it into the prior.
-%     \item Explain why a non stationary kernel (smooth step) might be beneficial 
+%     \item Explain why a non-stationary kernel (smooth step) might be beneficial 
 %     \item summarise the chapter and explain how it ties into the methodology
 % \end{itemize}
