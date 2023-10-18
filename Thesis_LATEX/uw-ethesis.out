@@ -1,24 +1,24 @@
 \BOOKMARK [0][-]{section*.1}{Author's Declaration}{}% 1
 \BOOKMARK [0][-]{section*.2}{Abstract}{}% 2
 \BOOKMARK [0][-]{section*.3}{Acknowledgements}{}% 3
-\BOOKMARK [0][-]{section*.4}{Dedication}{}% 4
-\BOOKMARK [0][-]{section*.7}{List of Figures}{}% 5
-\BOOKMARK [0][-]{section*.9}{List of Tables}{}% 6
-\BOOKMARK [0][-]{section*.12}{List of Abbreviations}{}% 7
-\BOOKMARK [0][-]{section*.15}{List of Symbols}{}% 8
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
-\BOOKMARK [0][-]{chapter.2}{Background Theory of Bayesian Techniques and WEST Interferometry}{}% 10
-\BOOKMARK [1][-]{section.2.1}{The Tokamak}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{NICE}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Bayesian Inference and Gaussian Process Regression}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.4}{Interferometry and Polarimetry}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.5}{Gaussian Process Regression for Interferometry}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 16
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 17
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 18
-\BOOKMARK [0][-]{chapter.6}{Future Investigation}{}% 19
-\BOOKMARK [0][-]{section*.18}{References}{}% 20
-\BOOKMARK [0][-]{appendix*.20}{APPENDICES}{}% 21
-\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 22
-\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 23
-\BOOKMARK [0][-]{section*.21}{Glossary}{}% 24
+\BOOKMARK [0][-]{section*.6}{List of Figures}{}% 4
+\BOOKMARK [0][-]{section*.8}{List of Tables}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
+\BOOKMARK [0][-]{chapter.2}{Background Theory of Bayesian Techniques and WEST Interferometry}{}% 7
+\BOOKMARK [1][-]{section.2.1}{The Tokamak}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{NICE}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Bayesian Inference and Gaussian Process Regression}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Interferometry and Polarimetry}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{Gaussian Process Regression for Interferometry}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.6}{Chapter Summary}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Methodology and Results}{}% 14
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 15
+\BOOKMARK [0][-]{chapter.5}{Future Investigation}{}% 16
+\BOOKMARK [0][-]{section*.11}{References}{}% 17
+\BOOKMARK [0][-]{appendix*.13}{APPENDICES}{}% 18
+\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 19
+\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 20
+\BOOKMARK [0][-]{appendix.C}{Complete Set of Distributions and Expressions for Reference}{}% 21
+\BOOKMARK [1][-]{section.C.1}{Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{appendix.C}% 22
+\BOOKMARK [1][-]{section.C.2}{Gaussian Process Regression for Interferometry, Including Artificial Observations}{appendix.C}% 23
+\BOOKMARK [0][-]{section*.14}{Glossary}{}% 24

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{chilenski}
 M.A. Chilenski, M.~Greenwald, Y.~Marzouk, N.T. Howard, A.E. White, J.E. Rice,
@@ -15,12 +15,6 @@ Blaise Faugeras.
 \newblock {\em Fusion engineering and design}, 160:112020--, 2020.
 
 \bibitem{westinterfero}
-C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
-  J.~Morales, P.~Moreau, and B.~Santraine.
-\newblock Renewal of the interfero-polarimeter diagnostic for west.
-\newblock {\em Fusion engineering and design}, 140:81--91, 2019.
-
-\bibitem{reneintpol}
 C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
   J.~Morales, P.~Moreau, and B.~Santraine.
 \newblock Renewal of the interfero-polarimeter diagnostic for west.
@@ -58,8 +52,8 @@ Carl~Edward. Rasmussen and Christopher K.~I. Williams.
 \bibitem{wessontokamak}
 John Wesson and John Wesson.
 \newblock {\em Tokamaks / John Wesson ; with contributions from D.J. Campbell
-  ... <et al.>}.
-\newblock <<The >>Oxford engineering science series. Clarendon Press, Oxford,
-  2. ed edition, 1997.
+  et al}.
+\newblock The Oxford engineering science series. Clarendon Press, Oxford, 2. ed
+  edition, 1997.
 
 \end{thebibliography}
