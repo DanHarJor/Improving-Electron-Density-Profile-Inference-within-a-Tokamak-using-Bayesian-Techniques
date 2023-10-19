@@ -1,0 +1,189 @@
+usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+               [--paths] [--json] [--debug]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+options:
+  -h, --help     show this help message and exit
+  --version      show the versions of core jupyter packages and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths. Add --json for machine-readable
+                 format.
+  --json         output paths as machine-readable json
+  --debug        output debug information about paths
+
+Available subcommands: kernel kernelspec migrate run troubleshoot
+
+Jupyter command `jupyter-notebook` not found.
+[I 09:30:34.387 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[W 09:30:37.576 NotebookApp] Loading JupyterLab as a classic notebook (v6) extension.
+[W 2023-10-19 09:30:37.579 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-10-19 09:30:37.580 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-10-19 09:30:37.580 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-10-19 09:30:37.580 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-10-19 09:30:37.580 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-10-19 09:30:37.583 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2023-10-19 09:30:37.583 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/lib/python3.11/site-packages/jupyterlab
+[I 2023-10-19 09:30:37.583 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/share/jupyter/lab
+[I 09:30:42.343 NotebookApp] Serving notebooks from local directory: /home/ubuntu/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques
+[I 09:30:42.343 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 09:30:42.343 NotebookApp] http://localhost:8899/?token=64981777bdd90ccc037c0971c51071681ab4e46d025a869b
+[I 09:30:42.343 NotebookApp]  or http://127.0.0.1:8899/?token=64981777bdd90ccc037c0971c51071681ab4e46d025a869b
+[I 09:30:42.343 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 09:30:42.350 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-61193-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8899/?token=64981777bdd90ccc037c0971c51071681ab4e46d025a869b
+     or http://127.0.0.1:8899/?token=64981777bdd90ccc037c0971c51071681ab4e46d025a869b
+[I 09:30:50.195 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[W 09:30:50.557 NotebookApp] Loading JupyterLab as a classic notebook (v6) extension.
+[W 2023-10-19 09:30:50.559 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-10-19 09:30:50.559 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-10-19 09:30:50.559 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-10-19 09:30:50.559 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-10-19 09:30:50.560 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-10-19 09:30:50.562 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2023-10-19 09:30:50.562 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/lib/python3.11/site-packages/jupyterlab
+[I 2023-10-19 09:30:50.562 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/share/jupyter/lab
+[I 09:30:51.503 NotebookApp] The port 8899 is already in use, trying another port.
+[I 09:30:51.504 NotebookApp] Serving notebooks from local directory: /home/ubuntu/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques
+[I 09:30:51.504 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 09:30:51.504 NotebookApp] http://localhost:8900/?token=57360a6689816f465dc2b8d45cb2c163ef0123b3954037fd
+[I 09:30:51.504 NotebookApp]  or http://127.0.0.1:8900/?token=57360a6689816f465dc2b8d45cb2c163ef0123b3954037fd
+[I 09:30:51.504 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 09:30:51.505 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/ubuntu/.local/share/jupyter/runtime/nbserver-61213-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8900/?token=57360a6689816f465dc2b8d45cb2c163ef0123b3954037fd
+     or http://127.0.0.1:8900/?token=57360a6689816f465dc2b8d45cb2c163ef0123b3954037fd
+[I 09:32:11.878 NotebookApp] 302 GET / (127.0.0.1) 1.180000ms
+This version of python seems to be incorrectly compiled
+(internal generated filenames are not absolute).
+This may make the debugger miss breakpoints.
+Related bug: http://bugs.python.org/issue1666807
+[W 09:32:32.451 NotebookApp] Notebook Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb is not trusted
+[W 09:32:39.166 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (127.0.0.1) 30.040000ms referer=http://localhost:8899/notebooks/Interferometry_example_Hao/Interferometry%20example/Interferometry-main/tutorial.ipynb
+[I 09:32:44.894 NotebookApp] Kernel started: b65938a2-fce4-4e8a-acf4-5bb2619f97ae, name: conda-env-mthesis-py
+CONDA_PREFIX=/home/ubuntu/anaconda3/envs/mthesis
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 09:34:33.956 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[W 09:34:33.959 NotebookApp] Notebook Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb is not trusted
+/home/ubuntu/anaconda3/lib/python3.11/site-packages/nbformat/__init__.py:128: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+/home/ubuntu/anaconda3/lib/python3.11/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate_nb(model['content'])
+[I 09:38:34.008 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[W 09:38:34.009 NotebookApp] Notebook Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb is not trusted
+[I 09:40:34.038 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:11:01.067 NotebookApp] Starting buffering for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+[I 10:11:01.701 NotebookApp] Kernel restarted: b65938a2-fce4-4e8a-acf4-5bb2619f97ae
+[I 10:11:01.826 NotebookApp] Restoring connection for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+CONDA_PREFIX=/home/ubuntu/anaconda3/envs/mthesis
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 10:11:02.454 NotebookApp] Replaying 9 buffered messages
+[I 10:12:34.714 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:16:33.963 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:18:33.986 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:42:44.802 NotebookApp] Starting buffering for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+[I 10:42:45.295 NotebookApp] Kernel restarted: b65938a2-fce4-4e8a-acf4-5bb2619f97ae
+[I 10:42:45.419 NotebookApp] Restoring connection for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+CONDA_PREFIX=/home/ubuntu/anaconda3/envs/mthesis
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 10:42:45.950 NotebookApp] Replaying 9 buffered messages
+[I 10:43:54.935 NotebookApp] Kernel interrupted: b65938a2-fce4-4e8a-acf4-5bb2619f97ae
+[I 10:44:33.965 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:46:33.985 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:48:33.966 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:49:05.306 NotebookApp] Starting buffering for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+[I 10:49:05.743 NotebookApp] Kernel restarted: b65938a2-fce4-4e8a-acf4-5bb2619f97ae
+[I 10:49:05.865 NotebookApp] Restoring connection for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+CONDA_PREFIX=/home/ubuntu/anaconda3/envs/mthesis
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 10:49:06.462 NotebookApp] Replaying 7 buffered messages
+[I 10:50:33.949 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 10:52:33.967 NotebookApp] Saving file at /Interferometry_example_Hao/Interferometry example/Interferometry-main/tutorial.ipynb
+[I 11:35:15.690 NotebookApp] Creating new notebook in 
+[I 11:35:21.888 NotebookApp] Kernel started: 84afe8bf-abac-400f-909e-f645ca7a3d9a, name: conda-env-mthesis-py
+CONDA_PREFIX=/home/ubuntu/anaconda3/envs/mthesis
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[W 11:36:25.611 NotebookApp] Notebook Simple Regression Problem.ipynb is not trusted
+[I 11:36:29.332 NotebookApp] Kernel started: 7cb7b03d-e9d4-4437-b987-442798f92aed, name: python3
+This version of python seems to be incorrectly compiled
+(internal generated filenames are not absolute).
+This may make the debugger miss breakpoints.
+Related bug: http://bugs.python.org/issue1666807
+[I 11:36:32.892 NotebookApp] Starting buffering for 7cb7b03d-e9d4-4437-b987-442798f92aed:49ad15641e494f61988e759d7df5756f
+[W 11:36:57.751 NotebookApp] Notebook RealEquillibriumInterferometry/SyntheticDataInterferometry.ipynb is not trusted
+[I 11:37:14.479 NotebookApp] Kernel started: 0094e6ca-a791-453f-b6c8-75cbe5076ee2, name: conda-env-mthesis-py
+CONDA_PREFIX=/home/ubuntu/anaconda3/envs/mthesis
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[I 11:37:22.608 NotebookApp] Saving file at /CubicSplines.ipynb
+[I 11:39:20.032 NotebookApp] Saving file at /RealEquillibriumInterferometry/SyntheticDataInterferometry.ipynb
+[W 11:39:20.037 NotebookApp] Notebook RealEquillibriumInterferometry/SyntheticDataInterferometry.ipynb is not trusted
+[I 11:55:17.080 NotebookApp] Starting buffering for b65938a2-fce4-4e8a-acf4-5bb2619f97ae:35f884e14967418aad223881c21f76b0
+[I 11:55:20.527 NotebookApp] Starting buffering for 84afe8bf-abac-400f-909e-f645ca7a3d9a:ebf7b4752bcf41cd90b849c32b42260f
+[I 11:55:24.910 NotebookApp] Starting buffering for 0094e6ca-a791-453f-b6c8-75cbe5076ee2:eb90bce7925d45cc8f7896a209629c27
+[I 11:55:31.639 NotebookApp] Shutting down on /api/shutdown request.
+[I 11:55:31.640 NotebookApp] Shutting down 4 kernels
+[I 11:55:31.643 NotebookApp] Kernel shutdown: b65938a2-fce4-4e8a-acf4-5bb2619f97ae
+[I 11:55:31.960 NotebookApp] Kernel shutdown: 84afe8bf-abac-400f-909e-f645ca7a3d9a
+[I 11:55:32.176 NotebookApp] Kernel shutdown: 7cb7b03d-e9d4-4437-b987-442798f92aed
+[I 11:55:32.392 NotebookApp] Kernel shutdown: 0094e6ca-a791-453f-b6c8-75cbe5076ee2
+[I 11:55:32.607 NotebookApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                       
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+
+[I 11:55:53.958 NotebookApp] Shutting down on /api/shutdown request.
+[I 11:55:53.960 NotebookApp] Shutting down 0 kernels
+[I 11:55:53.960 NotebookApp] Shutting down 0 terminals
+
+  _   _          _      _
+ | | | |_ __  __| |__ _| |_ ___
+ | |_| | '_ \/ _` / _` |  _/ -_)
+  \___/| .__/\__,_\__,_|\__\___|
+       |_|
+                       
+Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
+
+https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
+
+Please note that updating to Notebook 7 might break some of your extensions.
+

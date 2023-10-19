@@ -188,6 +188,30 @@ class Sampler(object):
         x_map = pm_minimize(problem, algorithm, termination=termination, verbose=False, x0=x_start).X
         return x_map
 
+    def MAP(self, opt='de'):
+        # Find MAP estimate
+        print("Estimating MAP ...")
+        start = time.time()
+        if opt == 'de':
+            x_map = self.find_map_with_differential_evolution()
+        else:
+            x_map = self.find_map_with_pattern_search()
+        time1 = time.time()
+        print(f"MAP point found. Cost time: {time1-start:.3f} s")
+        print(f"Negative logpdf: {self.log_prob(x_map)}")
+        ne_map = self.sample_to_profile(x_map)
+        print(f'sigma = {x_map[2 * E - 2]}')
+        print(f'smooth_factor = {x_map[2 * E - 1]}')
+        print(f'first derivative at the edge = {x_map[2 * E]}')
+        print('Plotting MAP')
+        plt.plot(self.rho_tor_norm_1d, ne_map, label='MAP')
+        if self.dens_prof is not None:
+            plt.plot(self.rho_tor_norm_1d, self.dens_prof.dens_1d, label='NICE')
+        plt.title('MAP estimate')
+        plt.legend()
+        plt.show()
+        
+
     def sample(self, burnin=2000, num_samples=2000, opt='de', file_name=None):
         """
         MCMC sampling
@@ -211,6 +235,7 @@ class Sampler(object):
         print(f'sigma = {x_map[2 * E - 2]}')
         print(f'smooth_factor = {x_map[2 * E - 1]}')
         print(f'first derivative at the edge = {x_map[2 * E]}')
+        print('Plotting MAP')
         plt.plot(self.rho_tor_norm_1d, ne_map, label='MAP')
         if self.dens_prof is not None:
             plt.plot(self.rho_tor_norm_1d, self.dens_prof.dens_1d, label='NICE')
