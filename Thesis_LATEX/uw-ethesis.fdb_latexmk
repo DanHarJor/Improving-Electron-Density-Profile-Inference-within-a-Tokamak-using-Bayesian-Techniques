@@ -6,7 +6,7 @@
   (generated)
   "uw-ethesis.bbl"
   "uw-ethesis.blg"
-["pdflatex"] 1697903098 "/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex" "uw-ethesis.pdf" "uw-ethesis" 1697903098
+["pdflatex"] 1697903349 "/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex" "uw-ethesis.pdf" "uw-ethesis" 1697903349
   "/etc/texmf/web2c/texmf.cnf" 1694440478 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex" 1697625954 14341 79d49881cbdd19469d58268e92a504c7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -136,7 +136,7 @@
   "appendix-final_expressions.tex" 1697903088 8506 3be62218107f8bf4c4064fc6d1486625 ""
   "appendix-margelideriv.tex" 1697886765 9309 cf703ab6cab551a33e93cda1c3140563 ""
   "chapter-1-introduction.tex" 1697560183 2111 9c9ace7597fcc60d15512474325c94db ""
-  "chapter-2-background_theory.tex" 1697903088 37861 2229fd115798c1a7288eec24de8e5bfc ""
+  "chapter-2-background_theory.tex" 1697903339 37861 2229fd115798c1a7288eec24de8e5bfc ""
   "chapter-3-methodology_results.tex" 1697548135 2938 5f263d28ff0a5532cf54d63dca4724af ""
   "chapter-4-conclusion.tex" 1695713592 190 29ba1acbf411aa66817899f834358b17 ""
   "chapter-5-future_investigation.tex" 1697548135 2625 9dfba3e1ddc0c34ffea9fe3821833b1c ""
@@ -151,9 +151,9 @@
   "images/tokamak.jpg" 1695713592 46407 e3d78306620cd11070a8ae420b1530fc ""
   "images/unilogos.png" 1695713592 270571 05c2b79d0845bf33ce7e63a440c732b6 ""
   "uw-ethesis-frontpgs.tex" 1697638846 5846 4c52c42a7f1a2347fee0027aaaecea45 ""
-  "uw-ethesis.aux" 1697903098 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "uw-ethesis.bbl" 1697640423 2314 e0da9709f80add2ed1027d4b67fb31b1 "bibtex uw-ethesis"
-  "uw-ethesis.gls" 1697903105 1883 36a2710b8aa2d0578208f8b2a11c828e ""
+  "uw-ethesis.aux" 1697903349 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "uw-ethesis.bbl" 1697903339 2314 e0da9709f80add2ed1027d4b67fb31b1 "bibtex uw-ethesis"
+  "uw-ethesis.gls" 1697903356 1883 36a2710b8aa2d0578208f8b2a11c828e ""
   "uw-ethesis.out" 0 -1 0 "pdflatex"
   "uw-ethesis.tex" 1697625954 14341 79d49881cbdd19469d58268e92a504c7 ""
   (generated)
