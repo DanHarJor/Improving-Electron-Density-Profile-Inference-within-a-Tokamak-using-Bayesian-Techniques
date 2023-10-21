@@ -18,17 +18,17 @@ P(\vec{d}|\vec{y},\vec\epsilon) = \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{l
 \begin{equation}
 \begin{split}
 P(\vec y|\theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|K|}} \exp \left[ -\frac{1}{2}(\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr}) \right],\\
-\theta \rightarrow \{\sigma, l\}, \, K_{ij} = k(\rho_i, \rho_j) = \sigma \exp \left[\frac{(\rho_i - \rho_j)^2}{2l^2}\right],
+\theta \rightarrow \{\sigma, l\}, \, K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \exp \left[\frac{(\rho_i - \rho_j)^2}{2l^2}\right],
 \end{split}
 \end{equation}
 
 \noindent and the posterior as,
 
 \begin{equation}
-P(\vec{y}|\vec{d},\vec\epsilon, \theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|\Sigma_{post}|}} \exp \left[ -\frac{1}{2}(\vec y - \mu_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \mu_{post}) \right].
+P(\vec{y}|\vec{d},\vec\epsilon, \theta) = \frac{1}{(2\pi)^{\frac{n}{2}} \sqrt{|\Sigma_{post}|}} \exp \left[ -\frac{1}{2}(\vec y - \mu_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \vec{\mu}_{post}) \right].
 \end{equation}
 
-\noindent To derive $\mu_{post}$ and $\Sigma_{post}$ the likelihood and prior are multiplied together and re-arranged. Only first and second order $\vec y$ terms are kept as the constants do not affect the shape of the multivariate Gaussian and thus do not affect $\mu_{post}$ or $\Sigma_{post}$. Then using the completing the square formula for matrices they can be combined into a single multivariate Gaussian. By comparing with the posterior we find the closed form expressions for $\mu_{post}$ and $\Sigma_{post}$. When the distributions are multiplied together the exponential powers are summed,
+\noindent To derive $\vec{\mu}_{post}$ and $\Sigma_{post}$ the likelihood and prior are multiplied together and re-arranged. Only first and second order $\vec y$ terms are kept as the constants do not affect the shape of the multivariate Gaussian and thus do not affect $\vec{\mu}_{post}$ or $\Sigma_{post}$. Then using the completing the square formula for matrices they can be combined into a single multivariate Gaussian. By comparing with the posterior we find the closed form expressions for $\vec{\mu}_{post}$ and $\Sigma_{post}$. When the distributions are multiplied together the exponential powers are summed,
 
 $$
  -\frac{1}{2}\left[(\vec d - R\vec y)^{\top} \Sigma^{-1}_{li} (\vec d - R\vec y)  + (\vec y - \vec \mu_{pr})^{\top} K^{-1} (\vec y - \vec \mu_{pr})\right],
@@ -79,13 +79,13 @@ $$
 \noindent We can ignore $\vec b^\top M^{-1} \vec b$ as it doesn't affect the shape of the Gaussian. Finally, for the posterior we have
 
 $$
-P(\vec{y}|\vec{d},\vec\epsilon, \theta) \propto \exp \left[ -\frac{1}{2}(\vec y - \mu_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \mu_{post}) \right] \propto \exp \left[ -\frac{1}{2} (\vec y - M^{-1}\vec b)^\top M (\vec y - M^{-1} \vec b)\right],
+P(\vec{y}|\vec{d},\vec\epsilon, \theta) \propto \exp \left[ -\frac{1}{2}(\vec y - \vec{\mu}_{post})^{\top} \Sigma^{-1}_{post} (\vec y - \vec{\mu}_{post}) \right] \propto \exp \left[ -\frac{1}{2} (\vec y - M^{-1}\vec b)^\top M (\vec y - M^{-1} \vec b)\right],
 $$
 
 \noindent from comparison, it can be seen that,
 
 \begin{equation}
-\mu_{post} = M^{-1} \vec b = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1} \left(R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}\right), \, \Sigma_{post} = M^{-1} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
+\vec{\mu}_{post} = M^{-1} \vec b = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1} \left(R^{\top} \Sigma_{li}^{-1}\vec d + K^{-1} \vec \mu_{pr}\right), \, \Sigma_{post} = M^{-1} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
 \end{equation}
 
 \noindent The posterior mean is often written in another form. This form can be found with the following steps,
@@ -102,8 +102,8 @@ $$
 \noindent The final closed form expression of the posterior mean and covariance is
 
 \begin{gather}
-\mu_{post}= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr})\\
+\vec{\mu}_{post}= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr})\\
 \Sigma_{post} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
 \end{gather}
 
-\noindent The error of each value in $\mu_{post}$ can be found on the diagonal of $\Sigma_{post}$.
+\noindent The error of each value in $\vec{\mu}_{post}$ can be found on the diagonal of $\Sigma_{post}$.

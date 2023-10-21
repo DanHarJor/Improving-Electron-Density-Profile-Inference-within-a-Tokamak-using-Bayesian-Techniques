@@ -29,23 +29,23 @@ In section \ref{sec:BIandGPR}, Gaussian process regression was introduced for a 
 \noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l$ is not a function but a constant, $l(\rho) = l$, then the kernel reverts back to the static kernel,
 
 \begin{equation}
-K_{ij} = k(\rho_i, \rho_j) = \sigma \exp\left[{\frac{\rho_i - \rho_j}{2l^2}}\right],
+K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \exp\left[{\frac{(\rho_i - \rho_j)^2}{2l^2}}\right],
 \end{equation}
   
 \noindent The goal is to compute the posterior,
 
 \begin{equation}
-\mathcal{N}(\vec{n_e}, \vec{\mu_{post}}, \Sigma_{post}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{post}|}} \exp \left[{{-\frac{1}{2}(\vec{n_e}-\mu_{post})^\top\Sigma_{post}^{-1}(\vec{n_e}-\mu_{post})}}\right],\\
+\mathcal{N}(\vec{n_e}, \vec{\mu}_{post}, \Sigma_{post}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{post}|}} \exp \left[{{-\frac{1}{2}(\vec{n_e}-\vec{\mu}_{post})^\top\Sigma_{post}^{-1}(\vec{n_e}-\vec{\mu}_{post})}}\right],\\
 \end{equation}
 
 \noindent which can be done with the closed form expressions,
 
 \begin{gather}
-    \mu_{post}= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr})\\
+    \vec{\mu}_{post}= \vec{\mu}_{pr} + (K^{-1} + R^{\top} \Sigma_{li}^{-1} R)^{-1} R^{\top} \Sigma_{li}^{-1} (\vec{d} - R \vec{\mu}_{pr})\\
     \Sigma_{post} = \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1}.
 \end{gather}
 
-\noindent as derived in appendix \ref{append:dervcf}. Once known the density profile can be plotted with the $\vec{\mu_{post}}$ values at the same $\rho$ values used in the kernel. The errors are the standard deviations held in the diagonal of $\Sigma_{post}$. This calculation is unlikely to be accurate until the hyperparameters are optimised. The parameters in the length scale function $l(\rho)$ are hyperparameters. The experimental errors $\epsilon$ can also be hyperparameters if unknown. The optimal hyperparameters can be found by minimising the negative log marginal likelihood. It is derived in appendix \ref{append:dervml} to be, 
+\noindent as derived in appendix \ref{append:dervcf}. Once known the density profile can be plotted with the $\vec{\mu}_{post}$ values at the same $\rho$ values used in the kernel. The errors are the standard deviations held in the diagonal of $\Sigma_{post}$. This calculation is unlikely to be accurate until the hyperparameters are optimised. The parameters in the length scale function $l(\rho)$ are hyperparameters. The experimental errors $\epsilon$ can also be hyperparameters if unknown. The optimal hyperparameters can be found by minimising the negative log marginal likelihood. It is derived in appendix \ref{append:dervml} to be, 
 
 \begin{equation}
 -\ln(P(\vec d| \vec \epsilon,\theta)) \propto \ln(|\Sigma_{li}+RKR^\top|) + (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}).
@@ -71,11 +71,18 @@ Artificial observations can be placed in the likelihood to include prior knowled
 0 & 0 & 0 & 0 & \epsilon_{edge} & 0\\
 0 & 0 & 0 & 0 & 0 & \epsilon'_{core}\\
 \end{bmatrix},\\
-&R^{alt} =\begin{bmatrix}
-R & \cdots & 0 & 0\\
-\vdots & \ddots & 0 & 0\\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1
+R^{alt} = 
+\begin{bmatrix}
+ R_{m\times n} &   O_{m\times2} \\
+ O_{2\times n} &   I_{2\times 2} \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+ &       &    & 0         & 0\\
+  &   R_{m\times n}    &    &  \vdots  & \vdots\\
+  &       &    & 0        & 0\\
+0 & \cdots & 0  & 1        & 0 \\
+0 & \cdots & 0  & 0        & 1
 \end{bmatrix},
 \end{aligned}
 \end{equation}
@@ -95,13 +102,13 @@ R & \cdots & 0 & 0\\
 \noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l(\rho) = l$ then this reverts to the static kernel,
 
 \begin{equation}
-K_{ij} = k(\rho_i, \rho_j) = \sigma \exp\left[{\frac{\rho_i - \rho_j}{2l^2}}\right].
+K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \exp\left[{\frac{(\rho_i - \rho_j)^2}{2l^2}}\right].
 \end{equation}
 
 \noindent The $K'$  and $K''$ are required to account for the fact that now there is gradient information and the covariance for positions of gradient information $\rho'$ requires a differential of the original covariance kernel $k$. The goal is to compute the posterior,  
 
 \begin{equation}
-\mathcal{N}(\vec{a}, \vec{\mu_{post}}, \Sigma_{post}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{post}|}} \exp \left[{{-\frac{1}{2}(\vec{a}-\mu_{post})^\top\Sigma_{post}^{-1}(\vec{a}-\mu_{post})}}\right],\\
+\mathcal{N}(\vec{a}, \vec{\mu}_{post}, \Sigma_{post}) = \frac{1}{\sqrt{(2\pi)^{\frac{n}{2}}|\Sigma_{post}|}} \exp \left[{{-\frac{1}{2}(\vec{a}-\vec{\mu}_{post})^\top\Sigma_{post}^{-1}(\vec{a}-\vec{\mu}_{post})}}\right],\\
 \end{equation}
 
-\noindent where since $\vec{n_e}$ has been extended to $\vec a$ the $\vec \mu_{post}$ and $\Sigma_{post}$ have also been extended. The careful choice of alterations allows us to use the same closed form expressions as before the artificial observations simply by inserting the alternate forms of the various matrices and vectors. The marginal likelihood for optimization also holds its form. To get the density profile one must remove the end terms of $\mu_{post}$ associated with the artificial observations before plotting. The same applies to the diagonal of $\Sigma_{post}$ to obtain the errors. 
+\noindent where since $\vec{n_e}$ has been extended to $\vec a$ the $\vec{\mu}_{post}$ and $\Sigma_{post}$ have also been extended. The careful choice of alterations allows us to use the same closed form expressions as before the artificial observations simply by inserting the alternate forms of the various matrices and vectors. The marginal likelihood for optimization also holds its form. To get the density profile one must remove the end terms of $\vec{\mu}_{post}$ associated with the artificial observations before plotting. The same applies to the diagonal of $\Sigma_{post}$ to obtain the errors. 
