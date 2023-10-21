@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Magnetic flux surfaces \cite {wessontokamak}.}}{5}{figure.2.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Electron density profile inferred by NICE for an instance in time within the WEST tokamak.}}{7}{figure.2.3}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Illustrating how many Gaussians can model a curved line and its uncertainty.}}{10}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces A visualisation of the simple GPR process.}}{12}{figure.2.5}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A visualisation of the simple regression problem and the various distributions involved in the GPR solution.}}{12}{figure.2.5}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces The geometry of interfero-polarimetry lasers at WEST \cite {westinterfero}.}}{14}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces An example mesh grid to aid visualisation of the triangular mesh grid interpolation used in the response matrix construction.}}{16}{figure.2.7}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Hyperbolic tangent smooth step function for length scale, equation \ref {eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite {chilenski}.}}{19}{figure.2.8}%

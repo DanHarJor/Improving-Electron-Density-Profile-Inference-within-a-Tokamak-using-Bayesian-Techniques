@@ -26,7 +26,7 @@ In section \ref{sec:BIandGPR}, Gaussian process regression was introduced for a 
 \end{aligned}
 \end{equation}
 
-\noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l$ is not a function but a constant, $l(\rho) = l$, then the kernel reverts back to the static kernel,
+\noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l$ is not a function but a constant, $l(\rho) = l$, then the kernel reverts back to the stationary kernel,
 
 \begin{equation}
 K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \exp\left[{\frac{(\rho_i - \rho_j)^2}{2l^2}}\right],
@@ -48,7 +48,7 @@ K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \exp\left[{\frac{(\rho_i - \rho_j)^2}{2l^2
 \noindent as derived in appendix \ref{append:dervcf}. Once known the density profile can be plotted with the $\vec{\mu}_{post}$ values at the same $\rho$ values used in the kernel. The errors are the standard deviations held in the diagonal of $\Sigma_{post}$. This calculation is unlikely to be accurate until the hyperparameters are optimised. The parameters in the length scale function $l(\rho)$ are hyperparameters. The experimental errors $\epsilon$ can also be hyperparameters if unknown. The optimal hyperparameters can be found by minimising the negative log marginal likelihood. It is derived in appendix \ref{append:dervml} to be, 
 
 \begin{equation}
--\ln(P(\vec d| \vec \epsilon,\theta)) \propto \ln(|\Sigma_{li}+RKR^\top|) + (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}).
+loss(\vec \epsilon,\theta) = \ln(|\Sigma_{li}+RKR^\top|) + (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}).
 \end{equation}
 
 \noindent There is no change in its form from the simple regression problem. The values of the various matrices and vectors have changed. 
@@ -99,7 +99,7 @@ R^{alt} =
 \end{aligned}
 \end{equation}
 
-\noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l(\rho) = l$ then this reverts to the static kernel,
+\noindent where $l(\rho)$ can be a hyperbolic tangent function or otherwise. If $l(\rho) = l$ then this reverts to the stationary kernel,
 
 \begin{equation}
 K_{ij} = k(\rho_i, \rho_j) = \sigma^2 \exp\left[{\frac{(\rho_i - \rho_j)^2}{2l^2}}\right].

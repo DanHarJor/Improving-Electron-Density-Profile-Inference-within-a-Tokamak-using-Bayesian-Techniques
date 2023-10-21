@@ -1,7 +1,7 @@
 \contentsline {chapter}{Author's Declaration}{ii}{section*.1}%
 \contentsline {chapter}{Abstract}{iii}{section*.2}%
 \contentsline {chapter}{Acknowledgements}{iv}{section*.3}%
-\contentsline {chapter}{List of Figures}{vi}{section*.6}%
+\contentsline {chapter}{List of Figures}{vii}{section*.6}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background Theory of Bayesian Techniques and WEST Interferometry}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The Tokamak}{3}{section.2.1}%

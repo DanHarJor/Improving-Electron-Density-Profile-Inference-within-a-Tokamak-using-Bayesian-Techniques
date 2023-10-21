@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  21 OCT 2023 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  21 OCT 2023 21:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,11 +447,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 165.
 LaTeX Info: Redefining \pageref on input line 165.
 LaTeX Info: Redefining \nameref on input line 165.
+ (./uw-ethesis.out) (./uw-ethesis.out)
 \@outlinefile=\write7
 \openout7 = `uw-ethesis.out'.
 
  (./uw-ethesis-frontpgs.tex
-<images/unilogos.png, id=4, 36.43613pt x 9.1542pt>
+<images/unilogos.png, id=96, 36.43613pt x 9.1542pt>
 File: images/unilogos.png Graphic file (type png)
 <use images/unilogos.png>
 Package pdftex.def Info: images/unilogos.png  used on input line 14.
@@ -471,20 +472,28 @@ Package pdftex.def Info: images/unilogos.png  used on input line 14.
 ] [4
 
 
-]
+] (./uw-ethesis.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [5
+
+
+
+
+])
 \tf@toc=\write8
 \openout8 = `uw-ethesis.toc'.
 
- [5
-
-
-
-
-]
+ [6] (./uw-ethesis.lof)
 \tf@lof=\write9
 \openout9 = `uw-ethesis.lof'.
 
- [6
+ [7
 
 
 
@@ -498,251 +507,57 @@ Chapter 1.
 
 ]
 Chapter 2.
-
-LaTeX Warning: Citation `nice' on page 2 undefined on input line 3.
-
-<images/tokamak.jpg, id=57, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=206, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 208.35736pt.
-
-LaTeX Warning: Citation `tokamakSchema' on page 2 undefined on input line 10.
-
-
-LaTeX Warning: Citation `tokamakSchema' on page 2 undefined on input line 10.
-
 [2
 
 
-]
-
-LaTeX Warning: Reference `fig:tokamakSchema' on page 3 undefined on input line 14.
-
-[3 <./images/tokamak.jpg>]
-
-LaTeX Warning: Reference `fig:tokamakSchema' on page 4 undefined on input line 16.
-
-
-LaTeX Warning: Reference `fig:magfluxsurf' on page 4 undefined on input line 18.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Reference `fig:nice_example' on page 4 undefined on input line 18.
-
-
-LaTeX Warning: Reference `fig:magfluxsurf' on page 4 undefined on input line 18.
-
-[4]
-<images/fluxsurf.png, id=79, 329.23pt x 341.275pt>
+] [3 <./images/tokamak.jpg>] [4]
+<images/fluxsurf.png, id=233, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
-
-
-LaTeX Warning: Citation `wessontokamak' on page 5 undefined on input line 23.
-
-
-LaTeX Warning: Citation `westmagdiag' on page 5 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:int_phase' on page 5 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:pol_farad' on page 5 undefined on input line 29.
-
-
-LaTeX Warning: Reference `fig:nice_example' on page 5 undefined on input line 29.
-
-[5 <./images/fluxsurf.png>]
-<images/niceExample.png, id=103, 297.87285pt x 268.00125pt>
+ [5 <./images/fluxsurf.png>]
+<images/niceExample.png, id=263, 297.87285pt x 268.00125pt>
 File: images/niceExample.png Graphic file (type png)
 <use images/niceExample.png>
 Package pdftex.def Info: images/niceExample.png  used on input line 33.
 (pdftex.def)             Requested size: 369.88582pt x 332.82109pt.
- [6] [7 <./images/niceExample.png>]
-
-LaTeX Warning: Citation `oscraz' on page 8 undefined on input line 47.
-
-
-./chapter-2-background_theory.tex:49: Package glossaries-extra Error: Glossary entry `GPR' has not been defined.
-
-See the glossaries-extra package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 ...cal. The usual way to introduce \gls{GPR} 
-                                                  surcumvents Bayes' theorem...
-You need to define a glossary entry before you can reference it.
-
-
-LaTeX Warning: Citation `gp4ml' on page 8 undefined on input line 49.
-
-[8]
-
-LaTeX Warning: Reference `fig:mvg' on page 9 undefined on input line 56.
-
-
-LaTeX Warning: Reference `fig:mvg' on page 9 undefined on input line 63.
-
-<images/mvg.png, id=129, 418.2024pt x 312.6882pt>
+ [6] [7 <./images/niceExample.png>] [8]
+<images/mvg.png, id=294, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 67.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
-./chapter-2-background_theory.tex:81: Missing $ inserted.
-<inserted text> 
-                $
-l.81 where \mu
-              _{post} has a length of 101, the same as the unknown $y$ value...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./chapter-2-background_theory.tex:81: Missing $ inserted.
-<inserted text> 
-                $
-l.81 ...known $y$ values. In order to compute $\mu
-                                                  _{post}$ and $\Sigma{post}...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (9.08209pt too wide) in paragraph at lines 81--82
-[]\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 ^^V[]hasalengthof\OT1/cmr/m/n/12 101\OML/cmm/m/it/12 ; thesameastheunknown$\OT1/cmr/m/n/12 y$\OML/cmm/m/it/12 values:Inordertocompute$$^^V[]$ \OT1/cmr/m/n/12 and
- []
-
-
-LaTeX Warning: Reference `fig:gprvis' on page 9 undefined on input line 94.
-
-[9]
-
-LaTeX Warning: Reference `fig:gprvis' on page 10 undefined on input line 101.
-
-
-LaTeX Warning: Reference `fig:gprvis' on page 10 undefined on input line 101.
-
-
-LaTeX Warning: Reference `eq:prior' on page 10 undefined on input line 101.
-
-
-LaTeX Warning: Reference `eq:bayesth' on page 10 undefined on input line 101.
-
-
-LaTeX Warning: Citation `oscraz' on page 10 undefined on input line 101.
-
-
-LaTeX Warning: Citation `gp4ml' on page 10 undefined on input line 101.
-
-[10 <./images/mvg.png>]
-<images/gprvis.png, id=153, 666.0885pt x 490.2315pt>
+ [9] [10 <./images/mvg.png>]
+<images/gprvis.png, id=325, 666.0885pt x 490.2315pt>
 File: images/gprvis.png Graphic file (type png)
 <use images/gprvis.png>
-Package pdftex.def Info: images/gprvis.png  used on input line 105.
+Package pdftex.def Info: images/gprvis.png  used on input line 102.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
- [11]
-
-LaTeX Warning: Reference `fig:gprvis' on page 12 undefined on input line 110.
-
-
-LaTeX Warning: Reference `fig:gprvis' on page 12 undefined on input line 110.
-
-
-LaTeX Warning: Reference `fig:gprvis' on page 12 undefined on input line 110.
-
-
-LaTeX Warning: Reference `append:dervcf' on page 12 undefined on input line 119.
-
-[12 <./images/gprvis.png>]
-
-LaTeX Warning: Reference `append:dervml' on page 13 undefined on input line 134.
-
-<images/interfgeo.png, id=166, 1099.10625pt x 780.9175pt>
+ [11] [12 <./images/gprvis.png>]
+<images/interfgeo.png, id=343, 1099.10625pt x 780.9175pt>
 File: images/interfgeo.png Graphic file (type png)
 <use images/interfgeo.png>
-Package pdftex.def Info: images/interfgeo.png  used on input line 141.
+Package pdftex.def Info: images/interfgeo.png  used on input line 138.
 (pdftex.def)             Requested size: 284.52756pt x 202.15198pt.
-
-LaTeX Warning: Citation `westinterfero' on page 13 undefined on input line 142.
-
-[13]
-
-LaTeX Warning: Reference `fig:interfgeo' on page 14 undefined on input line 146.
-
-
-LaTeX Warning: Citation `princPlasDiag' on page 14 undefined on input line 150.
-
-
-LaTeX Warning: Citation `princPlasDiag' on page 14 undefined on input line 159.
-
-[14 <./images/interfgeo.png>]
-
-LaTeX Warning: Reference `fig:meshtriangle' on page 15 undefined on input line 168.
-
-<images/meshtriangle.png, id=189, 274.3851pt x 309.3156pt>
+ [13] [14 <./images/interfgeo.png>]
+<images/meshtriangle.png, id=368, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
-Package pdftex.def Info: images/meshtriangle.png  used on input line 172.
+Package pdftex.def Info: images/meshtriangle.png  used on input line 169.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
-[15] [16 <./images/meshtriangle.png>]
-
-LaTeX Warning: Reference `eq:neapprox' on page 17 undefined on input line 209.
-
-
-LaTeX Warning: Reference `eq:neapproxFS' on page 17 undefined on input line 209.
-
-[17]
-
-LaTeX Warning: Reference `eq:mupost' on page 18 undefined on input line 221.
-
-
-LaTeX Warning: Reference `eq:covpost' on page 18 undefined on input line 221.
-
-
-LaTeX Warning: Citation `chilenski' on page 18 undefined on input line 232.
-
-
-LaTeX Warning: Reference `fig:smoothstep' on page 18 undefined on input line 236.
-
-<images/smoothstep.png, id=216, 431.4519pt x 331.4784pt>
+ [15] [16 <./images/meshtriangle.png>] [17]
+<images/smoothstep.png, id=398, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
-Package pdftex.def Info: images/smoothstep.png  used on input line 240.
+Package pdftex.def Info: images/smoothstep.png  used on input line 237.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
-
-LaTeX Warning: Reference `eq:smoothstep' on page 18 undefined on input line 241.
-
-
-LaTeX Warning: Citation `chilenski' on page 18 undefined on input line 241.
-
-
-LaTeX Warning: Reference `eq:smoothstep' on page 18 undefined on input line 241.
-
-
-LaTeX Warning: Citation `chilenski' on page 18 undefined on input line 241.
-
-[18]
-
-LaTeX Warning: Citation `chilenski' on page 19 undefined on input line 247.
-
-[19 <./images/smoothstep.png>]
-
-LaTeX Warning: Citation `chilenski' on page 20 undefined on input line 269.
-
-
-LaTeX Warning: Citation `chilenski' on page 20 undefined on input line 273.
-
-
-LaTeX Warning: Reference `append:distexpres' on page 20 undefined on input line 286.
-
-) (./chapter-3-methodology_results.tex [20]
+ [18] [19 <./images/smoothstep.png>]) (./chapter-3-methodology_results.tex [20]
 Chapter 3.
 ) (./chapter-4-conclusion.tex [21
 
@@ -796,10 +611,6 @@ Overfull \hbox (46.99153pt too wide) detected at line 59
  []
 
 [31]
-
-LaTeX Warning: Citation `gp4ml' on page 32 undefined on input line 90.
-
-
 Overfull \hbox (37.57133pt too wide) detected at line 99
 []\OML/cmm/m/it/12 K[][] \OT1/cmr/m/n/12 + []^^F[][] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )[] [] (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
  []
@@ -815,38 +626,16 @@ Overfull \hbox (27.95918pt too wide) detected at line 140
  []
 
 
-LaTeX Warning: Citation `gp4ml' on page 33 undefined on input line 142.
-
-
 Overfull \hbox (19.96678pt too wide) detected at line 165
 [][][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; ^^R\OT1/cmr/m/n/12 )) = \OMS/cmsy/m/n/12 ^^@[] [] \OML/cmm/m/it/12 :
  []
 
 [33]) (./appendix-final_expressions.tex [34]
 Appendix C.
-
-LaTeX Warning: Reference `sec:BIandGPR' on page 35 undefined on input line 5.
-
-
-LaTeX Warning: Reference `sec:GPRforInterf' on page 35 undefined on input line 5.
-
-
-LaTeX Warning: Reference `sec:GPRforInterf' on page 35 undefined on input line 20.
-
 [35
 
 
-]
-
-LaTeX Warning: Reference `append:dervcf' on page 36 undefined on input line 48.
-
-
-LaTeX Warning: Reference `append:dervml' on page 36 undefined on input line 48.
-
-
-LaTeX Warning: Reference `sec:GPRforInterf' on page 36 undefined on input line 58.
-
-[36]
+] [36]
 Overfull \hbox (213.23808pt too wide) detected at line 88
 [][][][]
  []
@@ -864,34 +653,22 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-ab
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.nomenclature-glg -o uw-ethesis.nomenclature-gls uw-ethesis.nomenclature-glo)...executed safely (allowed).
 
 ] (./uw-ethesis.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `uw-ethesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `uw-ethesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  255B46A5F332D96ADAC28CE96603D6D5;1623.
+Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
+(rerunfilecheck)             Checksum: 255B46A5F332D96ADAC28CE96603D6D5;1623.
  ) 
 Here is how much of TeX's memory you used:
- 16612 strings out of 480129
- 278533 string characters out of 5893409
- 672505 words of memory out of 5000000
- 34139 multiletter control sequences out of 15000+600000
+ 16646 strings out of 480129
+ 278975 string characters out of 5893409
+ 676407 words of memory out of 5000000
+ 34164 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  106i,17n,105p,4513b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (47 pages, 2511431 bytes).
+Output written on uw-ethesis.pdf (48 pages, 2501569 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 156 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
