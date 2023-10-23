@@ -1012,11 +1012,11 @@ INPUT ./images/mvg.png
 INPUT images/mvg.png
 INPUT ./images/mvg.png
 INPUT ./images/mvg.png
-INPUT ./images/gprvis.png
-INPUT ./images/gprvis.png
-INPUT images/gprvis.png
-INPUT ./images/gprvis.png
-INPUT ./images/gprvis.png
+INPUT ./images/srpvis.png
+INPUT ./images/srpvis.png
+INPUT images/srpvis.png
+INPUT ./images/srpvis.png
+INPUT ./images/srpvis.png
 INPUT ./images/interfgeo.png
 INPUT ./images/interfgeo.png
 INPUT images/interfgeo.png
