@@ -6,9 +6,9 @@
 \BOOKMARK [0][-]{chapter.2}{Background Theory of Bayesian Techniques and WEST Interferometry}{}% 6
 \BOOKMARK [1][-]{section.2.1}{The Tokamak}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.2}{NICE}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Bayesian Inference and Gaussian Process Regression}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Bayesian Inference and the Simple Regression Problem}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.4}{Interferometry and Polarimetry}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.5}{Gaussian Process Regression for Interferometry}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{Bayesian Inference for Interferometry}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.6}{Chapter Summary}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{Methodology and Results}{}% 13
 \BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 14
