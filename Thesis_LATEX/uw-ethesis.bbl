@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{chilenski}
 M.A. Chilenski, M.~Greenwald, Y.~Marzouk, N.T. Howard, A.E. White, J.E. Rice,
@@ -7,6 +7,19 @@ M.A. Chilenski, M.~Greenwald, Y.~Marzouk, N.T. Howard, A.E. White, J.E. Rice,
   experimental measurements of impurity transport coefficients using gaussian
   process regression.
 \newblock {\em Nuclear fusion}, 55(2):23012--20, 2015.
+
+\bibitem{SPARCoverview}
+A.~J. Creely, M.~J. Greenwald, S.~B. Ballinger, D.~Brunner, J.~Canik, J.~Doody,
+  T.~Fülöp, D.~T. Garnier, R.~Granetz, T.~K. Gray, C.~Holland, N.~T. Howard,
+  J.~W. Hughes, J.~H. Irby, V.~A. Izzo, G.~J. Kramer, A.~Q. Kuang,
+  B.~LaBombard, Y.~Lin, B.~Lipschultz, N.~C. Logan, J.~D. Lore, E.~S. Marmar,
+  K.~Montes, R.~T. Mumgaard, C.~Paz-Soldan, C.~Rea, M.~L. Reinke,
+  P.~Rodriguez-Fernandez, K.~Särkimäki, F.~Sciortino, S.~D. Scott,
+  A.~Snicker, P.~B. Snyder, B.~N. Sorbom, R.~Sweeney, R.~A. Tinguely, E.~A.
+  Tolman, M.~Umansky, O.~Vallhagen, J.~Varje, D.~G. Whyte, J.~C. Wright, S.~J.
+  Wukitch, and J.~Zhu.
+\newblock Overview of the sparc tokamak.
+\newblock {\em Journal of plasma physics}, 86(5), 2020.
 
 \bibitem{nice}
 Blaise Faugeras.
@@ -55,5 +68,25 @@ John Wesson and John Wesson.
   et al}.
 \newblock The Oxford engineering science series. Clarendon Press, Oxford, 2. ed
   edition, 1997.
+
+\bibitem{nationalignitionfacilitycali}
+A.~B. Zylstra, A.~L. Kritcher, O.~A. Hurricane, D.~A. Callahan, J.~E. Ralph,
+  D.~T. Casey, A.~Pak, O.~L. Landen, B.~Bachmann, K.~L. Baker,
+  L.~Berzak~Hopkins, S.~D. Bhandarkar, J.~Biener, R.~M. Bionta, N.~W. Birge,
+  T.~Braun, T.~M. Briggs, P.~M. Celliers, H.~Chen, C.~Choate, D.~S. Clark,
+  L.~Divol, T.~Döppner, D.~Fittinghoff, M.~J. Edwards, M.~Gatu~Johnson,
+  N.~Gharibyan, S.~Haan, K.~D. Hahn, E.~Hartouni, D.~E. Hinkel, D.~D. Ho,
+  M.~Hohenberger, J.~P. Holder, H.~Huang, N.~Izumi, J.~Jeet, O.~Jones, S.~M.
+  Kerr, S.~F. Khan, H.~Geppert~Kleinrath, V.~Geppert~Kleinrath, C.~Kong, K.~M.
+  Lamb, S.~Le~Pape, N.~C. Lemos, J.~D. Lindl, B.~J. MacGowan, A.~J. Mackinnon,
+  A.~G. MacPhee, E.~V. Marley, K.~Meaney, M.~Millot, A.~S. Moore, K.~Newman,
+  J.-M.~G. Di~Nicola, A.~Nikroo, R.~Nora, P.~K. Patel, N.~G. Rice, M.~S.
+  Rubery, J.~Sater, D.~J. Schlossberg, S.~M. Sepke, K.~Sequoia, S.~J. Shin,
+  M.~Stadermann, S.~Stoupin, D.~J. Strozzi, C.~A. Thomas, R.~Tommasini,
+  C.~Trosseille, E.~R. Tubman, P.~L. Volegov, C.~R. Weber, C.~Wild, D.~T.
+  Woods, S.~T. Yang, and C.~V. Young.
+\newblock Experimental achievement and signatures of ignition at the national
+  ignition facility.
+\newblock {\em Physical review. E}, 106(2):025202--025202, 2022.
 
 \end{thebibliography}
