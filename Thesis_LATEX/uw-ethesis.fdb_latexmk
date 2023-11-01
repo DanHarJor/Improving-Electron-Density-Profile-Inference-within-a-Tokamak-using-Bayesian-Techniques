@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex uw-ethesis"] 1698882222 "uw-ethesis.aux" "uw-ethesis.bbl" "uw-ethesis" 1698882263
+["bibtex uw-ethesis"] 1698882222 "uw-ethesis.aux" "uw-ethesis.bbl" "uw-ethesis" 1698883128
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "uw-ethesis.aux" 1698882262 10228 408655f7b80854b7adbc1518e67c0ac1 "pdflatex"
+  "uw-ethesis.aux" 1698883127 10228 408655f7b80854b7adbc1518e67c0ac1 "pdflatex"
   "uw-ethesis.bib" 1698871652 18992 ec19a98ec897999dc7d81e047d2823ef ""
   (generated)
   "uw-ethesis.bbl"
   "uw-ethesis.blg"
-["pdflatex"] 1698882254 "/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex" "uw-ethesis.pdf" "uw-ethesis" 1698882263
+["pdflatex"] 1698883119 "/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex" "uw-ethesis.pdf" "uw-ethesis" 1698883128
   "/etc/texmf/web2c/texmf.cnf" 1694440478 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex" 1698575912 14341 79d49881cbdd19469d58268e92a504c7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,7 +135,7 @@
   "appendix-closedformderiv.tex" 1698575912 5807 54cb6d52bb883fc347b5ff3dd70f7f4d ""
   "appendix-final_expressions.tex" 1698575912 8531 760d6c63f1f509c7e66c0706a1760c1a ""
   "appendix-margelideriv.tex" 1698575912 9339 06d601b12bb54ded9676a859984f62f6 ""
-  "chapter-1-introduction.tex" 1698882254 11394 6822020203878bccbe7178e1a54cc785 ""
+  "chapter-1-introduction.tex" 1698883119 11372 7e64d4cee1a9a47c58b02add1f448c7c ""
   "chapter-2-background_theory.tex" 1698575912 39002 b1ccf06f497b21e12a8c99db34467014 ""
   "chapter-3-methodology_results.tex" 1697548135 2938 5f263d28ff0a5532cf54d63dca4724af ""
   "chapter-4-conclusion.tex" 1695713592 190 29ba1acbf411aa66817899f834358b17 ""
@@ -151,13 +151,13 @@
   "images/tokamak.jpg" 1695713592 46407 e3d78306620cd11070a8ae420b1530fc ""
   "images/unilogos.png" 1695713592 270571 05c2b79d0845bf33ce7e63a440c732b6 ""
   "uw-ethesis-frontpgs.tex" 1698882214 5959 d8f51c609b439b01b66cbdf20e10a2c0 ""
-  "uw-ethesis.aux" 1698882262 10228 408655f7b80854b7adbc1518e67c0ac1 "pdflatex"
+  "uw-ethesis.aux" 1698883127 10228 408655f7b80854b7adbc1518e67c0ac1 "pdflatex"
   "uw-ethesis.bbl" 1698882222 4342 29b90f6dcca5aad538a147c62ed09c43 "bibtex uw-ethesis"
-  "uw-ethesis.gls" 1698882262 1400 831dbc73d163fe4ec14d1b33fc93bb76 ""
-  "uw-ethesis.lof" 1698882262 1559 20f6c4d436e1fed53daa1864c2911418 "pdflatex"
-  "uw-ethesis.out" 1698882262 1616 08708835a6c83f8e4e0c5b2923af8142 "pdflatex"
+  "uw-ethesis.gls" 1698883127 1400 831dbc73d163fe4ec14d1b33fc93bb76 ""
+  "uw-ethesis.lof" 1698883127 1559 20f6c4d436e1fed53daa1864c2911418 "pdflatex"
+  "uw-ethesis.out" 1698883127 1616 08708835a6c83f8e4e0c5b2923af8142 "pdflatex"
   "uw-ethesis.tex" 1698575912 14341 79d49881cbdd19469d58268e92a504c7 ""
-  "uw-ethesis.toc" 1698882262 1953 611d450473815c993bd45f76888261ae "pdflatex"
+  "uw-ethesis.toc" 1698883127 1953 611d450473815c993bd45f76888261ae "pdflatex"
   (generated)
   "uw-ethesis.aux"
   "uw-ethesis.glo"
