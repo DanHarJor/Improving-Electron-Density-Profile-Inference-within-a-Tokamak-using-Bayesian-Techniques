@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{IDAgeert2023}
+Jiahong Chen, Zhibin Wang, Tianbo Wang, Yonghao Yang, Hao Wu, Yonggao Li,
+  Guoliang Xiao, Geert Verdoolaege, Didier Mazon, Zengchen Yang, Min Jiang,
+  Zhongbing Shi, Jian Chen, Yi~Yv, Wulyu Zhong, and Min Xu.
+\newblock Integrated data analysis on the electron density profile of hl-2a
+  with the bayesian probability inference method.
+\newblock {\em Plasma physics and controlled fusion}, 65(5):55027--, 2023.
+
 \bibitem{chilenski}
 M.A. Chilenski, M.~Greenwald, Y.~Marzouk, N.T. Howard, A.E. White, J.E. Rice,
   and J.R. Walk.
@@ -26,6 +34,12 @@ Blaise Faugeras.
 \newblock An overview of the numerical methods for tokamak plasma equilibrium
   computation implemented in the nice code.
 \newblock {\em Fusion engineering and design}, 160:112020--, 2020.
+
+\bibitem{IDAmaxPlanck}
+R.~Fischer and A.~Dinklage.
+\newblock Integrated data analysis of fusion diagnostics by means of the
+  bayesian probability theory.
+\newblock {\em Review of Scientific Instruments}, 75(10):4237--4239, 2004.
 
 \bibitem{westinterfero}
 C.~Gil, G.~Colledani, M.~Domenes, D.~Volpe, A.~Berne, F.~Faisse, C.~Guillon,
