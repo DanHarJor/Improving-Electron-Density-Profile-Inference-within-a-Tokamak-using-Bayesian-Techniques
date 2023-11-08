@@ -15,6 +15,8 @@ The electron density profile is an important parameter that determines many aspe
 
 This thesis focuses on performing a Bayesian inference of the electron density profile using the interferometry diagnostic and a Gaussian process prior. Bayesian inference with a Gaussian process prior is a powerful technique for nonparametric modeling of complex and nonlinear phenomena. A Gaussian process is a collection of random variables, of which have a joint Gaussian distribution. A Gaussian process can be specified by a mean vector and a covariance matrix, which encode the prior assumptions about the unknown profile to be learned. By applying Bayes’ rule, one can obtain the posterior distribution of the profile given some observed data, and use it for prediction and uncertainty quantification. Interferometry is a technique that uses the interference of electromagnetic waves to measure the properties of a medium. An interferometer consists of a coherent source of radiation, such as a laser, that is split into two beams: one that passes through the plasma and one that bypasses it. The two beams are then recombined and detected by a receiver. The phase difference between the two beams depends on the difference in the optical path length, which is affected by the electron density along the line of sight. By measuring the phase difference, one can calculate the line-averaged electron density of the plasma. The interferometer within a tokamk consists of many such laser beams penetrating the plasma at various angles. This thesis uses the \gls{west} tokmak's laser geometry which covers a span of the polodial cross section. Although there is not enough information to completly and accuratly reconstruct the electron density profile a best guess given the data can be infered. It is difficult or impossible to know how close any inffered profile is to the true profile.
 
+Bayesian integrated analysis is often used to combine multiple diagnostics which measure the same or related physical parameters. to assertain the electron density profile. This involves combining multiple diagnostics with the Bayesian framework which provides a universal way to treat uncertanties of any probability density function. R. Fischera from the Max-Planck-Institut für Plasmaphysik published a paper on using Bayesian integrated analysis with thomson scattering, interferometry and lithium beam diagnostics to combine their information on the electron density profile \cite{IDAmaxPlanck}. Jiahong Chen published a paper on the development of a Bayesian integrated analysis program being developed for the HL-2A tokamak \cite{IDAgeert2023}. For the electron density profile it combines interferometry and reflectrometry. The program is a full bayesian analysis from the raw data to results; whilst Bayesian integrated analysis often combines the results of multiple diagnostics that are not essentialy Bayesian derived. The work in this thesis 
+
 Given the importance of the electron density profile, regular use of interferomety and power of Bayseian inference with Gaussian process priors; it comes to little supprise that these things have been brought together before. **List the papers that do the same / similar thing and say if you do anything more/different. Mention what has been done at west ie NICE. 
 
 
@@ -22,11 +24,7 @@ write about whats included in each chapter,
 
 then summarise the introduction
 
-
-
-
 update the interferometry section in the background theory to match this one.
-
 
 maybe reword somethings to sound like yourself a bit more. Tone down some of the scientific claims/ add refferences.
 

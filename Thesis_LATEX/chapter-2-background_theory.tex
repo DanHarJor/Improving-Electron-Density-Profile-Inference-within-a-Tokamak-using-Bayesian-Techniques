@@ -143,14 +143,14 @@ loss(\vec \epsilon,\theta) = \ln(|\Sigma_{li}+RKR^\top|) +  (\vec{d} - R\vec{\mu
   \label{fig:interfgeo}
 \end{figure}
 
-Both interferometry and polarimetry gain information from the same lasers. The lasers are fired through the plasma at multiple angles. The geometry at \gls{west} is shown in figure \ref{fig:interfgeo}. The refractive index of the plasma is dependent on the electron density. The lasers slow and the phase shift can be measured with interferometry. This phase shift is proportional to the line integrated electron density $n_e$ along the line of sight of the lasers,
+Interferometry and Polarimetry are techniques that use the interference of electromagnetic waves to measure the properties of a medium. Interfero-polarimetry lasers within a tokamk penetrate the plasma at various angles. The geometry at \gls{west} is shown in figure \ref{fig:interfgeo}. Each laser is split into two beams: one that passes through the plasma and one that bypasses it. The two beams are then recombined and detected by a receiver. The phase difference between the two beams depends on the difference in the optical path length, which is affected by the electron density along the line of sight. Interferometry measures the phase difference; alowing one to calculate the line integrated electron density of the plasma $\int n_e \, dl$, 
 
 \begin{equation} 
   \label{eq:int_phase}
   \Delta\phi = \frac{\lambda e^{2}}{4 \pi \epsilon_0 m_e c^2 } \int n_e \, dl \, \cite{princPlasDiag}.
 \end{equation}
 
-\noindent The laser wavelength $\lambda$, is combined with other common physical constants to ascertain the constant of proportionality. \gls{west} has stored the line integrated electron density as raw interferometry data in the \gls{imas} database. This is the data that will be used for this work.
+\noindent The laser wavelength $\lambda$, is combined with other common physical constants to ascertain the constant of proportionality. \gls{west} has stored the line integrated electron density as raw interferometry data in the \gls{imas} database. This is the data that will be used for this work. Although there is not enough information to completly and accuratly reconstruct the electron density profile a best guess given the data can be infered.
 
 Polarimetry measures the Faraday rotation angle of the lasers. The linearly polarised lasers experience a rotation as the circularly polarised components travel through the plasma at different speeds. This is due to the small gyration of the electrons around the magnetic field. The Faraday rotation angle is proportional to the line integrated density of $n_e B_{||}$ along the line of sight of the lasers, 
 
@@ -159,7 +159,7 @@ Polarimetry measures the Faraday rotation angle of the lasers. The linearly pola
   \theta_F = \frac{\lambda^2 e^3}{8 \pi^2 c^3 \epsilon_0 m_e^2} \int n_e B_{||} \, dl \, \cite{princPlasDiag},
 \end{equation}
 
-\noindent where $B_{||}$ is the magnetic field strength parallel to the line of sight. Polarimetry has information about electron density and this work could be extended to become a Bayesian integrated analysis which includes this information in the inference. Currently only interferometry information is used. Polarimetry can be used in combination with interferometry to gain information about the poloidal magnetic field and this is why \gls{nice} uses it to determine the position of the magnetic flux surfaces.
+\noindent where $B_{||}$ is the magnetic field strength parallel to the line of sight. Polarimetry has information about electron density and this work could be extended to become a Bayesian integrated analysis which includes this information in the inference. Only interferometry information is used in this thesis. Polarimetry can be used in combination with interferometry to gain information about the poloidal magnetic field and this is why \gls{nice} uses it to determine the position of the magnetic flux surfaces.
 
 \section{Bayesian Inference for Interferometry}\label{sec:InfForInterf}
 
