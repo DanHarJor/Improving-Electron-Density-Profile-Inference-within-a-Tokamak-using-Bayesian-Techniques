@@ -8,7 +8,8 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 
 class MagneticEquilibriumSinglePoint(object):
-    def __init__(self, r_equi_2d=None, z_equi_2d=None, psi_norm=None, rho_tor_norm_1d=None,
+    def __init__(self, r_equi_2d=None, z_equi_2d=None, psi_norm=None, 
+                 rho_tor_norm_1d=None,
                  rho_tor_norm_2d=None, r_ax=0.0, z_ax=0.0, psi=None, psi_prof=None, psi_boundary=None,
                  plasma_boundary=None, lid_nice=None, t=0.0, shot=0):
         """
@@ -105,7 +106,7 @@ class MagneticEquilibrium(object):
         self.lid_nice = None    # The line integrated density calculated by NICE (1e19 m-2)
         self.shot = 0
 
-    def load_from_imas(self, file_name, remove_x_point=True, remove_boundary=True, shot=0):
+    def load_from_imas(self, file_name, remove_x_point=True, remove_boundary=True, shot=0, Daniel=False):
         """
         Load magnetic equilibrium from IMAS file.
         :param file_name:   Name of the IMAS file (in .mat format)
@@ -116,7 +117,9 @@ class MagneticEquilibrium(object):
         file_equilibrium = scio.loadmat(file_name)
         self.t0 = file_equilibrium['t0'][0, 0]
         self.shot = shot
-        equi = file_equilibrium['ids']
+        if Daniel: equi = file_equilibrium['equi_magonly_ids']
+        else: equi = file_equilibrium['ids'] 
+        # print(equi)
         # Filter no converged equilibrium computations
         output_flag = equi['code'][0, 0]['output_flag'][0, 0].flatten()
         mask_eq = (output_flag >= 0)
@@ -130,6 +133,8 @@ class MagneticEquilibrium(object):
         self.rho_tor_norm_2d = np.zeros_like(psi)
         self.plasma_boundary = equi['boundPlasma'][0, 0][mask_eq, :, :]
         self.psi_boundary = equi['boundary'][0, 0]['psi'][0, 0].flatten()[mask_eq]
+        otherv = 5
+        testv = equi['constraints'][0, 0]['n_e_line'][0, 0]['reconstructed'][0, 0]
         self.lid_nice = equi['constraints'][0, 0]['n_e_line'][0, 0]['reconstructed'][0, 0][mask_eq, :] / 1e19
         self.r_ax = equi['mag_ax_R'][0, 0].flatten()[mask_eq]
         self.z_ax = equi['mag_ax_Z'][0, 0].flatten()[mask_eq]
@@ -252,16 +257,20 @@ class MagneticEquilibrium(object):
 
 def magnetic_equilibrium_main():
     t = 5.2113
+    print(t)
     shot = 53259
+    print(shot)
     equi_all = MagneticEquilibrium()
-    equi_all.load_from_imas(f'data/WEST/{shot}/imas_equilibrium_{shot}.mat', shot=shot)
-    equi = equi_all.get_single_point(t)
-    equi_interp = equi_all.get_single_point_interp(t)
-    equi.plot_mag_equi()
-    equi_interp.plot_mag_equi()
+    print('eq',type(equi_all))
+    # equi_all.load_from_imas(f'data/WEST/{shot}/imas_equilibrium_{shot}.mat', shot=shot)
+    # equi = equi_all.get_single_point(t)
+    # equi_interp = equi_all.get_single_point_interp(t)
+    # equi.plot_mag_equi()
+    # equi_interp.plot_mag_equi()
 
 
 if __name__ == '__main__':
+    print('is it okay?')
     magnetic_equilibrium_main()
 
 
