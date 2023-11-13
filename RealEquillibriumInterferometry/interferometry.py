@@ -1,6 +1,7 @@
 import numpy as np
 import numpy.ma as ma
 import scipy.io as scio
+import re
 
 
 class InterferometrySinglePoint(object):
@@ -43,7 +44,7 @@ class Interferometry(object):
         file_interf = scio.loadmat(file_name)
         self.t0 = file_interf['t0'][0, 0]
         self.shot = shot
-        interf = file_interf['ids']
+        interf = list({key:val for key,val in file_interf.items() if re.search(f"{'ids'}$", key)}.values())[0]#file_interf['ids']
         self.time_interf = interf['time'][0, 0].flatten() - self.t0
         channel_data = interf['channel'][0, 0]
         self.channels = np.arange(1, channel_data.shape[0] + 1)

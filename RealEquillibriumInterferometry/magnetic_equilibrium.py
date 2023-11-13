@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d, griddata
 from scipy.spatial import distance
 from mpl_toolkits.axes_grid1 import make_axes_locatable
+import re
 
 
 class MagneticEquilibriumSinglePoint(object):
@@ -106,7 +107,7 @@ class MagneticEquilibrium(object):
         self.lid_nice = None    # The line integrated density calculated by NICE (1e19 m-2)
         self.shot = 0
 
-    def load_from_imas(self, file_name, remove_x_point=True, remove_boundary=True, shot=0, Daniel=False):
+    def load_from_imas(self, file_name, remove_x_point=True, remove_boundary=True, shot=0):
         """
         Load magnetic equilibrium from IMAS file.
         :param file_name:   Name of the IMAS file (in .mat format)
@@ -117,8 +118,7 @@ class MagneticEquilibrium(object):
         file_equilibrium = scio.loadmat(file_name)
         self.t0 = file_equilibrium['t0'][0, 0]
         self.shot = shot
-        if Daniel: equi = file_equilibrium['equi_magonly_ids']
-        else: equi = file_equilibrium['ids'] 
+        equi = list({key:val for key,val in file_equilibrium.items() if re.search(f"{'ids'}$", key)}.values())[0] #file_equilibrium['ids'] 
         # print(equi)
         # Filter no converged equilibrium computations
         output_flag = equi['code'][0, 0]['output_flag'][0, 0].flatten()
@@ -135,7 +135,7 @@ class MagneticEquilibrium(object):
         self.psi_boundary = equi['boundary'][0, 0]['psi'][0, 0].flatten()[mask_eq]
         otherv = 5
         testv = equi['constraints'][0, 0]['n_e_line'][0, 0]['reconstructed'][0, 0]
-        self.lid_nice = equi['constraints'][0, 0]['n_e_line'][0, 0]['reconstructed'][0, 0][mask_eq, :] / 1e19
+#         self.lid_nice = equi['constraints'][0, 0]['n_e_line'][0, 0]['reconstructed'][0, 0][mask_eq, :] / 1e19
         self.r_ax = equi['mag_ax_R'][0, 0].flatten()[mask_eq]
         self.z_ax = equi['mag_ax_Z'][0, 0].flatten()[mask_eq]
         for i in range(mask_eq.sum()):
@@ -208,7 +208,7 @@ class MagneticEquilibrium(object):
         rho_tor_norm_2d = self.rho_tor_norm_2d[idx_t, :, :]
         r_ax = self.r_ax[idx_t]
         z_ax = self.z_ax[idx_t]
-        lid_nice = self.lid_nice[idx_t, :]
+        lid_nice = self.lid_nice#[idx_t, :]
         equi_single = MagneticEquilibriumSinglePoint(r_equi_2d, z_equi_2d, psi_norm, rho_tor_norm_1d, rho_tor_norm_2d,
                                                      r_ax, z_ax, psi, psi_prof, psi_boundary, plasma_boundary, lid_nice,
                                                      self.time_equi[idx_t], self.shot)
@@ -248,7 +248,7 @@ class MagneticEquilibrium(object):
         rho_tor_norm_2d = rho_2d_interp
         r_ax = self.r_ax[idx_t]
         z_ax = self.z_ax[idx_t]
-        lid_nice = self.lid_nice[idx_t, :]
+        lid_nice = self.lid_nice#[idx_t, :]
         equi_single = MagneticEquilibriumSinglePoint(r_equi_2d, z_equi_2d, psi_norm, rho_tor_norm_1d, rho_tor_norm_2d,
                                                      r_ax, z_ax, psi_interp, psi_prof, psi_boundary, plasma_boundary, lid_nice,
                                                      self.time_equi[idx_t], self.shot)

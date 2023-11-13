@@ -197,37 +197,45 @@ def compute_response_matrix(geo: ChordGeometryInterferometry, equi: MagneticEqui
     return response
 
 
-@mpl.rc_context({'font.family': 'Times New Roman', 'xtick.direction': 'in', 'ytick.direction': 'in',
-                 'figure.dpi': 100})
-def plot_geometry_with_mag_equi(geo: ChordGeometryInterferometry, equi: MagneticEquilibriumSinglePoint, file_name=None):
+# @mpl.rc_context({'font.family': 'Times New Roman', 'xtick.direction': 'in', 'ytick.direction': 'in',
+#                  'figure.dpi': 100})
+def plot_geometry_with_mag_equi(geo: ChordGeometryInterferometry, equi: MagneticEquilibriumSinglePoint, file_name=None, axis=None):
     """
     Plot the geometry of the chords along with magnetic surfaces
     """
     plt.figure()
-    ax = plt.subplot(111)
+    if type(axis) == type(None):
+        ax = plt.subplot(111)
+    else: ax=axis
     r = equi.r_equi_2d[0, :]
     z = equi.z_equi_2d[:, 0]
     num_r_points = r.shape[0]
     num_z_points = z.shape[0]
     # Plot grid lines
     for i in range(num_r_points):
-        plt.plot(r[i] * np.ones_like(z), z, linestyle='-', linewidth=0.5, color='grey', alpha=0.3)
+        ax.plot(r[i] * np.ones_like(z), z, linestyle='-', linewidth=0.5, color='grey', alpha=0.3)
     for j in range(num_z_points):
-        plt.plot(r, z[j] * np.ones_like(r), linestyle='-', linewidth=0.5, color='grey', alpha=0.3)
-    plt.contour(equi.r_equi_2d, equi.z_equi_2d, equi.psi_norm, linestyles='dashed', linewidths=1, colors='black')
-    plt.plot(equi.plasma_boundary[0, :], equi.plasma_boundary[1, :], linestyle='--', linewidth=2, color='red')
+        ax.plot(r, z[j] * np.ones_like(r), linestyle='-', linewidth=0.5, color='grey', alpha=0.3)
+    ax.contour(equi.r_equi_2d, equi.z_equi_2d, equi.psi_norm, linestyles='dashed', linewidths=1, colors='black')
+    ax.plot(equi.plasma_boundary[0, :], equi.plasma_boundary[1, :], linestyle='--', linewidth=2, color='red')
     for i in range(geo.num_los):
-        plt.plot([geo.los_r_start[i], geo.los_r_end[i]], [geo.los_z_start[i], geo.los_z_end[i]], label=f'ch{i + 1}')
-    plt.xlabel('R (m)', fontsize=12)
-    plt.ylabel('z (m)', fontsize=12)
+        ax.plot([geo.los_r_start[i], geo.los_r_end[i]], [geo.los_z_start[i], geo.los_z_end[i]], label=f'{i + 1}',linewidth=2)
+    ax.set_xlabel(r'$R$, $m$')#, fontsize=12)
+    ax.set_ylabel(r'$Z$, $m$')#, fontsize=12)
     box = ax.get_position()
-    ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
-    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    plt.title('Geometry of the chords from interferometry', fontsize=16)
+#     ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
+    ax.legend().set_title('Channel')#loc='center left', bbox_to_anchor=(1, 0.5))
+    ax.set_title('Interferometry Geometry')#, fontsize=16)
     if file_name is not None:
         plt.savefig(file_name)
-    plt.show()
-
+#     axc = plt.gca() # get the current axes
+    ax.set_aspect('equal')
+    lines = ax.lines # get the list of line elements
+    colours = [line.get_color() for line in lines]
+    ax.set_xlim(1.9,r[-1])
+    ax.set_ylim(z[0],z[-1])
+    if type(axis) == type(None): plt.show()
+    return colours
 
 def forward_1d_triangle_main():
     t = 5.2113
