@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  7 NOV 2023 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  14 NOV 2023 00:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -500,34 +500,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]) (./chapter-1-introduction.tex
 Chapter 1.
-[1
+) (./chapter-2-background_theory.tex [1
 
 
 
 
-] [2]
-Overfull \hbox (14.56133pt too wide) in paragraph at lines 12--13
-\OT1/cmr/m/n/12 The elec-tron den-sity pro-file is in-flu-enced by var-i-ous fac-tors, such as plasma ge-om-e-try/magnetic
- []
-
-[3]) (./chapter-2-background_theory.tex [4]
+]
 Chapter 2.
-<images/tokamak.jpg, id=225, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=199, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 208.35736pt.
-[5
+[2
 
 
-] [6 <./images/tokamak.jpg>] [7]
-<images/fluxsurf.png, id=251, 329.23pt x 341.275pt>
+] [3 <./images/tokamak.jpg>] [4]
+<images/fluxsurf.png, id=226, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
- [8 <./images/fluxsurf.png>]
-<images/niceExample.png, id=280, 297.87285pt x 268.00125pt>
+ [5 <./images/fluxsurf.png>]
+<images/niceExample.png, id=257, 297.87285pt x 268.00125pt>
 File: images/niceExample.png Graphic file (type png)
 <use images/niceExample.png>
 Package pdftex.def Info: images/niceExample.png  used on input line 33.
@@ -537,65 +532,70 @@ Overfull \hbox (17.21257pt too wide) in paragraph at lines 38--38
 []\OT1/cmr/bx/n/17.28 Bayesian In-fer-ence and the Sim-ple Re-gres-sion Prob-
  []
 
-[9] [10 <./images/niceExample.png>] [11]
-<images/mvg.png, id=305, 418.2024pt x 312.6882pt>
+[6] [7 <./images/niceExample.png>] [8]
+<images/mvg.png, id=282, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
- [12 <./images/mvg.png>] [13]
-<images/srpvis.png, id=335, 666.0885pt x 490.2315pt>
+ [9 <./images/mvg.png>] [10]
+<images/srpvis.png, id=312, 666.0885pt x 490.2315pt>
 File: images/srpvis.png Graphic file (type png)
 <use images/srpvis.png>
 Package pdftex.def Info: images/srpvis.png  used on input line 105.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
- [14] [15 <./images/srpvis.png>]
-<images/interfgeo.png, id=352, 1099.10625pt x 780.9175pt>
+ [11] [12 <./images/srpvis.png>] [13]
+Overfull \hbox (20.04996pt too wide) in paragraph at lines 156--157
+\OT1/cmr/m/n/12 paramter pos-te-rior from ear-lier. Sam-pling $\OML/cmm/m/it/12 y$ \OT1/cmr/m/n/12 from the joint dis-tri-bu-tion $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 ^^R; []\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R; []epsilon\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 )$
+ []
+
+[14]
+<images/interfgeo.png, id=356, 1099.10625pt x 780.9175pt>
 File: images/interfgeo.png Graphic file (type png)
 <use images/interfgeo.png>
-Package pdftex.def Info: images/interfgeo.png  used on input line 141.
+Package pdftex.def Info: images/interfgeo.png  used on input line 168.
 (pdftex.def)             Requested size: 284.52756pt x 202.15198pt.
- [16] [17 <./images/interfgeo.png>]
-<images/meshtriangle.png, id=376, 274.3851pt x 309.3156pt>
+ [15] [16 <./images/interfgeo.png>]
+<images/meshtriangle.png, id=380, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
-Package pdftex.def Info: images/meshtriangle.png  used on input line 172.
+Package pdftex.def Info: images/meshtriangle.png  used on input line 199.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
- [18] [19 <./images/meshtriangle.png>] [20]
-<images/smoothstep.png, id=405, 431.4519pt x 331.4784pt>
+ [17] [18 <./images/meshtriangle.png>] [19]
+<images/smoothstep.png, id=409, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
-Package pdftex.def Info: images/smoothstep.png  used on input line 240.
+Package pdftex.def Info: images/smoothstep.png  used on input line 267.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
- [21] [22 <./images/smoothstep.png>] [23]) (./chapter-3-methodology_results.tex [24]
+ [20] [21 <./images/smoothstep.png>] [22]) (./chapter-3-methodology_results.tex [23]
 Chapter 3.
-) (./chapter-4-conclusion.tex [25
+) (./chapter-4-conclusion.tex [24
 
 
 ]
 Chapter 4.
-) (./chapter-5-future_investigation.tex [26
+) (./chapter-5-future_investigation.tex [25
 
 
 ]
 Chapter 5.
-) [27
+) [26
 
 
-] (./uw-ethesis.bbl [28
+] (./uw-ethesis.bbl [27
 
 
 
 
-] [29]) [30] (./appendix-closedformderiv.tex [31
+] [28]) [29] (./appendix-closedformderiv.tex [30
 
 
 ]
 Appendix A.
-[32
+[31
 
 
-] [33]
+] [32]
 Overfull \hbox (6.95715pt too wide) detected at line 83
 \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; []; ^^R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] / [] [] \OML/cmm/m/it/12 ;
  []
@@ -610,9 +610,9 @@ Overfull \hbox (5.59161pt too wide) detected at line 100
 [][]
  []
 
-) (./appendix-margelideriv.tex [34]
+) (./appendix-margelideriv.tex [33]
 Appendix B.
-[35
+[34
 
 
 ]
@@ -620,7 +620,7 @@ Overfull \hbox (46.99153pt too wide) detected at line 59
 [][][][]
  []
 
-[36]
+[35]
 Overfull \hbox (37.57133pt too wide) detected at line 99
 []\OML/cmm/m/it/12 K[][] \OT1/cmr/m/n/12 + []^^F[][] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )[] [] (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
  []
@@ -630,7 +630,7 @@ Overfull \hbox (17.5867pt too wide) detected at line 114
 [][]
  []
 
-[37]
+[36]
 Overfull \hbox (27.95918pt too wide) detected at line 140
 [][]
  []
@@ -640,16 +640,17 @@ Overfull \hbox (19.96678pt too wide) detected at line 165
 [][][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; ^^R\OT1/cmr/m/n/12 )) = \OMS/cmsy/m/n/12 ^^@[] [] \OML/cmm/m/it/12 :
  []
 
-[38]) (./appendix-final_expressions.tex [39]
+[37]) (./appendix-final_expressions.tex [38]
 Appendix C.
-[40
+[39
 
 
-] [41] [42]) [43] (./uw-ethesis.gls [44]) [45
+] [40] [41]) [42] (./uw-ethesis.gls [43] [44
 
 
 
 
+]) [45
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg -o uw-ethesis.gls uw-ethesis.glo)...executed safely (allowed).
 
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-abr uw-ethesis.glo-abr)...executed safely (allowed).
@@ -661,18 +662,18 @@ Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
 (rerunfilecheck)             Checksum: 08708835A6C83F8E4E0C5B2923AF8142;1616.
  ) 
 Here is how much of TeX's memory you used:
- 16660 strings out of 480129
- 279178 string characters out of 5893409
- 676556 words of memory out of 5000000
- 34171 multiletter control sequences out of 15000+600000
+ 16770 strings out of 480129
+ 280825 string characters out of 5893409
+ 678808 words of memory out of 5000000
+ 34275 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 106i,17n,105p,4503b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,17n,105p,4503b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (52 pages, 2514771 bytes).
+Output written on uw-ethesis.pdf (52 pages, 2513089 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 164 named destinations out of 1000 (max. 500000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 590 compressed objects within 6 object streams
+ 170 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

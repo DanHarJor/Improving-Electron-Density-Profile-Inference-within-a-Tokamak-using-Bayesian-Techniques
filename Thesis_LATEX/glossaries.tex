@@ -83,7 +83,32 @@ description={A person of supposed average intelligence who makes incredibly brai
   plural={WEST's}%
 }
 
+\newglossaryentry{mcmc}% the label
+{%
+  name={MCMC},%
+  description={Markov chain Monte Carlo (MCMC) is a technique for sampling from complex and high-dimensional probability distributions that are difficult to sample from directly.},%
+  % type={abbreviations},
+  first={Markov chain Monte Carlo (MCMC)},%
+  text={MCMC}%
+}
 
+\newglossaryentry{iat}% the label
+{%
+  name={IAT},%
+  description={Integrated Autocorrelation Time (IAT) is a measure of how many steps it takes for a Markov chain to forget its initial state and become uncorrelated. It is defined as the sum of the normalized autocorrelations for all possible lags. It can be used to estimate the effective sample size and the Monte Carlo error of a chain.},%
+  % type={abbreviations},
+  first={Integrated Autocorrelation Time (IAT)},%
+  text={IAT}%
+}
+
+\newglossaryentry{emcee}% the label
+{%
+  name={emcee},%
+  description={emcee is a Python package that allows you to perform Markov chain Monte Carlo simulations using an ensemble of walkers that explore the parameter space in an affine-invariant way. This means that the shape of the posterior distribution does not affect the efficiency of the sampling.},%
+  % type={abbreviations},
+  % first={Integrated Autocorrelation Time (IAT)},%
+  text={emcee}%
+}
 % List of Symbols
 % \newglossary*{symbols}{List of Symbols}
 % \newglossaryentry{rvec}

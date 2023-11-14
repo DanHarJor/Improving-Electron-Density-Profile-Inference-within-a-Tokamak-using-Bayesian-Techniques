@@ -38,7 +38,7 @@ The magnetic field lines are confined to magnetic flux surfaces, figure \ref{fig
 \section{Bayesian Inference and the Simple Regression Problem}
 \label{sec:BIandSRP}
 
-This work aims to use Bayesian inference to obtain the electron density profile. Bayesian inference will be introduced generally and then it will be used to define a specific implemtation applied to a simple regression problem. The method introduced will later be extended to solve the problem of infering the electron density profile with interferometry data. Bayes' theorem for a physical quantity of interest $q$ is expressed as,
+This work aims to use Bayesian inference to obtain the electron density profile. Bayesian inference will be introduced generally and then it will be used to define a specific implemtation applied to a simple regression problem. The method introduced will later be extended to solve the problem of infering the electron density profile with interferometry data. The predictive Bayes' theorem for a physical quantity of interest $q$ is expressed as,
 
 \begin{equation}
 P(q|D,I) = \frac{P(D|q,I) P(q|I)}{P(D|I)},
@@ -116,13 +116,21 @@ Figure \ref{fig:srpvis} shows the simple regression problem, it then tries to sh
 \Sigma_{post} &= \left(R^\top \Sigma_{li}^{-1} R + K^{-1}\right)^{-1},
 \end{align}
 
-\noindent which are derived in appendix \ref{append:dervcf}. The main steps include multiplying the functional forms of the prior and likelihood, ignoring all scaling factors, simplifying until they form a single unnormalised multivariate Gaussian and then comparing this with the posterior. The marginal likelihood can be expressed as,
+\noindent which are derived in appendix \ref{append:dervcf}. The main steps include multiplying the functional forms of the prior and likelihood, ignoring all scaling factors, simplifying until they form a single unnormalised multivariate Gaussian and then comparing this with the posterior. There is still the issue of deciding the values of the hyperparameters to place in $K$ and the experimental error to place within $\Sigma_{li}$. Often the experimental error is not precisely known and can also be treated as a hyperparameter. In order to select the hyperparameters we can perform a separate hyperparamater Bayesian inference,
 
 \begin{equation}
-\begin{aligned}
- P(\vec d|\vec\epsilon,\theta) &= \int P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)  \, d\vec y \\
- &= \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li} + RKR^\top|}} \exp\left[ -\frac{1}{2} (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}) \right].
-\end{aligned}
+  P(\theta, \vec{\epsilon}|\vec d) = \frac{P(\vec d|\theta, \vec{\epsilon}) P(\theta,\vec{\epsilon})}{P(\vec d)},
+  \label{eq:parambayes}
+\end{equation}
+
+Where the most probable hyperparametes given the same data can be found by maximising the hyperparameter posterior, $P(\theta,\vec{\epsilon}|\vec d)$. Notice the likelihood $P(\vec d|\vec{\epsilon})$ is exactly the marginal likelihood from the predictive Bayesian formula \ref{eq:bayesth}. The prior $P(\vec d)$ needs to accurately represent our prior knowledge of the hyperparameters. By maximising the numerator of Bayes theorem the posterior is also maximised. The marginal likelihood from the hyperparameter Bayes theorem $P(\vec d)$, can safely be ignored as it is a normalisation constant. All further mentions of marginal likelihood refers to the predictive distributions marginal likelihood $P(\vec d|\theta,\vec{\epsilon})$; as is the usual terminology for this procedure. It can be computed by integrating the numerator of the predictive Bayesian over the quantity of interest:
+
+\begin{equation}
+  \begin{aligned}
+   P(\vec d|\vec\epsilon,\theta) &= \int P(\vec{d}|\vec{y},\vec\epsilon)P(\vec{y}|\theta)  \, d\vec y \\
+   &= \frac{1}{(2\pi)^{\frac{m}{2}} \sqrt{|\Sigma_{li} + RKR^\top|}} \exp\left[ -\frac{1}{2} (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}) \right].
+   \label{eq:margeli}
+  \end{aligned}
 \end{equation}
 
 \noindent The values of the marginal likelihood can become very large and troublesome to compute with standard 64-bit float precision. For this reason, the logarithm is computed. It is the convention when performing optimisation to define a loss function to be minimised, thus the negative log marginal likelihood is used. Scaling constants do not affect the minimum value and can be ignored. The negative log marginal likelihood used as a loss function for hyper-parameters is then,
@@ -131,8 +139,27 @@ Figure \ref{fig:srpvis} shows the simple regression problem, it then tries to sh
 loss(\vec \epsilon,\theta) = \ln(|\Sigma_{li}+RKR^\top|) +  (\vec{d} - R\vec{\mu}_{pr})^{\top} (\Sigma_{li} + R K R^{\top})^{-1} (\vec{d} - R\vec{\mu}_{pr}),
 \end{equation}
 
-\noindent the full derivation of this expression can be found in appendix \ref{append:dervml}.
+\noindent the full derivation of this expression can be found in appendix \ref{append:dervml}. To include a uniform prior for the hyperparameters $P(\theta)$, the loss function can be programmed to return infinity (or a very large number) when the proposed hyperparameters are outside their bounds. Although some minimisation algorithms can avoid proposing values outside of determined bounds.
 
+An alternative solution is to perform a full bayesian analysis where the hyperparameters are margenalised out of the predictive posterior. This allows the predictive posterior to become independant of the hyperparameters and allows for a more robust and flexible inference. Margenalisation of the posterior can be written as,
+
+\begin{equation} 
+  P(\vec{y}|\vec{d}) = \int \int P(\vec y, \theta, \vec \epsilon|\vec d) \, d\theta \, d\vec \epsilon ,
+\end{equation}
+
+and with conditional probability rules,
+
+\begin{equation}
+  P(\vec{y}|\vec{d},\vec \epsilon, \theta) = \int \int P(\vec y | \theta, \vec \epsilon, \vec d) P(\theta, \vec \epsilon|\vec d) \, d\theta \, d\vec \epsilon.
+\end{equation}
+
+Notice that $P(\vec y|\theta, \vec \epsilon)$  is our origional predictive posterior and $P(\theta, \vec \epsilon|\vec d)$ is the hyperparamter posterior from earlier. Sampling $y$ from the joint distribution $P(\vec y|\theta, \vec \epsilon) P(\theta, \vec \ epsilon|\vec d)$ is equilivant to sampling from the posterior $P(\vec y|\vec d)$ that does not depend on the hyper parameters. To acomplish this a first step is to use \gls{mcmc} sampling techniques to sample $\theta$ and $\vec epsilon$ from the hyperparameter posterior. This only requires the ability to compute the log of the hyperparameter likelihood and prior given a proposed set of hyperparameters. The prior is defined by us and so must be computable and the likelihood is exactly the predictive marginal likelihood and has an analytical form given previously in equation \ref{eq:margeli}. This thesis uses the python package EMCEE which involves initialising a group of 'walkers' at random parameter positions. They then explore the space of the provided posterior distribution using a proposal function and the Metropolis Hastings criteria. The proposal function suggests a new position in the hyperparameter space based on the current position. If the new position satisfies the Metropolis Hastings criteria it is accepted and the values of the hyperparameters at the new position are collected as a sample. After some number of itterations the samples can closely represent samples from the true posterior. These samples of $\theta$ and $\vec \epsilon$ can be used to sample $\vec y$ from the predictive posterior $P(\vec y|\theta, \vec \epsilon)$; which is a multivariate Gaussian of mean and covariance given by equations \ref{eq:mupost} and \ref{eq:covpost}. Sampling from a known multivariate Gaussian can be done with more simple sampling techniqes that have zero possibility of sample rejection: \gls{mcmc} sampling is not required. Remember that each sampled $\vec y$ is a curve where the vector items correspond to $y$ values of the curve at regularly spaced $x$ intervals; as shown in figure \ref{fig:srpvis}. Thus the most likely value of the curve is the mean or median of the posterior samples at each $x$ value. For uncertainty, the standard deviation or certian quantiles can be computed.
+
+An additional caveat of \gls{mcmc} sampling is that a chain of samples from a walker are autocorrelated, yet a true sample from the posterior would not depend on the current position of a walker. To reduce autocorrelation the chains are often thinned. Thinning by a degree of three means to remove every third sample. This reduces autocorrelation and the samples more accuratly represent samples from the posterior. Over thinning limits the number of samples obtainable with the given computation power and time limits, leading to a loss of precision of the inference. To aid in deciding the thinning degree one can compute the \gls{iat}. This is a measure of how long it takes for a Markov chain to forget its initial state and become uncorrelated. Thinning by a degree of the \gls{iat} will ensure there is almost no correlation between the samples but this is extream and often means very long run times for a few samples that produce much less precise results than if more samples are kept.
+
+Another way to reduce autocorrelation is to tune the \gls{mcmc} algorithms hyperparameters.
+
+For \gls{emcee} the main hyperparameter is the 'moves', which is their term for proposal function. It is also possible to pass multiple moves and weights when sampling. It will then randomly select a move in proportion to the weights. In theory this should make the next sample more random and less correlated to the previous. Each move also has a single parameter. These can be trialed with smaller sample numbers in an attempt to minimise the autocorrelation. Optuna is a hyperparameter tuning framework for python that proposes trials in an attempt to minimise the objective function. By default it uses the tree-structured Parzen estimator algorithm which is also a Bayesian method. In this thesis four of the moves and their parameters are trialed with Optuna in an attempt to reduce the autocorrelation. The lowest trialed autocorrelation time for each move is used to determine parameter value of each move. It also determines the weights, allowing for the best performing move to be used more frequently.
 
 \section{Interferometry and Polarimetry}
 
