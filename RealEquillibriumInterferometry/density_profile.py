@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import scipy.io as scio
+import re
 
 
 class DensityProfileSinglePoint(object):
@@ -53,7 +54,7 @@ class DensityProfile(object):
         file_core_profiles = scio.loadmat(file_name)
         self.shot = shot
         self.t0 = file_core_profiles['t0'][0, 0]
-        profiles = file_core_profiles['ids']
+        profiles = list({key:val for key,val in file_core_profiles.items() if re.search(f"{'ids'}$", key)}.values())[0] #file_core_profiles['ids']
         output_flag = profiles['code'][0, 0]['output_flag'][0, 0].flatten()
         mask_core = (output_flag >= 0)
 
