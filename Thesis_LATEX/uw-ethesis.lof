@@ -9,9 +9,16 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces An example mesh grid to aid visualisation of the triangular mesh grid interpolation used in the response matrix construction.}}{18}{figure.2.7}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Hyperbolic tangent smooth step function for length scale, equation \ref {eq:smoothstep}. Used to capture the drop at the edge of H-mode plasmas \cite {chilenski}.}}{21}{figure.2.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ground truth profiles used to generate synthetic interferometry data.}}{26}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Electron density inference using the hyperparameter MAP method on synthetic interferometry data.}}{27}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Electron density inference using the hyperparameter MAP method on synthetic interferometry data.}}{28}{figure.3.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ground truth profiles used to generate synthetic interferometry data.}}{25}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Electron density inference using the hyperparameter MAP method on synthetic interferometry data from H and L mode profiles.}}{28}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Electron density inference using the hyperparameter MAP method on synthetic interferometry data for peaked profiles. The mean square error is shown as `mse'.}}{29}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The distrubution from which emcee proposal functions (moves) are selected based on perfomance in an Optuna evaluation.}}{30}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A trace plot showing the amplitude samples left after a burn of 1000 and thin of degree 10. The integrated autocorrelation time and effective sample size is shown as `iat' and `ess', respectivly.}}{30}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces An example distribution of $n_e$ for $\rho =0.54$ from the full Bayesian sampling method.}}{31}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Electron density inference based on the full Bayesian method for synthetic interferometry data from H and L mode profiles. The mean square error is shown as `mse'.}}{32}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Electron density inference based on the full Bayesian method for synthetic interferometry data from peaked profiles.}}{33}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces A typical set of magnetic flux surfaces and interferometry data from the WEST tokamak. The electron desnity profile inferred by the NICE algorithem.}}{34}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Electron density inference using the hyperparameter MAP method on real interferometry data from the WEST tokamak. The mean square error is shown as `mse'.}}{34}{figure.3.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

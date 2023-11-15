@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  15 NOV 2023 01:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  16 NOV 2023 00:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -388,11 +388,7 @@ Package glossaries Info: Writing glossary file uw-ethesis.nomenclature-glo on in
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box60
-) (./uw-ethesis.aux
-
-LaTeX Warning: Label `fig:mapsynthetic' multiply defined.
-
-)
+) (./uw-ethesis.aux)
 \openout1 = `uw-ethesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
@@ -493,16 +489,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write8
 \openout8 = `uw-ethesis.toc'.
 
- [6] (./uw-ethesis.lof)
+ [6] (./uw-ethesis.lof [7
+
+
+
+
+])
 \tf@lof=\write9
 \openout9 = `uw-ethesis.lof'.
 
- [7
-
-
-
-
-]) (./chapter-1-introduction.tex
+ [8]) (./chapter-1-introduction.tex
 Chapter 1.
 ) (./chapter-2-background_theory.tex [1
 
@@ -511,7 +507,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/tokamak.jpg, id=208, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=239, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
@@ -520,13 +516,13 @@ Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 
 
 ] [3 <./images/tokamak.jpg>] [4]
-<images/fluxsurf.png, id=235, 329.23pt x 341.275pt>
+<images/fluxsurf.png, id=265, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
  [5 <./images/fluxsurf.png>]
-<images/Final/nice.png, id=267, 292.4526pt x 262.581pt>
+<images/Final/nice.png, id=298, 292.4526pt x 262.581pt>
 File: images/Final/nice.png Graphic file (type png)
 <use images/Final/nice.png>
 Package pdftex.def Info: images/Final/nice.png  used on input line 33.
@@ -537,34 +533,34 @@ Overfull \hbox (17.21257pt too wide) in paragraph at lines 38--38
  []
 
 [6] [7 <./images/Final/nice.png>] [8]
-<images/mvg.png, id=292, 418.2024pt x 312.6882pt>
+<images/mvg.png, id=323, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
  [9 <./images/mvg.png>] [10]
-<images/srpvis.png, id=322, 666.0885pt x 490.2315pt>
+<images/srpvis.png, id=351, 666.0885pt x 490.2315pt>
 File: images/srpvis.png Graphic file (type png)
 <use images/srpvis.png>
 Package pdftex.def Info: images/srpvis.png  used on input line 105.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
  [11] [12 <./images/srpvis.png>] [13] [14]
-<images/54344_7s_interf.png, id=369, 2393.94376pt x 1178.4025pt>
+<images/54344_7s_interf.png, id=397, 2393.94376pt x 1178.4025pt>
 File: images/54344_7s_interf.png Graphic file (type png)
 <use images/54344_7s_interf.png>
-Package pdftex.def Info: images/54344_7s_interf.png  used on input line 167.
+Package pdftex.def Info: images/54344_7s_interf.png  used on input line 170.
 (pdftex.def)             Requested size: 426.79134pt x 210.07144pt.
  [15] [16 <./images/54344_7s_interf.png>]
-<images/meshtriangle.png, id=394, 274.3851pt x 309.3156pt>
+<images/meshtriangle.png, id=421, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
-Package pdftex.def Info: images/meshtriangle.png  used on input line 198.
+Package pdftex.def Info: images/meshtriangle.png  used on input line 201.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
  [17] [18 <./images/meshtriangle.png>] [19]
-<images/smoothstep.png, id=424, 431.4519pt x 331.4784pt>
+<images/smoothstep.png, id=452, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
-Package pdftex.def Info: images/smoothstep.png  used on input line 266.
+Package pdftex.def Info: images/smoothstep.png  used on input line 269.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
  [20] [21 <./images/smoothstep.png>] [22]) (./chapter-3-methodology_results.tex [23]
 Chapter 3.
@@ -572,44 +568,87 @@ Chapter 3.
 
 
 ]
-<images/Final/MAPsynthetic_final_hl.png, id=471, 1092.2406pt x 441.8106pt>
+<images/syntheticProfiles.png, id=499, 586.3506pt x 225.0006pt>
+File: images/syntheticProfiles.png Graphic file (type png)
+<use images/syntheticProfiles.png>
+Package pdftex.def Info: images/syntheticProfiles.png  used on input line 11.
+(pdftex.def)             Requested size: 460.72124pt x 176.79407pt.
+<images/Final/MAPsynthetic_final_hl.png, id=500, 1092.2406pt x 441.8106pt>
 File: images/Final/MAPsynthetic_final_hl.png Graphic file (type png)
 <use images/Final/MAPsynthetic_final_hl.png>
-Package pdftex.def Info: images/Final/MAPsynthetic_final_hl.png  used on input line 7.
-(pdftex.def)             Requested size: 284.52756pt x 115.0905pt.
-File: images/Final/MAPsynthetic_final_hl.png Graphic file (type png)
-<use images/Final/MAPsynthetic_final_hl.png>
-Package pdftex.def Info: images/Final/MAPsynthetic_final_hl.png  used on input line 14.
-(pdftex.def)             Requested size: 284.52756pt x 115.0905pt.
-<images/Final/MAPsynthetic_final_p.png, id=472, 1092.2406pt x 658.6206pt>
+Package pdftex.def Info: images/Final/MAPsynthetic_final_hl.png  used on input line 18.
+(pdftex.def)             Requested size: 500.0pt x 202.25108pt.
+ [25 <./images/syntheticProfiles.png>]
+<images/Final/MAPsynthetic_final_p.png, id=507, 1092.2406pt x 658.6206pt>
 File: images/Final/MAPsynthetic_final_p.png Graphic file (type png)
 <use images/Final/MAPsynthetic_final_p.png>
-Package pdftex.def Info: images/Final/MAPsynthetic_final_p.png  used on input line 21.
-(pdftex.def)             Requested size: 284.52756pt x 171.56895pt.
-) (./chapter-4-conclusion.tex [25] [26 <./images/Final/MAPsynthetic_final_hl.png>] [27] [28 <./images/Final/MAPsynthetic_final_p.png>]
+Package pdftex.def Info: images/Final/MAPsynthetic_final_p.png  used on input line 27.
+(pdftex.def)             Requested size: 500.0pt x 301.50189pt.
+ [26]
+<images/Final/optuna.png, id=519, 415.7934pt x 334.1283pt>
+File: images/Final/optuna.png Graphic file (type png)
+<use images/Final/optuna.png>
+Package pdftex.def Info: images/Final/optuna.png  used on input line 40.
+(pdftex.def)             Requested size: 300.0pt x 241.08202pt.
+<images/Final/TraceBurn1000_thin10.png, id=521, 714.7503pt x 195.129pt>
+File: images/Final/TraceBurn1000_thin10.png Graphic file (type png)
+<use images/Final/TraceBurn1000_thin10.png>
+Package pdftex.def Info: images/Final/TraceBurn1000_thin10.png  used on input line 49.
+(pdftex.def)             Requested size: 460.72124pt x 125.7813pt.
+<images/Final/sampled_ne_dist.png, id=526, 412.6617pt x 318.7107pt>
+File: images/Final/sampled_ne_dist.png Graphic file (type png)
+<use images/Final/sampled_ne_dist.png>
+Package pdftex.def Info: images/Final/sampled_ne_dist.png  used on input line 58.
+(pdftex.def)             Requested size: 300.0pt x 231.69882pt.
+<images/Final/FB6000compute_noMAP_hl_burn1000_thin10.png, id=527, 1092.2406pt x 441.8106pt>
+File: images/Final/FB6000compute_noMAP_hl_burn1000_thin10.png Graphic file (type png)
+<use images/Final/FB6000compute_noMAP_hl_burn1000_thin10.png>
+Package pdftex.def Info: images/Final/FB6000compute_noMAP_hl_burn1000_thin10.png  used on input line 65.
+(pdftex.def)             Requested size: 500.0pt x 202.25108pt.
+<images/Final/FB6000compute_noMAP_p_burn1000_thin10.png, id=528, 1092.2406pt x 658.6206pt>
+File: images/Final/FB6000compute_noMAP_p_burn1000_thin10.png Graphic file (type png)
+<use images/Final/FB6000compute_noMAP_p_burn1000_thin10.png>
+Package pdftex.def Info: images/Final/FB6000compute_noMAP_p_burn1000_thin10.png  used on input line 73.
+(pdftex.def)             Requested size: 500.0pt x 301.50189pt.
+<images/Final/interferometry_nice.png, id=535, 871.5762pt x 282.8166pt>
+File: images/Final/interferometry_nice.png Graphic file (type png)
+<use images/Final/interferometry_nice.png>
+Package pdftex.def Info: images/Final/interferometry_nice.png  used on input line 82.
+(pdftex.def)             Requested size: 500.0pt x 162.24283pt.
+
+Overfull \hbox (39.27876pt too wide) in paragraph at lines 82--83
+ [][] 
+ []
+
+<images/Final/NICE_real_map_likep.png, id=536, 659.8251pt x 225.0006pt>
+File: images/Final/NICE_real_map_likep.png Graphic file (type png)
+<use images/Final/NICE_real_map_likep.png>
+Package pdftex.def Info: images/Final/NICE_real_map_likep.png  used on input line 89.
+(pdftex.def)             Requested size: 460.72124pt x 157.10794pt.
+) (./chapter-4-conclusion.tex [27] [28 <./images/Final/MAPsynthetic_final_hl.png>] [29 <./images/Final/MAPsynthetic_final_p.png>] [30 <./images/Final/optuna.png> <./images/Final/TraceBurn1000_thin10.png>] [31 <./images/Final/sampled_ne_dist.png>] [32 <./images/Final/FB6000compute_noMAP_hl_burn1000_thin10.png>] [33 <./images/Final/FB6000compute_noMAP_p_burn1000_thin10.png>] [34 <./images/Final/interferometry_nice.png> <./images/Final/NICE_real_map_likep.png>]
 Chapter 4.
-) (./chapter-5-future_investigation.tex [29
+) (./chapter-5-future_investigation.tex [35
 
 
 ]
 Chapter 5.
-) [30
+) [36
 
 
-] (./uw-ethesis.bbl [31
+] (./uw-ethesis.bbl [37
 
 
 
 
-] [32]) [33] (./appendix-closedformderiv.tex [34
+] [38]) [39] (./appendix-closedformderiv.tex [40
 
 
 ]
 Appendix A.
-[35
+[41
 
 
-] [36]
+] [42]
 Overfull \hbox (6.95715pt too wide) detected at line 83
 \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; []; ^^R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] / [] [] \OML/cmm/m/it/12 ;
  []
@@ -624,9 +663,9 @@ Overfull \hbox (5.59161pt too wide) detected at line 100
 [][]
  []
 
-) (./appendix-margelideriv.tex [37]
+) (./appendix-margelideriv.tex [43]
 Appendix B.
-[38
+[44
 
 
 ]
@@ -634,7 +673,7 @@ Overfull \hbox (46.99153pt too wide) detected at line 59
 [][][][]
  []
 
-[39]
+[45]
 Overfull \hbox (37.57133pt too wide) detected at line 99
 []\OML/cmm/m/it/12 K[][] \OT1/cmr/m/n/12 + []^^F[][] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )[] [] (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
  []
@@ -644,7 +683,7 @@ Overfull \hbox (17.5867pt too wide) detected at line 114
 [][]
  []
 
-[40]
+[46]
 Overfull \hbox (27.95918pt too wide) detected at line 140
 [][]
  []
@@ -654,17 +693,17 @@ Overfull \hbox (19.96678pt too wide) detected at line 165
 [][][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; ^^R\OT1/cmr/m/n/12 )) = \OMS/cmsy/m/n/12 ^^@[] [] \OML/cmm/m/it/12 :
  []
 
-[41]) (./appendix-final_expressions.tex [42]
+[47]) (./appendix-final_expressions.tex [48]
 Appendix C.
-[43
+[49
 
 
-] [44] [45]) [46] (./uw-ethesis.gls [47] [48
+] [50] [51]) [52] (./uw-ethesis.gls [53] [54
 
 
 
 
-]) [49
+]) [55
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg -o uw-ethesis.gls uw-ethesis.glo)...executed safely (allowed).
 
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-abr uw-ethesis.glo-abr)...executed safely (allowed).
@@ -672,25 +711,22 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-ab
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.nomenclature-glg -o uw-ethesis.nomenclature-gls uw-ethesis.nomenclature-glo)...executed safely (allowed).
 
 ] (./uw-ethesis.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
 (rerunfilecheck)             Checksum: 08708835A6C83F8E4E0C5B2923AF8142;1616.
  ) 
 Here is how much of TeX's memory you used:
- 16830 strings out of 480129
- 282020 string characters out of 5893409
- 680248 words of memory out of 5000000
- 34324 multiletter control sequences out of 15000+600000
+ 16909 strings out of 480129
+ 284556 string characters out of 5893409
+ 682617 words of memory out of 5000000
+ 34381 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 106i,17n,105p,4503b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,17n,105p,4503b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (56 pages, 3053811 bytes).
+Output written on uw-ethesis.pdf (63 pages, 4971649 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 626 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 836 PDF objects out of 1000 (max. 8388607)
+ 699 compressed objects within 7 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 

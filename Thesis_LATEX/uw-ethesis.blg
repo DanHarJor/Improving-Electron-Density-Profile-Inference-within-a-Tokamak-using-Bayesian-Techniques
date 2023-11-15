@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: uw-ethesis.aux
 The style file: plain.bst
 Database file #1: uw-ethesis.bib
-You've used 13 entries,
+You've used 14 entries,
             2118 wiz_defined-function locations,
-            606 strings with 9301 characters,
-and the built_in function-call counts, 8989 in all, are:
-= -- 715
-> -- 982
+            613 strings with 9480 characters,
+and the built_in function-call counts, 9296 in all, are:
+= -- 745
+> -- 995
 < -- 0
-+ -- 393
-- -- 378
-* -- 932
-:= -- 1663
-add.period$ -- 41
-call.type$ -- 13
-change.case$ -- 225
++ -- 398
+- -- 382
+* -- 957
+:= -- 1715
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 230
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 143
-empty$ -- 320
-format.name$ -- 378
-if$ -- 1636
+cite$ -- 14
+duplicate$ -- 154
+empty$ -- 345
+format.name$ -- 382
+if$ -- 1700
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 15
-newline$ -- 68
-num.names$ -- 26
-pop$ -- 213
+int.to.str$ -- 14
+missing$ -- 16
+newline$ -- 73
+num.names$ -- 28
+pop$ -- 216
 preamble$ -- 1
-purify$ -- 215
+purify$ -- 219
 quote$ -- 0
-skip$ -- 91
+skip$ -- 99
 stack$ -- 0
-substring$ -- 259
-swap$ -- 13
+substring$ -- 279
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
+type$ -- 50
 warning$ -- 0
-while$ -- 34
-width$ -- 15
-write$ -- 148
+while$ -- 37
+width$ -- 16
+write$ -- 159

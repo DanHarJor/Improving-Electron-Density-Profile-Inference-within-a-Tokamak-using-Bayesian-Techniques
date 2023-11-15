@@ -11,13 +11,13 @@
 \contentsline {section}{\numberline {2.5}Bayesian Inference for Interferometry}{17}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Chapter Summary}{22}{section.2.6}%
 \contentsline {chapter}{\numberline {3}Methodology and Results}{24}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Conclusion}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Future Investigation}{30}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{31}{section*.9}%
-\contentsline {chapter}{APPENDICES}{34}{appendix*.11}%
-\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{35}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{38}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Complete Set of Distributions and Expressions for Reference}{43}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{43}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Gaussian Process Regression for Interferometry, Including Artificial Observations}{45}{section.C.2}%
-\contentsline {chapter}{Glossary}{48}{section*.12}%
+\contentsline {chapter}{\numberline {4}Conclusion}{35}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Future Investigation}{36}{chapter.5}%
+\contentsline {chapter}{\textbf {References}}{37}{section*.9}%
+\contentsline {chapter}{APPENDICES}{40}{appendix*.11}%
+\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{41}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{44}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Complete Set of Distributions and Expressions for Reference}{49}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{49}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Gaussian Process Regression for Interferometry, Including Artificial Observations}{51}{section.C.2}%
+\contentsline {chapter}{Glossary}{54}{section*.12}%
