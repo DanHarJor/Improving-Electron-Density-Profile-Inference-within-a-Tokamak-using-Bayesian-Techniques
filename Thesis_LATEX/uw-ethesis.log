@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  14 NOV 2023 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  15 NOV 2023 01:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -221,13 +221,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `plainpages' set `false' on input line 109.
-Package hyperref Info: Option `unicode' set `false' on input line 109.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 109.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 109.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 109.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 109.
-Package hyperref Info: Option `colorlinks' set `true' on input line 109.
+Package hyperref Info: Option `plainpages' set `false' on input line 110.
+Package hyperref Info: Option `unicode' set `false' on input line 110.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 110.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 110.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 110.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 110.
+Package hyperref Info: Option `colorlinks' set `true' on input line 110.
  (/usr/share/texlive/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
 Package: glossaries-extra 2021/11/22 v1.48 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -375,40 +375,44 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glo@main@file=\write4
 \openout4 = `uw-ethesis.glo'.
 
-Package glossaries Info: Writing glossary file uw-ethesis.glo on input line 159.
+Package glossaries Info: Writing glossary file uw-ethesis.glo on input line 160.
 \glo@abbreviations@file=\write5
 \openout5 = `uw-ethesis.glo-abr'.
 
-Package glossaries Info: Writing glossary file uw-ethesis.glo-abr on input line 159.
+Package glossaries Info: Writing glossary file uw-ethesis.glo-abr on input line 160.
 \glo@nomenclature@file=\write6
 \openout6 = `uw-ethesis.nomenclature-glo'.
 
-Package glossaries Info: Writing glossary file uw-ethesis.nomenclature-glo on input line 159.
+Package glossaries Info: Writing glossary file uw-ethesis.nomenclature-glo on input line 160.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box60
-) (./uw-ethesis.aux)
+) (./uw-ethesis.aux
+
+LaTeX Warning: Label `fig:mapsynthetic' multiply defined.
+
+)
 \openout1 = `uw-ethesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
@@ -434,7 +438,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 165.
+Package hyperref Info: Link coloring ON on input line 166.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -444,9 +448,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count322
 )
-LaTeX Info: Redefining \ref on input line 165.
-LaTeX Info: Redefining \pageref on input line 165.
-LaTeX Info: Redefining \nameref on input line 165.
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
  (./uw-ethesis.out) (./uw-ethesis.out)
 \@outlinefile=\write7
 \openout7 = `uw-ethesis.out'.
@@ -507,7 +511,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/tokamak.jpg, id=199, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=208, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
@@ -516,86 +520,96 @@ Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 
 
 ] [3 <./images/tokamak.jpg>] [4]
-<images/fluxsurf.png, id=226, 329.23pt x 341.275pt>
+<images/fluxsurf.png, id=235, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
  [5 <./images/fluxsurf.png>]
-<images/niceExample.png, id=257, 297.87285pt x 268.00125pt>
-File: images/niceExample.png Graphic file (type png)
-<use images/niceExample.png>
-Package pdftex.def Info: images/niceExample.png  used on input line 33.
-(pdftex.def)             Requested size: 369.88582pt x 332.82109pt.
+<images/Final/nice.png, id=267, 292.4526pt x 262.581pt>
+File: images/Final/nice.png Graphic file (type png)
+<use images/Final/nice.png>
+Package pdftex.def Info: images/Final/nice.png  used on input line 33.
+(pdftex.def)             Requested size: 369.88582pt x 332.11989pt.
 
 Overfull \hbox (17.21257pt too wide) in paragraph at lines 38--38
 []\OT1/cmr/bx/n/17.28 Bayesian In-fer-ence and the Sim-ple Re-gres-sion Prob-
  []
 
-[6] [7 <./images/niceExample.png>] [8]
-<images/mvg.png, id=282, 418.2024pt x 312.6882pt>
+[6] [7 <./images/Final/nice.png>] [8]
+<images/mvg.png, id=292, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
  [9 <./images/mvg.png>] [10]
-<images/srpvis.png, id=312, 666.0885pt x 490.2315pt>
+<images/srpvis.png, id=322, 666.0885pt x 490.2315pt>
 File: images/srpvis.png Graphic file (type png)
 <use images/srpvis.png>
 Package pdftex.def Info: images/srpvis.png  used on input line 105.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
- [11] [12 <./images/srpvis.png>] [13]
-Overfull \hbox (20.04996pt too wide) in paragraph at lines 156--157
-\OT1/cmr/m/n/12 paramter pos-te-rior from ear-lier. Sam-pling $\OML/cmm/m/it/12 y$ \OT1/cmr/m/n/12 from the joint dis-tri-bu-tion $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 ^^R; []\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^R; []epsilon\OMS/cmsy/m/n/12 j[]\OT1/cmr/m/n/12 )$
- []
-
-[14]
-<images/interfgeo.png, id=356, 1099.10625pt x 780.9175pt>
-File: images/interfgeo.png Graphic file (type png)
-<use images/interfgeo.png>
-Package pdftex.def Info: images/interfgeo.png  used on input line 168.
-(pdftex.def)             Requested size: 284.52756pt x 202.15198pt.
- [15] [16 <./images/interfgeo.png>]
-<images/meshtriangle.png, id=380, 274.3851pt x 309.3156pt>
+ [11] [12 <./images/srpvis.png>] [13] [14]
+<images/54344_7s_interf.png, id=369, 2393.94376pt x 1178.4025pt>
+File: images/54344_7s_interf.png Graphic file (type png)
+<use images/54344_7s_interf.png>
+Package pdftex.def Info: images/54344_7s_interf.png  used on input line 167.
+(pdftex.def)             Requested size: 426.79134pt x 210.07144pt.
+ [15] [16 <./images/54344_7s_interf.png>]
+<images/meshtriangle.png, id=394, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
-Package pdftex.def Info: images/meshtriangle.png  used on input line 199.
+Package pdftex.def Info: images/meshtriangle.png  used on input line 198.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
  [17] [18 <./images/meshtriangle.png>] [19]
-<images/smoothstep.png, id=409, 431.4519pt x 331.4784pt>
+<images/smoothstep.png, id=424, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
-Package pdftex.def Info: images/smoothstep.png  used on input line 267.
+Package pdftex.def Info: images/smoothstep.png  used on input line 266.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
  [20] [21 <./images/smoothstep.png>] [22]) (./chapter-3-methodology_results.tex [23]
 Chapter 3.
-) (./chapter-4-conclusion.tex [24
+[24
 
 
 ]
+<images/Final/MAPsynthetic_final_hl.png, id=471, 1092.2406pt x 441.8106pt>
+File: images/Final/MAPsynthetic_final_hl.png Graphic file (type png)
+<use images/Final/MAPsynthetic_final_hl.png>
+Package pdftex.def Info: images/Final/MAPsynthetic_final_hl.png  used on input line 7.
+(pdftex.def)             Requested size: 284.52756pt x 115.0905pt.
+File: images/Final/MAPsynthetic_final_hl.png Graphic file (type png)
+<use images/Final/MAPsynthetic_final_hl.png>
+Package pdftex.def Info: images/Final/MAPsynthetic_final_hl.png  used on input line 14.
+(pdftex.def)             Requested size: 284.52756pt x 115.0905pt.
+<images/Final/MAPsynthetic_final_p.png, id=472, 1092.2406pt x 658.6206pt>
+File: images/Final/MAPsynthetic_final_p.png Graphic file (type png)
+<use images/Final/MAPsynthetic_final_p.png>
+Package pdftex.def Info: images/Final/MAPsynthetic_final_p.png  used on input line 21.
+(pdftex.def)             Requested size: 284.52756pt x 171.56895pt.
+) (./chapter-4-conclusion.tex [25] [26 <./images/Final/MAPsynthetic_final_hl.png>] [27] [28 <./images/Final/MAPsynthetic_final_p.png>]
 Chapter 4.
-) (./chapter-5-future_investigation.tex [25
+) (./chapter-5-future_investigation.tex [29
 
 
 ]
 Chapter 5.
-) [26
+) [30
 
 
-] (./uw-ethesis.bbl [27
+] (./uw-ethesis.bbl [31
 
 
 
 
-] [28]) [29] (./appendix-closedformderiv.tex [30
+] [32]) [33] (./appendix-closedformderiv.tex [34
 
 
 ]
 Appendix A.
-[31
+[35
 
 
-] [32]
+] [36]
 Overfull \hbox (6.95715pt too wide) detected at line 83
 \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; []; ^^R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] / [] [] \OML/cmm/m/it/12 ;
  []
@@ -610,9 +624,9 @@ Overfull \hbox (5.59161pt too wide) detected at line 100
 [][]
  []
 
-) (./appendix-margelideriv.tex [33]
+) (./appendix-margelideriv.tex [37]
 Appendix B.
-[34
+[38
 
 
 ]
@@ -620,7 +634,7 @@ Overfull \hbox (46.99153pt too wide) detected at line 59
 [][][][]
  []
 
-[35]
+[39]
 Overfull \hbox (37.57133pt too wide) detected at line 99
 []\OML/cmm/m/it/12 K[][] \OT1/cmr/m/n/12 + []^^F[][] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )[] [] (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
  []
@@ -630,7 +644,7 @@ Overfull \hbox (17.5867pt too wide) detected at line 114
 [][]
  []
 
-[36]
+[40]
 Overfull \hbox (27.95918pt too wide) detected at line 140
 [][]
  []
@@ -640,17 +654,17 @@ Overfull \hbox (19.96678pt too wide) detected at line 165
 [][][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; ^^R\OT1/cmr/m/n/12 )) = \OMS/cmsy/m/n/12 ^^@[] [] \OML/cmm/m/it/12 :
  []
 
-[37]) (./appendix-final_expressions.tex [38]
+[41]) (./appendix-final_expressions.tex [42]
 Appendix C.
-[39
+[43
 
 
-] [40] [41]) [42] (./uw-ethesis.gls [43] [44
+] [44] [45]) [46] (./uw-ethesis.gls [47] [48
 
 
 
 
-]) [45
+]) [49
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg -o uw-ethesis.gls uw-ethesis.glo)...executed safely (allowed).
 
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-abr uw-ethesis.glo-abr)...executed safely (allowed).
@@ -658,22 +672,25 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-ab
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.nomenclature-glg -o uw-ethesis.nomenclature-gls uw-ethesis.nomenclature-glo)...executed safely (allowed).
 
 ] (./uw-ethesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
 (rerunfilecheck)             Checksum: 08708835A6C83F8E4E0C5B2923AF8142;1616.
  ) 
 Here is how much of TeX's memory you used:
- 16770 strings out of 480129
- 280825 string characters out of 5893409
- 678808 words of memory out of 5000000
- 34275 multiletter control sequences out of 15000+600000
+ 16830 strings out of 480129
+ 282020 string characters out of 5893409
+ 680248 words of memory out of 5000000
+ 34324 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 106i,17n,105p,4503b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,17n,105p,4503b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (52 pages, 2513089 bytes).
+Output written on uw-ethesis.pdf (56 pages, 3053811 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 170 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 740 PDF objects out of 1000 (max. 8388607)
+ 626 compressed objects within 7 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

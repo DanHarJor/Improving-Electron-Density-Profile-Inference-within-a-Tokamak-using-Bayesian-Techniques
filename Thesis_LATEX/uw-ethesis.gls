@@ -10,6 +10,9 @@
 		\setentrycounter[]{page}\glsnumberformat{6}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{map}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{24}}}%
 \glossentry{mcmc}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{14\delimN 15}}}%
 \glossentry{mhd}{\glossaryentrynumbers{\relax 
@@ -28,5 +31,6 @@
 		\setentrycounter[]{page}\glsnumberformat{5\delimN 6}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{16\delimN 17}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{20}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{23}}}%
+		\setentrycounter[]{page}\glsnumberformat{23}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{25}}}%
 \end{theglossary}\glossarypostamble
