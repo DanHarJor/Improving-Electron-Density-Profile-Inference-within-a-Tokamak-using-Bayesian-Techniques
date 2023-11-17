@@ -10,14 +10,17 @@
 \BOOKMARK [1][-]{section.2.4}{Interferometry and Polarimetry}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.5}{Bayesian Inference for Interferometry}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.6}{Chapter Summary}{chapter.2}% 12
-\BOOKMARK [0][-]{chapter.3}{Methodology and Results}{}% 13
-\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 14
-\BOOKMARK [0][-]{chapter.5}{Future Investigation}{}% 15
-\BOOKMARK [0][-]{section*.9}{References}{}% 16
-\BOOKMARK [0][-]{appendix*.11}{APPENDICES}{}% 17
-\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 18
-\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 19
-\BOOKMARK [0][-]{appendix.C}{Complete Set of Distributions and Expressions for Reference}{}% 20
-\BOOKMARK [1][-]{section.C.1}{Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{appendix.C}% 21
-\BOOKMARK [1][-]{section.C.2}{Gaussian Process Regression for Interferometry, Including Artificial Observations}{appendix.C}% 22
-\BOOKMARK [0][-]{section*.12}{Glossary}{}% 23
+\BOOKMARK [0][-]{chapter.3}{Experiment}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Methodology}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Results}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Analysis}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 17
+\BOOKMARK [0][-]{chapter.5}{Future Investigation}{}% 18
+\BOOKMARK [0][-]{section*.9}{References}{}% 19
+\BOOKMARK [0][-]{appendix*.11}{APPENDICES}{}% 20
+\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 21
+\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 22
+\BOOKMARK [0][-]{appendix.C}{Complete Set of Distributions and Expressions for Reference}{}% 23
+\BOOKMARK [1][-]{section.C.1}{Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{appendix.C}% 24
+\BOOKMARK [1][-]{section.C.2}{Gaussian Process Regression for Interferometry, Including Artificial Observations}{appendix.C}% 25
+\BOOKMARK [0][-]{section*.12}{Glossary}{}% 26

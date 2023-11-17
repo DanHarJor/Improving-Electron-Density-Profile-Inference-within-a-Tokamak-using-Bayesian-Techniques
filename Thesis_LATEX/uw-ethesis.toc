@@ -3,21 +3,24 @@
 \contentsline {chapter}{Acknowledgements}{iv}{section*.3}%
 \contentsline {chapter}{List of Figures}{vii}{section*.6}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Background Theory of Bayesian Techniques and WEST Interferometry}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The Tokamak}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}NICE}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Bayesian Inference and the Simple Regression Problem}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Interferometry and Polarimetry}{16}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Bayesian Inference for Interferometry}{17}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Chapter Summary}{22}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Methodology and Results}{24}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Conclusion}{35}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Future Investigation}{36}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{37}{section*.9}%
-\contentsline {chapter}{APPENDICES}{40}{appendix*.11}%
-\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{41}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{44}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Complete Set of Distributions and Expressions for Reference}{49}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{49}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Gaussian Process Regression for Interferometry, Including Artificial Observations}{51}{section.C.2}%
-\contentsline {chapter}{Glossary}{54}{section*.12}%
+\contentsline {chapter}{\numberline {2}Background Theory of Bayesian Techniques and WEST Interferometry}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Tokamak}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}NICE}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Bayesian Inference and the Simple Regression Problem}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Interferometry and Polarimetry}{18}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Bayesian Inference for Interferometry}{19}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Chapter Summary}{24}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Experiment}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Methodology}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Results}{31}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Analysis}{35}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusion}{37}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Future Investigation}{38}{chapter.5}%
+\contentsline {chapter}{\textbf {References}}{39}{section*.9}%
+\contentsline {chapter}{APPENDICES}{42}{appendix*.11}%
+\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{43}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{46}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Complete Set of Distributions and Expressions for Reference}{51}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{51}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Gaussian Process Regression for Interferometry, Including Artificial Observations}{53}{section.C.2}%
+\contentsline {chapter}{Glossary}{56}{section*.12}%

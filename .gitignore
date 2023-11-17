@@ -1,3 +1,7 @@
 .ipynb_checkpoints*
 dask-worker-space*
+*.png
+*.jpg
+*.jpeg
+*.db
 __pycache__/
