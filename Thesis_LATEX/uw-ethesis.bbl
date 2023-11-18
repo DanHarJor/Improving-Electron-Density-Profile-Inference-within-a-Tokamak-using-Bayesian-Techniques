@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{vacves}
+CEA.
+\newblock Tokamak vacuum chamber, 2021.
+\newblock Accessed: 2023-11-17.
+
 \bibitem{IDAgeert2023}
 Jiahong Chen, Zhibin Wang, Tianbo Wang, Yonghao Yang, Hao Wu, Yonggao Li,
   Guoliang Xiao, Geert Verdoolaege, Didier Mazon, Zengchen Yang, Min Jiang,
@@ -81,6 +86,13 @@ Carl~Edward. Rasmussen and Christopher K.~I. Williams.
 \newblock {\em Gaussian processes for machine learning}.
 \newblock Adaptive computation and machine learning. MIT Press, Cambridge,
   Mass, 2006.
+
+\bibitem{nessiIBAmega-ampere-spherical}
+G~T von Nessi and M~J Hole.
+\newblock Using bayesian analysis and gaussian processes to infer electron
+  temperature and density profiles on the mega-ampere spherical tokamak
+  experiment.
+\newblock {\em Review of scientific instruments}, 84(6):063505--063505, 2013.
 
 \bibitem{wessontokamak}
 John Wesson and John Wesson.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  17 NOV 2023 01:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  18 NOV 2023 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -47,6 +47,9 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@dimlist=\toks17
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
@@ -81,7 +84,7 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count268
 \c@MaxMatrixCols=\count269
-\dotsspace@=\muskip16
+\dotsspace@=\muskip17
 \c@parentequation=\count270
 \dspbrk@lvl=\count271
 \tag@help=\toks19
@@ -189,10 +192,6 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 LaTeX Info: Redefining \href on input line 4715.
 \c@Hy@tempcnt=\count279
- (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen159
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
@@ -238,13 +237,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `plainpages' set `false' on input line 113.
-Package hyperref Info: Option `unicode' set `false' on input line 113.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 113.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 113.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 113.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 113.
-Package hyperref Info: Option `colorlinks' set `true' on input line 113.
+Package hyperref Info: Option `plainpages' set `false' on input line 114.
+Package hyperref Info: Option `unicode' set `false' on input line 114.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 114.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 114.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 114.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 114.
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
  (/usr/share/texlive/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
 Package: glossaries-extra 2021/11/22 v1.48 (NLCT)
  (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -392,15 +391,15 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glo@main@file=\write4
 \openout4 = `uw-ethesis.glo'.
 
-Package glossaries Info: Writing glossary file uw-ethesis.glo on input line 163.
+Package glossaries Info: Writing glossary file uw-ethesis.glo on input line 164.
 \glo@abbreviations@file=\write5
 \openout5 = `uw-ethesis.glo-abr'.
 
-Package glossaries Info: Writing glossary file uw-ethesis.glo-abr on input line 163.
+Package glossaries Info: Writing glossary file uw-ethesis.glo-abr on input line 164.
 \glo@nomenclature@file=\write6
 \openout6 = `uw-ethesis.nomenclature-glo'.
 
-Package glossaries Info: Writing glossary file uw-ethesis.nomenclature-glo on input line 163.
+Package glossaries Info: Writing glossary file uw-ethesis.nomenclature-glo on input line 164.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
@@ -408,24 +407,24 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 ) (./uw-ethesis.aux)
 \openout1 = `uw-ethesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -486,7 +485,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 169.
+Package hyperref Info: Link coloring ON on input line 170.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -496,9 +495,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 169.
-LaTeX Info: Redefining \pageref on input line 169.
-LaTeX Info: Redefining \nameref on input line 169.
+LaTeX Info: Redefining \ref on input line 170.
+LaTeX Info: Redefining \pageref on input line 170.
+LaTeX Info: Redefining \nameref on input line 170.
  (./uw-ethesis.out) (./uw-ethesis.out)
 \@outlinefile=\write7
 \openout7 = `uw-ethesis.out'.
@@ -552,34 +551,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [8]) (./chapter-1-introduction.tex
 Chapter 1.
+<images/Final/vaccumeVessel.jpg, id=256, 3641.605pt x 2428.07124pt>
+File: images/Final/vaccumeVessel.jpg Graphic file (type jpg)
+<use images/Final/vaccumeVessel.jpg>
+Package pdftex.def Info: images/Final/vaccumeVessel.jpg  used on input line 8.
+(pdftex.def)             Requested size: 460.72124pt x 307.17604pt.
 [1
 
 
 
 
-] [2]
-Overfull \hbox (14.56133pt too wide) in paragraph at lines 12--13
+] [2 <./images/Final/vaccumeVessel.jpg>]
+Overfull \hbox (14.56133pt too wide) in paragraph at lines 19--20
 \OT1/cmr/m/n/12 The elec-tron den-sity pro-file is in-flu-enced by var-i-ous fac-tors, such as plasma ge-om-e-try/magnetic
  []
 
-[3]) (./chapter-2-background_theory.tex [4]
+[3] [4]) (./chapter-2-background_theory.tex [5]
 Chapter 2.
-<images/tokamak.jpg, id=279, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=303, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 (pdftex.def)             Requested size: 284.52756pt x 208.35736pt.
-[5
+[6
 
 
-] [6 <./images/tokamak.jpg>] [7]
-<images/fluxsurf.png, id=309, 329.23pt x 341.275pt>
+] [7 <./images/tokamak.jpg>] [8]
+<images/fluxsurf.png, id=330, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
- [8 <./images/fluxsurf.png>]
-<images/Final/nice.png, id=339, 292.4526pt x 262.581pt>
+ [9 <./images/fluxsurf.png>]
+<images/Final/nice.png, id=360, 292.4526pt x 262.581pt>
 File: images/Final/nice.png Graphic file (type png)
 <use images/Final/nice.png>
 Package pdftex.def Info: images/Final/nice.png  used on input line 33.
@@ -589,75 +593,72 @@ Overfull \hbox (17.21257pt too wide) in paragraph at lines 38--38
 []\OT1/cmr/bx/n/17.28 Bayesian In-fer-ence and the Sim-ple Re-gres-sion Prob-
  []
 
-[9] [10 <./images/Final/nice.png>] [11]
-<images/mvg.png, id=368, 418.2024pt x 312.6882pt>
+[10] [11 <./images/Final/nice.png>] [12]
+<images/mvg.png, id=389, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
- [12 <./images/mvg.png>] [13]
-<images/srpvis.png, id=387, 666.0885pt x 490.2315pt>
+ [13 <./images/mvg.png>] [14]
+<images/srpvis.png, id=408, 666.0885pt x 490.2315pt>
 File: images/srpvis.png Graphic file (type png)
 <use images/srpvis.png>
 Package pdftex.def Info: images/srpvis.png  used on input line 105.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
- [14 <./images/srpvis.png>] [15] [16] [17]
-<images/54344_7s_interf.png, id=435, 2393.94376pt x 1178.4025pt>
+ [15 <./images/srpvis.png>] [16] [17] [18]
+<images/54344_7s_interf.png, id=454, 2393.94376pt x 1178.4025pt>
 File: images/54344_7s_interf.png Graphic file (type png)
 <use images/54344_7s_interf.png>
 Package pdftex.def Info: images/54344_7s_interf.png  used on input line 171.
 (pdftex.def)             Requested size: 426.79134pt x 210.07144pt.
- [18 <./images/54344_7s_interf.png>] [19]
-<images/meshtriangle.png, id=459, 274.3851pt x 309.3156pt>
+ [19 <./images/54344_7s_interf.png>] [20]
+<images/meshtriangle.png, id=477, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
 Package pdftex.def Info: images/meshtriangle.png  used on input line 202.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
- [20 <./images/meshtriangle.png>] [21]
-<images/smoothstep.png, id=484, 431.4519pt x 331.4784pt>
+ [21 <./images/meshtriangle.png>] [22]
+<images/smoothstep.png, id=502, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
 Package pdftex.def Info: images/smoothstep.png  used on input line 270.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
- [22] [23 <./images/smoothstep.png>] [24]) (./chapter-3-methodology_results.tex [25]
+ [23] [24 <./images/smoothstep.png>] [25]) (./chapter-3-methodology_results.tex [26]
 Chapter 3.
-<images/syntheticProfiles.png, id=522, 586.3506pt x 225.0006pt>
+[27
+
+
+]
+<images/syntheticProfiles.png, id=545, 586.3506pt x 225.0006pt>
 File: images/syntheticProfiles.png Graphic file (type png)
 <use images/syntheticProfiles.png>
-Package pdftex.def Info: images/syntheticProfiles.png  used on input line 8.
+Package pdftex.def Info: images/syntheticProfiles.png  used on input line 14.
 (pdftex.def)             Requested size: 460.72124pt x 176.79407pt.
-[26
-
-
-] [27 <./images/syntheticProfiles.png>]
-<images/Final/sampled_ne_dist.png, id=542, 412.6617pt x 318.7107pt>
+ [28 <./images/syntheticProfiles.png>]
+<images/Final/sampled_ne_dist.png, id=561, 412.6617pt x 318.7107pt>
 File: images/Final/sampled_ne_dist.png Graphic file (type png)
 <use images/Final/sampled_ne_dist.png>
-Package pdftex.def Info: images/Final/sampled_ne_dist.png  used on input line 21.
+Package pdftex.def Info: images/Final/sampled_ne_dist.png  used on input line 27.
 (pdftex.def)             Requested size: 250.0pt x 193.08073pt.
- [28 <./images/Final/sampled_ne_dist.png>]
-<images/Final/optuna.png, id=550, 415.7934pt x 334.1283pt>
+ [29]
+<images/Final/optuna.png, id=570, 415.7934pt x 334.1283pt>
 File: images/Final/optuna.png Graphic file (type png)
 <use images/Final/optuna.png>
-Package pdftex.def Info: images/Final/optuna.png  used on input line 30.
+Package pdftex.def Info: images/Final/optuna.png  used on input line 36.
 (pdftex.def)             Requested size: 380.0pt x 305.3726pt.
- [29 <./images/Final/optuna.png>]
-<images/Final/TraceBurn1000_thin10.png, id=559, 714.7503pt x 195.129pt>
+ [30 <./images/Final/sampled_ne_dist.png>]
+<images/Final/TraceBurn1000_thin10.png, id=577, 714.7503pt x 195.129pt>
 File: images/Final/TraceBurn1000_thin10.png Graphic file (type png)
 <use images/Final/TraceBurn1000_thin10.png>
-Package pdftex.def Info: images/Final/TraceBurn1000_thin10.png  used on input line 39.
+Package pdftex.def Info: images/Final/TraceBurn1000_thin10.png  used on input line 45.
 (pdftex.def)             Requested size: 400.0pt x 109.203pt.
-<images/Final/interferometry_nice.png, id=564, 871.5762pt x 282.8166pt>
+ [31 <./images/Final/optuna.png>]
+<images/Final/interferometry_nice.png, id=587, 871.5762pt x 282.8166pt>
 File: images/Final/interferometry_nice.png Graphic file (type png)
 <use images/Final/interferometry_nice.png>
-Package pdftex.def Info: images/Final/interferometry_nice.png  used on input line 48.
-(pdftex.def)             Requested size: 500.0pt x 162.24283pt.
-
-Overfull \hbox (39.27876pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-[30 <./images/Final/TraceBurn1000_thin10.png> <./images/Final/interferometry_nice.png>] [31]
+Package pdftex.def Info: images/Final/interferometry_nice.png  used on input line 54.
+(pdftex.def)             Requested size: 460.72124pt x 149.49937pt.
+ [32 <./images/Final/TraceBurn1000_thin10.png> <./images/Final/interferometry_nice.png>] [33]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: letterpaper
@@ -690,64 +691,98 @@ Overfull \hbox (39.27876pt too wide) in paragraph at lines 48--49
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Final/MAPsynthetic_final_all.png, id=575, 875.1897pt x 1091.9997pt>
+<images/Final/MAPsynthetic_final_all.png, id=600, 875.1897pt x 1091.9997pt>
 File: images/Final/MAPsynthetic_final_all.png Graphic file (type png)
 <use images/Final/MAPsynthetic_final_all.png>
-Package pdftex.def Info: images/Final/MAPsynthetic_final_all.png  used on input line 63.
+Package pdftex.def Info: images/Final/MAPsynthetic_final_all.png  used on input line 70.
 (pdftex.def)             Requested size: 430.00462pt x 536.51752pt.
-<images/Final/FBsynthetic_all.png, id=576, 875.1897pt x 1091.9997pt>
-File: images/Final/FBsynthetic_all.png Graphic file (type png)
-<use images/Final/FBsynthetic_all.png>
-Package pdftex.def Info: images/Final/FBsynthetic_all.png  used on input line 71.
-(pdftex.def)             Requested size: 430.00462pt x 536.51752pt.
- [32
-
- <./images/Final/MAPsynthetic_final_all.png>] [33 <./images/Final/FBsynthetic_all.png>]
-<images/Final/map_real.png, id=587, 659.8251pt x 225.0006pt>
-File: images/Final/map_real.png Graphic file (type png)
-<use images/Final/map_real.png>
-Package pdftex.def Info: images/Final/map_real.png  used on input line 80.
-(pdftex.def)             Requested size: 460.72124pt x 157.10794pt.
-<images/Final/FB_real.png, id=588, 658.3797pt x 225.0006pt>
-File: images/Final/FB_real.png Graphic file (type png)
-<use images/Final/FB_real.png>
-Package pdftex.def Info: images/Final/FB_real.png  used on input line 87.
-(pdftex.def)             Requested size: 460.72124pt x 157.45126pt.
-<images/Final/manual.png, id=589, 658.6206pt x 225.0006pt>
-File: images/Final/manual.png Graphic file (type png)
-<use images/Final/manual.png>
-Package pdftex.def Info: images/Final/manual.png  used on input line 94.
-(pdftex.def)             Requested size: 460.72124pt x 157.39633pt.
  [34
 
- <./images/Final/map_real.png> <./images/Final/FB_real.png>]
+ <./images/Final/MAPsynthetic_final_all.png>] [35
 
-LaTeX Warning: Reference `fig:fb_inference_hl' on page 35 undefined on input line 108.
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(85.35826pt, 614.21436pt, 95.39737pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=614.21436pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[35 <./images/Final/manual.png>]) (./chapter-4-conclusion.tex [36]
+<images/Final/FBsynthetic_all.png, id=616, 875.1897pt x 1091.9997pt>
+File: images/Final/FBsynthetic_all.png Graphic file (type png)
+<use images/Final/FBsynthetic_all.png>
+Package pdftex.def Info: images/Final/FBsynthetic_all.png  used on input line 81.
+(pdftex.def)             Requested size: 430.00462pt x 536.51752pt.
+ [36
+
+ <./images/Final/FBsynthetic_all.png>]
+<images/Final/map_real.png, id=629, 659.8251pt x 225.0006pt>
+File: images/Final/map_real.png Graphic file (type png)
+<use images/Final/map_real.png>
+Package pdftex.def Info: images/Final/map_real.png  used on input line 92.
+(pdftex.def)             Requested size: 460.72124pt x 157.10794pt.
+<images/Final/FB_real.png, id=634, 658.3797pt x 225.0006pt>
+File: images/Final/FB_real.png Graphic file (type png)
+<use images/Final/FB_real.png>
+Package pdftex.def Info: images/Final/FB_real.png  used on input line 101.
+(pdftex.def)             Requested size: 460.72124pt x 157.45126pt.
+ [37
+
+ <./images/Final/map_real.png>]
+<images/Final/manual.png, id=642, 658.6206pt x 225.0006pt>
+File: images/Final/manual.png Graphic file (type png)
+<use images/Final/manual.png>
+Package pdftex.def Info: images/Final/manual.png  used on input line 110.
+(pdftex.def)             Requested size: 460.72124pt x 157.39633pt.
+ [38 <./images/Final/FB_real.png>]) (./chapter-4-conclusion.tex [39 <./images/Final/manual.png>] [40]
 Chapter 4.
-) (./chapter-5-future_investigation.tex [37
+) (./chapter-5-future_investigation.tex [41
 
 
 ]
 Chapter 5.
-) [38
+) [42
 
 
-] (./uw-ethesis.bbl [39
+] (./uw-ethesis.bbl [43
 
 
 
 
-] [40]) [41] (./appendix-closedformderiv.tex [42
+] [44]) [45] (./appendix-closedformderiv.tex [46
 
 
 ]
 Appendix A.
-[43
+[47
 
 
-] [44]
+] [48]
 Overfull \hbox (6.95715pt too wide) detected at line 83
 \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; []; ^^R\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / [] [] / [] [] \OML/cmm/m/it/12 ;
  []
@@ -762,9 +797,9 @@ Overfull \hbox (5.59161pt too wide) detected at line 100
 [][]
  []
 
-) (./appendix-margelideriv.tex [45]
+) (./appendix-margelideriv.tex [49]
 Appendix B.
-[46
+[50
 
 
 ]
@@ -772,7 +807,7 @@ Overfull \hbox (46.99153pt too wide) detected at line 59
 [][][][]
  []
 
-[47]
+[51]
 Overfull \hbox (37.57133pt too wide) detected at line 99
 []\OML/cmm/m/it/12 K[][] \OT1/cmr/m/n/12 + []^^F[][] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )[] [] (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 ^^F[][] + \OML/cmm/m/it/12 K[][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
  []
@@ -782,7 +817,7 @@ Overfull \hbox (17.5867pt too wide) detected at line 114
 [][]
  []
 
-[48]
+[52]
 Overfull \hbox (27.95918pt too wide) detected at line 140
 [][]
  []
@@ -792,17 +827,17 @@ Overfull \hbox (19.96678pt too wide) detected at line 165
 [][][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([]\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 ; ^^R\OT1/cmr/m/n/12 )) = \OMS/cmsy/m/n/12 ^^@[] [] \OML/cmm/m/it/12 :
  []
 
-[49]) (./appendix-final_expressions.tex [50]
+[53]) (./appendix-final_expressions.tex [54]
 Appendix C.
-[51
+[55
 
 
-] [52] [53]) [54] (./uw-ethesis.gls [55] [56
+] [56] [57]) [58] (./uw-ethesis.gls [59] [60
 
 
 
 
-]) [57
+]) [61
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg -o uw-ethesis.gls uw-ethesis.glo)...executed safely (allowed).
 
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-abr uw-ethesis.glo-abr)...executed safely (allowed).
@@ -810,25 +845,22 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-ab
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.nomenclature-glg -o uw-ethesis.nomenclature-gls uw-ethesis.nomenclature-glo)...executed safely (allowed).
 
 ] (./uw-ethesis.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
-(rerunfilecheck)             Checksum: FBD3D633BCCB14B9650D7A927DB94883;1770.
+(rerunfilecheck)             Checksum: 9CD032DAC3E2B5AE301958E4CA9DFB63;1777.
  ) 
 Here is how much of TeX's memory you used:
- 17407 strings out of 480129
- 291734 string characters out of 5893409
- 697041 words of memory out of 5000000
- 34867 multiletter control sequences out of 15000+600000
+ 17423 strings out of 480129
+ 292080 string characters out of 5893409
+ 697263 words of memory out of 5000000
+ 34875 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  106i,17n,105p,4503b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (65 pages, 3630283 bytes).
+Output written on uw-ethesis.pdf (69 pages, 6525113 bytes).
 PDF statistics:
- 884 PDF objects out of 1000 (max. 8388607)
- 744 compressed objects within 8 object streams
- 197 named destinations out of 1000 (max. 500000)
- 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 933 PDF objects out of 1000 (max. 8388607)
+ 787 compressed objects within 8 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
