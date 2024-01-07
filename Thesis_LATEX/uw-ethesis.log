@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.26)  18 NOV 2023 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  7 JAN 2024 11:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex
-(/home/daniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex
+**/home/djdaniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex
+(/home/djdaniel/Improving-Electron-Density-Profile-Inference-within-a-Tokamak-using-Bayesian-Techniques/Thesis_LATEX/uw-ethesis.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
@@ -551,24 +551,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [8]) (./chapter-1-introduction.tex
 Chapter 1.
-<images/Final/vaccumeVessel.jpg, id=256, 3641.605pt x 2428.07124pt>
-File: images/Final/vaccumeVessel.jpg Graphic file (type jpg)
-<use images/Final/vaccumeVessel.jpg>
-Package pdftex.def Info: images/Final/vaccumeVessel.jpg  used on input line 8.
-(pdftex.def)             Requested size: 460.72124pt x 307.17604pt.
+<images/Final/vaccumeVessel.png, id=257, 1230.5975pt x 823.075pt>
+File: images/Final/vaccumeVessel.png Graphic file (type png)
+<use images/Final/vaccumeVessel.png>
+Package pdftex.def Info: images/Final/vaccumeVessel.png  used on input line 8.
+(pdftex.def)             Requested size: 460.72124pt x 308.13744pt.
 [1
 
 
 
 
-] [2 <./images/Final/vaccumeVessel.jpg>]
+] [2 <./images/Final/vaccumeVessel.png>]
 Overfull \hbox (14.56133pt too wide) in paragraph at lines 19--20
 \OT1/cmr/m/n/12 The elec-tron den-sity pro-file is in-flu-enced by var-i-ous fac-tors, such as plasma ge-om-e-try/magnetic
  []
 
 [3] [4]) (./chapter-2-background_theory.tex [5]
 Chapter 2.
-<images/tokamak.jpg, id=303, 373.395pt x 273.4215pt>
+<images/tokamak.jpg, id=305, 373.395pt x 273.4215pt>
 File: images/tokamak.jpg Graphic file (type jpg)
 <use images/tokamak.jpg>
 Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
@@ -577,13 +577,13 @@ Package pdftex.def Info: images/tokamak.jpg  used on input line 9.
 
 
 ] [7 <./images/tokamak.jpg>] [8]
-<images/fluxsurf.png, id=330, 329.23pt x 341.275pt>
+<images/fluxsurf.png, id=332, 329.23pt x 341.275pt>
 File: images/fluxsurf.png Graphic file (type png)
 <use images/fluxsurf.png>
 Package pdftex.def Info: images/fluxsurf.png  used on input line 22.
 (pdftex.def)             Requested size: 142.26378pt x 147.46921pt.
  [9 <./images/fluxsurf.png>]
-<images/Final/nice.png, id=360, 292.4526pt x 262.581pt>
+<images/Final/nice.png, id=362, 292.4526pt x 262.581pt>
 File: images/Final/nice.png Graphic file (type png)
 <use images/Final/nice.png>
 Package pdftex.def Info: images/Final/nice.png  used on input line 33.
@@ -594,66 +594,66 @@ Overfull \hbox (17.21257pt too wide) in paragraph at lines 38--38
  []
 
 [10] [11 <./images/Final/nice.png>] [12]
-<images/mvg.png, id=389, 418.2024pt x 312.6882pt>
+<images/mvg.png, id=391, 418.2024pt x 312.6882pt>
 File: images/mvg.png Graphic file (type png)
 <use images/mvg.png>
 Package pdftex.def Info: images/mvg.png  used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 212.74443pt.
  [13 <./images/mvg.png>] [14]
-<images/srpvis.png, id=408, 666.0885pt x 490.2315pt>
+<images/srpvis.png, id=410, 666.0885pt x 490.2315pt>
 File: images/srpvis.png Graphic file (type png)
 <use images/srpvis.png>
 Package pdftex.def Info: images/srpvis.png  used on input line 105.
 (pdftex.def)             Requested size: 369.88582pt x 272.23878pt.
  [15 <./images/srpvis.png>] [16] [17] [18]
-<images/54344_7s_interf.png, id=454, 2393.94376pt x 1178.4025pt>
+<images/54344_7s_interf.png, id=456, 2393.94376pt x 1178.4025pt>
 File: images/54344_7s_interf.png Graphic file (type png)
 <use images/54344_7s_interf.png>
 Package pdftex.def Info: images/54344_7s_interf.png  used on input line 171.
 (pdftex.def)             Requested size: 426.79134pt x 210.07144pt.
  [19 <./images/54344_7s_interf.png>] [20]
-<images/meshtriangle.png, id=477, 274.3851pt x 309.3156pt>
+<images/meshtriangle.png, id=479, 274.3851pt x 309.3156pt>
 File: images/meshtriangle.png Graphic file (type png)
 <use images/meshtriangle.png>
 Package pdftex.def Info: images/meshtriangle.png  used on input line 202.
 (pdftex.def)             Requested size: 284.52756pt x 320.75555pt.
  [21 <./images/meshtriangle.png>] [22]
-<images/smoothstep.png, id=502, 431.4519pt x 331.4784pt>
+<images/smoothstep.png, id=504, 431.4519pt x 331.4784pt>
 File: images/smoothstep.png Graphic file (type png)
 <use images/smoothstep.png>
 Package pdftex.def Info: images/smoothstep.png  used on input line 270.
 (pdftex.def)             Requested size: 284.52756pt x 218.60443pt.
- [23] [24 <./images/smoothstep.png>] [25]) (./chapter-3-methodology_results.tex [26]
+ [23] [24 <./images/smoothstep.png>] [25]) (./chapter-3-Experiment.tex [26]
 Chapter 3.
 [27
 
 
 ]
-<images/syntheticProfiles.png, id=545, 586.3506pt x 225.0006pt>
+<images/syntheticProfiles.png, id=547, 586.3506pt x 225.0006pt>
 File: images/syntheticProfiles.png Graphic file (type png)
 <use images/syntheticProfiles.png>
 Package pdftex.def Info: images/syntheticProfiles.png  used on input line 14.
 (pdftex.def)             Requested size: 460.72124pt x 176.79407pt.
  [28 <./images/syntheticProfiles.png>]
-<images/Final/sampled_ne_dist.png, id=561, 412.6617pt x 318.7107pt>
+<images/Final/sampled_ne_dist.png, id=564, 412.6617pt x 318.7107pt>
 File: images/Final/sampled_ne_dist.png Graphic file (type png)
 <use images/Final/sampled_ne_dist.png>
 Package pdftex.def Info: images/Final/sampled_ne_dist.png  used on input line 27.
 (pdftex.def)             Requested size: 250.0pt x 193.08073pt.
  [29]
-<images/Final/optuna.png, id=570, 415.7934pt x 334.1283pt>
+<images/Final/optuna.png, id=572, 415.7934pt x 334.1283pt>
 File: images/Final/optuna.png Graphic file (type png)
 <use images/Final/optuna.png>
 Package pdftex.def Info: images/Final/optuna.png  used on input line 36.
 (pdftex.def)             Requested size: 380.0pt x 305.3726pt.
  [30 <./images/Final/sampled_ne_dist.png>]
-<images/Final/TraceBurn1000_thin10.png, id=577, 714.7503pt x 195.129pt>
+<images/Final/TraceBurn1000_thin10.png, id=579, 714.7503pt x 195.129pt>
 File: images/Final/TraceBurn1000_thin10.png Graphic file (type png)
 <use images/Final/TraceBurn1000_thin10.png>
 Package pdftex.def Info: images/Final/TraceBurn1000_thin10.png  used on input line 45.
 (pdftex.def)             Requested size: 400.0pt x 109.203pt.
  [31 <./images/Final/optuna.png>]
-<images/Final/interferometry_nice.png, id=587, 871.5762pt x 282.8166pt>
+<images/Final/interferometry_nice.png, id=589, 871.5762pt x 282.8166pt>
 File: images/Final/interferometry_nice.png Graphic file (type png)
 <use images/Final/interferometry_nice.png>
 Package pdftex.def Info: images/Final/interferometry_nice.png  used on input line 54.
@@ -691,11 +691,11 @@ Package pdftex.def Info: images/Final/interferometry_nice.png  used on input lin
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Final/MAPsynthetic_final_all.png, id=600, 875.1897pt x 1091.9997pt>
+<images/Final/MAPsynthetic_final_all.png, id=602, 1010.77625pt x 1275.76625pt>
 File: images/Final/MAPsynthetic_final_all.png Graphic file (type png)
 <use images/Final/MAPsynthetic_final_all.png>
 Package pdftex.def Info: images/Final/MAPsynthetic_final_all.png  used on input line 70.
-(pdftex.def)             Requested size: 430.00462pt x 536.51752pt.
+(pdftex.def)             Requested size: 430.00462pt x 542.74829pt.
  [34
 
  <./images/Final/MAPsynthetic_final_all.png>] [35
@@ -733,32 +733,32 @@ Package pdftex.def Info: images/Final/MAPsynthetic_final_all.png  used on input 
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/Final/FBsynthetic_all.png, id=616, 875.1897pt x 1091.9997pt>
+<images/Final/FBsynthetic_all.png, id=618, 1010.77625pt x 1275.76625pt>
 File: images/Final/FBsynthetic_all.png Graphic file (type png)
 <use images/Final/FBsynthetic_all.png>
 Package pdftex.def Info: images/Final/FBsynthetic_all.png  used on input line 81.
-(pdftex.def)             Requested size: 430.00462pt x 536.51752pt.
+(pdftex.def)             Requested size: 430.00462pt x 542.74829pt.
  [36
 
  <./images/Final/FBsynthetic_all.png>]
-<images/Final/map_real.png, id=629, 659.8251pt x 225.0006pt>
+<images/Final/map_real.png, id=631, 1536.74126pt x 529.98pt>
 File: images/Final/map_real.png Graphic file (type png)
 <use images/Final/map_real.png>
 Package pdftex.def Info: images/Final/map_real.png  used on input line 92.
-(pdftex.def)             Requested size: 460.72124pt x 157.10794pt.
-<images/Final/FB_real.png, id=634, 658.3797pt x 225.0006pt>
+(pdftex.def)             Requested size: 460.72124pt x 158.89009pt.
+<images/Final/FB_real.png, id=636, 1536.74126pt x 529.98pt>
 File: images/Final/FB_real.png Graphic file (type png)
 <use images/Final/FB_real.png>
 Package pdftex.def Info: images/Final/FB_real.png  used on input line 101.
-(pdftex.def)             Requested size: 460.72124pt x 157.45126pt.
+(pdftex.def)             Requested size: 460.72124pt x 158.89009pt.
  [37
 
  <./images/Final/map_real.png>]
-<images/Final/manual.png, id=642, 658.6206pt x 225.0006pt>
+<images/Final/manual.png, id=644, 1536.74126pt x 529.98pt>
 File: images/Final/manual.png Graphic file (type png)
 <use images/Final/manual.png>
 Package pdftex.def Info: images/Final/manual.png  used on input line 110.
-(pdftex.def)             Requested size: 460.72124pt x 157.39633pt.
+(pdftex.def)             Requested size: 460.72124pt x 158.89009pt.
  [38 <./images/Final/FB_real.png>]) (./chapter-4-conclusion.tex [39 <./images/Final/manual.png>] [40]
 Chapter 4.
 ) (./chapter-5-future_investigation.tex [41
@@ -846,21 +846,21 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.nomenclature-glg -o uw-ethes
 
 ] (./uw-ethesis.aux)
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9CD032DAC3E2B5AE301958E4CA9DFB63;1777.
+(rerunfilecheck)             Checksum: 3CE29973E05155F92140AE9E62B675AB;1933.
  ) 
 Here is how much of TeX's memory you used:
- 17423 strings out of 480129
- 292080 string characters out of 5893409
- 697263 words of memory out of 5000000
- 34875 multiletter control sequences out of 15000+600000
+ 17423 strings out of 478287
+ 292041 string characters out of 5849290
+ 701911 words of memory out of 5000000
+ 35112 multiletter control sequences out of 15000+600000
  475770 words of font info for 52 fonts, out of 8000000 for 9000
- 81 hyphenation exceptions out of 8191
- 106i,17n,105p,4503b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1141 hyphenation exceptions out of 8191
+ 106i,17n,105p,4505b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on uw-ethesis.pdf (69 pages, 6525113 bytes).
+Output written on uw-ethesis.pdf (69 pages, 5856403 bytes).
 PDF statistics:
- 933 PDF objects out of 1000 (max. 8388607)
- 787 compressed objects within 8 object streams
+ 935 PDF objects out of 1000 (max. 8388607)
+ 788 compressed objects within 8 object streams
  204 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
