@@ -87,6 +87,17 @@ Carl~Edward. Rasmussen and Christopher K.~I. Williams.
 \newblock Adaptive computation and machine learning. MIT Press, Cambridge,
   Mass, 2006.
 
+\bibitem{talaPeaking2022}
+T.~Tala, F.~Eriksson, P.~Mantica, A.~Mariani, A.~Salmi, E.R. Solano, I.S.
+  Carvalho, A.~Chomiczewska, E.~Delabie, J.~Ferreira, E.~Fransson, L.~Horvath,
+  P.~Jacquet, D.~King, A.~Kirjasuo, S.~Leerink, E.~Lerche, C.~Maggi, M.~Marin,
+  M.~Maslov, S.~Menmuir, R.B. Morales, V.~Naulin, M.F.F. Nave, H.~Nordman,
+  C.~Perez Von~Thun, P.A. Schneider, M.~Sertoli, K.~Tanaka, and Jet
+  Contributors.
+\newblock Role of {NBI} fuelling in contributing to density peaking between the
+  {ICRH} and {NBI} identity plasmas on {JET}.
+\newblock 62(6):066008.
+
 \bibitem{nessiIBAmega-ampere-spherical}
 G~T von Nessi and M~J Hole.
 \newblock Using bayesian analysis and gaussian processes to infer electron

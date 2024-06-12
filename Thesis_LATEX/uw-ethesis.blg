@@ -3,44 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: uw-ethesis.aux
 The style file: plain.bst
 Database file #1: uw-ethesis.bib
-You've used 16 entries,
+Warning--empty journal in talaPeaking2022
+Warning--empty year in talaPeaking2022
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            626 strings with 9786 characters,
-and the built_in function-call counts, 9879 in all, are:
-= -- 802
-> -- 1015
+            632 strings with 10428 characters,
+and the built_in function-call counts, 11058 in all, are:
+= -- 886
+> -- 1168
 < -- 0
-+ -- 406
-- -- 388
-* -- 994
-:= -- 1809
-add.period$ -- 50
-call.type$ -- 16
-change.case$ -- 239
++ -- 467
+- -- 448
+* -- 1133
+:= -- 2028
+add.period$ -- 53
+call.type$ -- 17
+change.case$ -- 272
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 172
-empty$ -- 400
-format.name$ -- 388
-if$ -- 1825
+cite$ -- 19
+duplicate$ -- 183
+empty$ -- 426
+format.name$ -- 448
+if$ -- 2027
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 17
-newline$ -- 83
-num.names$ -- 32
-pop$ -- 228
+int.to.str$ -- 17
+missing$ -- 18
+newline$ -- 88
+num.names$ -- 34
+pop$ -- 263
 preamble$ -- 1
-purify$ -- 226
+purify$ -- 258
 quote$ -- 0
-skip$ -- 114
+skip$ -- 120
 stack$ -- 0
-substring$ -- 328
+substring$ -- 351
 swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 0
-while$ -- 42
-width$ -- 18
-write$ -- 180
+type$ -- 62
+warning$ -- 2
+while$ -- 45
+width$ -- 19
+write$ -- 189
+(There were 2 warnings)

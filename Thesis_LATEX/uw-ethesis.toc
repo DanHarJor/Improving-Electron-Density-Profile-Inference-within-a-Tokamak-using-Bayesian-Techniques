@@ -14,13 +14,12 @@
 \contentsline {section}{\numberline {3.1}Methodology for hyperparameter MAP and full Bayesian experiment}{28}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Resulting Desnity Profiles of each Implimentation}{34}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Chapter Summary}{40}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Conclusion}{42}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Future Investigation}{43}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{44}{section*.9}%
-\contentsline {chapter}{APPENDICES}{47}{appendix*.11}%
-\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{48}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{51}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Complete Set of Distributions and Expressions for Reference}{56}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{56}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Gaussian Process Regression for Interferometry, Including Artificial Observations}{58}{section.C.2}%
-\contentsline {chapter}{Glossary}{61}{section*.12}%
+\contentsline {chapter}{\numberline {4}Conclusion}{41}{chapter.4}%
+\contentsline {chapter}{\textbf {References}}{43}{section*.9}%
+\contentsline {chapter}{APPENDICES}{46}{appendix*.11}%
+\contentsline {chapter}{\numberline {A}Deriving the Closed Form Posterior Expressions}{47}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Deriving the Marginal Likelihood and Loss Function Expression}{50}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Complete Set of Distributions and Expressions for Reference}{55}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{55}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Gaussian Process Regression for Interferometry, Including Artificial Observations}{57}{section.C.2}%
+\contentsline {chapter}{Glossary}{60}{section*.12}%

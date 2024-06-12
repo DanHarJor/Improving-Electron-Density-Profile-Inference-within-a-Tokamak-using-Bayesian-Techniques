@@ -15,12 +15,11 @@
 \BOOKMARK [1][-]{section.3.2}{Resulting Desnity Profiles of each Implimentation}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.3}{Chapter Summary}{chapter.3}% 16
 \BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 17
-\BOOKMARK [0][-]{chapter.5}{Future Investigation}{}% 18
-\BOOKMARK [0][-]{section*.9}{References}{}% 19
-\BOOKMARK [0][-]{appendix*.11}{APPENDICES}{}% 20
-\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 21
-\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 22
-\BOOKMARK [0][-]{appendix.C}{Complete Set of Distributions and Expressions for Reference}{}% 23
-\BOOKMARK [1][-]{section.C.1}{Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{appendix.C}% 24
-\BOOKMARK [1][-]{section.C.2}{Gaussian Process Regression for Interferometry, Including Artificial Observations}{appendix.C}% 25
-\BOOKMARK [0][-]{section*.12}{Glossary}{}% 26
+\BOOKMARK [0][-]{section*.9}{References}{}% 18
+\BOOKMARK [0][-]{appendix*.11}{APPENDICES}{}% 19
+\BOOKMARK [0][-]{appendix.A}{Deriving the Closed Form Posterior Expressions}{}% 20
+\BOOKMARK [0][-]{appendix.B}{Deriving the Marginal Likelihood and Loss Function Expression}{}% 21
+\BOOKMARK [0][-]{appendix.C}{Complete Set of Distributions and Expressions for Reference}{}% 22
+\BOOKMARK [1][-]{section.C.1}{Gaussian Process Regression for Interferometry, Discluding Artificial Observations}{appendix.C}% 23
+\BOOKMARK [1][-]{section.C.2}{Gaussian Process Regression for Interferometry, Including Artificial Observations}{appendix.C}% 24
+\BOOKMARK [0][-]{section*.12}{Glossary}{}% 25
